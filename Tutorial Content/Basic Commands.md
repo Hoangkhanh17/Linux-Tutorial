@@ -78,3 +78,44 @@ Các lệnh sau có thể giúp ta kiểm tra hệ thống tệp tin
     # cat file2.txt
     Hello
     ```
+
+    Khi sử dụng lệnh rm để xóa file thì làm giảm đi một hard link. Khi số lượng hard link giảm còn 0 thì không thể truy cập tới nội dung của file được nữa
+2. **Liên kết mềm (Symbolic Links)**
+
+    Khi tạo Symbolic link với tên là `othername` thì hệ thống sẽ tạo ra một chỉ số inode khác tương ứng với tên file đó. Inode này sẽ tham chiếu đến một vùng nhớ khác chứa địa chỉ, địa chỉ này sẽ trỏ đến một vùng nhớ chứa dữ liệu lưu trữ đường dẫn đến file gốc `filename`.
+
+    <img src="https://images.viblo.asia/bf8c7003-1a2f-487d-89e9-a4c9f2ac608c.png">
+
+    Lệnh tạo liên kết tượng trưng như sau: `ln -s [file nguồn] [file đích]`
+
+    ```
+    # ln -s file2.txt file4.txt
+    # ls -i file2.txt file4.txt
+    1059736 file2.txt  1060252 file4.txt
+    ```
+
+    ```
+    # echo "Hello World" > file2.txt
+    # cat file2.txt
+    Hello World
+    # cat file4.txt
+    Hello World
+    ```
+    
+    Nếu xóa tệp tin file2.txt thì nội dung tại tệp file4.txt sẽ không còn:
+
+    ```
+    # rm file2.txt
+    # cat file4.txt
+    cat: file4.txt: No such file or directory
+    ```
+
+3. ** So sánh giữa Hard Links và Symbolic Links**
+
+    | Hard Links | Symbolic Links |
+    |------------|----------------|
+    |Chỉ liên kết được tới file, không liên kết được tới thư mục| Có thể liên kết được tới thư mục|
+    |Không tham chiếu được tới file trên ổ đĩa khác| Có thể tham chiếu tới file/thư mục khác ổ đĩa|
+    |Liên kết tới một file vẫn còn ngay cả khi file đó đã được di chuyển	|Liên kết không còn tham chiếu được nữa nếu file được di chuyển|
+    |Được liên kết với inode tham chiếu vật lý trên ổ cứng nơi chứa file	|Liên kết tham chiếu tên file/thư mục trừu tượng mà không phải địa chỉ vật lý. Chúng được cung cấp inode riêng của mình|
+    |Có thể làm việc với mọi ứng dụng	|Một số ứng dụng không cho phép symbolic link
