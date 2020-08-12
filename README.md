@@ -7,4 +7,5 @@ Hey guys, This is a Linux Tutorial from me. Growing Linux skill Timeline.
 
 1. [Basic Commands](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Tutorial%20Content/Basic%20Commands.md)
 
-2. [Working with Files]()
+2. [Working with Files](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Tutorial%20Content/Working%20with%20files.md)
+
