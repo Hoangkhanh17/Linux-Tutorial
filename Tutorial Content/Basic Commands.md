@@ -110,7 +110,7 @@ Các lệnh sau có thể giúp ta kiểm tra hệ thống tệp tin
     cat: file4.txt: No such file or directory
     ```
 
-3. ** So sánh giữa Hard Links và Symbolic Links**
+3. **So sánh giữa Hard Links và Symbolic Links**
 
     | Hard Links | Symbolic Links |
     |------------|----------------|
