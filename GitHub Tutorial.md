@@ -2,7 +2,7 @@
 
 ## Phần 1. Cấu hình và cài đặt Github
 
-1. **Nguyên tắc hoạt động**
+**1. Nguyên tắc hoạt động**
 
     Để làm việc với GitHub, ta cần:
     
@@ -12,7 +12,7 @@
 
     <img src="https://i.imgur.com/Am1wAOY.png">
 
-2. **Đăng ký tài khoản GitHub**
+**2. Đăng ký tài khoản GitHub**
 
     Truy cập trang web: https://github.com 
 
@@ -20,7 +20,7 @@
 
     <img src="https://i.imgur.com/PIJ4n2G.png">
 
-3. **Tạo một Repository trên GitHub**
+**3. Tạo một Repository trên GitHub**
 
     Tạo một Repository khá đơn giản, ta chỉ việc chọn **New Repository** -> **Create a New Repository**
 
@@ -32,7 +32,7 @@
 
     <img src="https://i.imgur.com/pX8cJc0.png">
 
-4. **Cài đặt GitHub Desktop**
+**4. Cài đặt GitHub Desktop**
 
     Download bản cài đặt trên: https://desktop.github.com/
 
@@ -52,7 +52,7 @@
 
 ## Phần 2. Tích hợp GitHub với Visual Studio
 
-1. **Cài đặt Visual Studio Code**
+**1. Cài đặt Visual Studio Code**
 
     Download Visual Studio Code tại: https://code.visualstudio.com/
 
@@ -62,7 +62,7 @@
 
     <img src="https://i.imgur.com/W3u6AeP.png">
 
-2. **Tích hợp Visual Studio Code với GitHub**
+**2. Tích hợp Visual Studio Code với GitHub**
 
     Chọn `Open Folder`, mở thư mục nơi lưu trữ Repository của GitHub trên máy Local.
 
