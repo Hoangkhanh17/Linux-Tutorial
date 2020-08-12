@@ -14,8 +14,9 @@
 
 2. Đăng ký tài khoản GitHub
 
-    - Truy cập trang web: https://github.com 
-    - Tạo username/password và địa chỉ email.
+    Truy cập trang web: https://github.com 
+
+    Tạo username/password và địa chỉ email.
 
     <img src="https://i.imgur.com/PIJ4n2G.png">
 
@@ -27,3 +28,30 @@
 
     <img src="https://i.imgur.com/19FzsZk.png">
 
+    Thông báo cài đặt thành công:
+
+    <img src="https://i.imgur.com/pX8cJc0.png">
+
+4. Cài đặt GitHub Desktop
+    Download bản cài đặt trên: https://desktop.github.com/
+
+    <img src="https://i.imgur.com/e7Hibgz.png">
+
+    Sau khi cài đặt xong, đăng nhập vào GitHub Desktop bằng tài khoản GitHub của bạn.
+
+    <img src="https://i.imgur.com/5Krek2V.png">
+
+    Chọn Repository mà mình ta vừa tạo, sau đó chọn nơi lưu trữ Repository tại máy Local.
+
+    <img src="https://i.imgur.com/qg190jt.png">
+
+    Tiến hành Clone Repository, kết quả đã kết nối GitHub với GitHub Desktop thành công:
+
+    <img src="https://i.imgur.com/Tcph81H.png">
+
+## Phần 2. Tích hợp GitHub với Visual Studio
+
+1. Cài đặt Visual Studio Code
+    Download Visual Studio Code tại: https://code.visualstudio.com/
+
+    <img src="https://i.imgur.com/xpddw6L.png">
