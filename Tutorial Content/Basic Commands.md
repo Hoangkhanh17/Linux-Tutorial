@@ -40,7 +40,7 @@ Các lệnh sau có thể giúp ta kiểm tra hệ thống tệp tin
 
 | Câu lệnh | Kết quả              |
 |----------|----------------------|
-| ls       | Liệt kê các nội dung của thư mục hiện tại |
-| ls -a     | Liệt kê các nội dung bao gồm cả các thư mục và tệp tin ẩn    |
-| tree     | Hiển thị sơ đồ cây các nội dung của thư mục hiện tại       |
-| tree -d     | Chỉ liệt kê các thư mục của thư mục hiện tại |
+| ls       | Liệt kê các nội dung của thư mục hiện hành |
+| ls -a    | Liệt kê các nội dung bao gồm cả các thư mục và tệp tin ẩn của thư mục hiện hành   |
+| tree     | Hiển thị sơ đồ cây các nội dung của thư mục hiện hành       |
+| tree -d  | Chỉ hiện thị sơ đồ cây các thư mục của thư mục hiện hành |
