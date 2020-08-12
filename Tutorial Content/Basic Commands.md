@@ -30,6 +30,7 @@ httpd: /usr/sbin/httpd /usr/lib64/httpd /etc/httpd /usr/share/httpd /usr/share/m
 | Câu lệnh |   Kết quả   |
 |----------|-------------|
 | cd       | Chuyển đến thư mục chính  |
-| cd..     | Chuyển đến thư mục mẹ     |
+| cd ..     | Chuyển đến thư mục mẹ     |
 | cd -     | Chuyển đến thư mục ngay trước khi ta sử dụng câu lệnh                |
 | cd /     | Chuyển đến thư mục /   |
+
