@@ -12,8 +12,9 @@
     - Cấu hình để có thể đồng bộ hóa dữ liệu bằng GitHub Desktop lên Repository server.
     ```
 
-    <img src="https://imgur.com/Am1wAOY">
+    <img src="https://i.imgur.com/Am1wAOY.png">
 
+2. 
 
 
 
