@@ -16,7 +16,7 @@ $ which httpd
 /usr/sbin/httpd
 ```
 
-Nếu lệnh `which` không có tác dụng, ta có thể sử dụng lệnh `whereis`. Lệnh này có thể tìm kiếm các gói liên quan trong phạm vi rộng hơn
+Nếu lệnh `which` không có tác dụng, ta có thể sử dụng lệnh `whereis`. Lệnh này có thể tìm kiếm các gói liên quan trong phạm vi rộng hơn.
 
 ```
 whereis httpd
@@ -34,3 +34,13 @@ httpd: /usr/sbin/httpd /usr/lib64/httpd /etc/httpd /usr/share/httpd /usr/share/m
 | cd -     | Chuyển đến thư mục ngay trước khi ta sử dụng câu lệnh                |
 | cd /     | Chuyển đến thư mục /   |
 
+# Kiểm tra hệ thống tệp tin
+
+Các lệnh sau có thể giúp ta kiểm tra hệ thống tệp tin
+
+| Câu lệnh | Kết quả              |
+|----------|----------------------|
+| ls       | Liệt kê các nội dung của thư mục hiện tại |
+| ls -a     | Liệt kê các nội dung bao gồm cả các thư mục và tệp tin ẩn    |
+| tree     | Hiển thị sơ đồ cây các nội dung của thư mục hiện tại       |
+| tree -d     | Chỉ liệt kê các thư mục của thư mục hiện tại |
