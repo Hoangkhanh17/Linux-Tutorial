@@ -73,3 +73,31 @@ Licensed under the Apache License, Version 2.0 (the “License”); you may not 
 
 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an “AS IS” BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
 ```
+
+### 2. BSD 3-Clause “New” or “Revised” license
+
+#### a. Nhà phát hành
+Thời gian phát hành: 22/07/1999.
+
+Giấy phép ***BSD (Berkeley Software Distribution License)*** có thể nói là lâu đời nhất trong các giấy phép nguồn mở, nó đã và đang tồn tại ở một số dạng kể từ những năm 1980.
+
+#### b. Nội dung chính
+
+***Điều khoản của giấy phép:*** Tái phân phối và sử dụng ở dạng mã nguồn và nhị phân , có hoặc không có sửa đổi mã nguồn , đều được cho phép miễn là các điều khoản sau được đáp ứng:
+
+- Việc phân phối lại mã nguồn phải giữ lại thông báo bản quyền , danh sách các điều kiện và tuyên bố từ chối trách nhiệm.
+
+- Việc phân phối lại dưới dạng nhị phân phải sao chép thông báo bản quyền , danh sách các điều kiện và tuyên bố từ chối trách nhiệm trong tài liệu và/hoặc các tài liệu khác được cung cấp bởi bản phân phối.
+
+- Tên của người giữ bản quyền cũng như tên của những người đóng góp của nó có thể được sử dụng để xác nhận hoặc quảng cáo các sản phẩm có nguồn gốc từ phần mềm này mà không có sự cho phép trước bằng văn bản cụ thể.
+
+Nội dung License: https://opensource.org/licenses/BSD-3-Clause
+
+### 3. BSD 2-Clause “Simplified” or “FreeBSD” license
+
+Ngày phát hành: 04/1999.
+
+Giấy phép **BSD 2-Clause “Simplified” or “FreeBSD” license** về cơ bản giống với giấy phép **BSD 3-Clause**. Nhưng BSD 2-Clause yêu cầu *“Tên của những người đóng góp trước đó không được sử dụng để quảng cáo cho bất kỳ phiên bản phái sinh nào mà không có được sự cho phép bằng văn bản của họ”*. **BSD 3-Clause** đã giảm bớt sự phiền hà khi sử dụng phần mềm nguồn mở theo giấy phép BSD.
+
+Nội dung License: https://opensource.org/licenses/BSD-2-Clause
+
