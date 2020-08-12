@@ -1,0 +1,3 @@
+# Tìm hiểu về Open-source Licenses
+
+#### Phần mềm mã nguồn mở (Open Source) là những phần mềm được cung cấp dưới cả dạng mã và nguồn , không chỉ là miễn phí về giá mua mà chủ yếu là miễn phí về bản quyền : người dùng có quyền sửa đổi , cải tiến , phát triển , nâng cấp theo một số nguyên tắc chung quy định trong giấy phép phần mềm nguồn mở mà không cần xin phép ai , điều mà họ không được phép làm đối với các phần mềm nguồn đóng ( tức là phần mềm thương mại )
