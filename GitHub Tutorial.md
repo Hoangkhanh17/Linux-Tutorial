@@ -55,3 +55,34 @@
     Download Visual Studio Code tại: https://code.visualstudio.com/
 
     <img src="https://i.imgur.com/xpddw6L.png">
+
+    Giao diện của Visual Studio Code sau khi cài đặt:
+
+    <img src="https://i.imgur.com/W3u6AeP.png">
+
+2. Tích hợp Visual Studio Code với GitHub
+    Chọn `Open Folder`, mở thư mục nơi lưu trữ Repository của GitHub trên máy Local.
+
+    <img src="https://i.imgur.com/8rJ5j1a.png">
+
+    Giao diện sau khi mở Repository thành công:
+
+    <img src="https://i.imgur.com/iZhi8Vj.png">
+
+    Tạo một file để kiểm tra đã kết nối thành công hay chưa. Sau đó tiến hành Save file này lại:
+
+    <img src="https://i.imgur.com/9uJDRnT.png">
+
+    Kiểm tra trên GitHub Desktop đã có thông báo thay đổi:
+
+    <img src="https://i.imgur.com/BiHPOIX.png">
+
+    Commit to Master để xác nhận các thay đổi.
+
+    Chọn Push Origin để commit lên GitHub.
+
+    <img src="https://i.imgur.com/zvy3umh.png">
+
+    Kiểm tra trên GitHub web thấy đã thay đổi.
+    
+    <img src="https://i.imgur.com/znkfrSv.png">
