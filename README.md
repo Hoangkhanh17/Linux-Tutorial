@@ -1,7 +1,7 @@
 # Linux Tutorial :D
 Hey guys, This is a Linux Tutorial from me. Growing Linux skill Timeline.
 
-Before Starting, please check My [GitHub Tutorial](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/GitHub%20Tutorial.md)
+Before We start, please check My [GitHub Tutorial](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/GitHub%20Tutorial.md)
 
 ## The Tutorial is base on [Linux-Tutorial](https://github.com/niemdinhtrong/Linux-Tutorial)
 
