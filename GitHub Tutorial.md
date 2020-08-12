@@ -21,9 +21,9 @@
 
 3. Tạo một Repository trên GitHub
 
-    Tạo một Repository khá đơn giản, ta chỉ việc chọn New Repository
+    Tạo một Repository khá đơn giản, ta chỉ việc chọn `New Repository -> Create a New Repository`
 
     <img src="https://i.imgur.com/Au778Sm.png">
-    
+
     <img src="https://i.imgur.com/19FzsZk.png">
 
