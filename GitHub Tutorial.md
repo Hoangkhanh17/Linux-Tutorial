@@ -8,7 +8,7 @@
     
     ```
     - Đăng ký một tài khoản GitHub và tạo một Repository (GitHub Repository).
-    - Cài đặt GitHub Desktop, một công cụ trực quan quản lý Local Repository (Kho chứa dữ liệu địa phương).
+    - Cài đặt GitHub Desktop, một công cụ trực quan quản lý Local Repository .
     - Cấu hình để có thể đồng bộ hóa dữ liệu bằng GitHub Desktop lên Repository server.
     ```
 
