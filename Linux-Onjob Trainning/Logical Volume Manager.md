@@ -2,15 +2,19 @@
 
 ## Mục Lục
 
+[Phần 1. Giới thiệu về LVM](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob%20Trainning/Logical%20Volume%20Manager.md#ph%E1%BA%A7n-1-gi%E1%BB%9Bi-thi%E1%BB%87u-v%E1%BB%81-lvm)
+
+[]
+
 ## Phần 1. Giới thiệu về LVM
 
-1. LVM là gì ?
+### 1. LVM là gì ?
 
 LVM là một công cụ để quản lý phân vùng logic được tạo và phân bổ từ các ổ đĩa vật lý. Với LVM bạn có thể dễ dàng tạo mới, thay đổi kích thước hoặc xóa bỏ phân vùng đã tạo.
 
 Với kỹ thuật Logical Volume Manager (LVM), ta có thể thay đổi kích thước mà không cần phải sửa lại partition table của OS. Nếu muốn mở rộng dung lượng của nó, ta chỉ cần ấn định lại dung lượng mà không cần phân vùng lại, cũng không phải đối mặt với nguy cơ mất dữ liệu khi thay đổi dung lượng như khi thao tác trên Partition.
 
-2. Cấu trúc LVM
+### 2. Cấu trúc LVM
 
 <img src="https://imgur.com/VtGksx7.png">
 
