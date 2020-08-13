@@ -26,6 +26,8 @@
 
 - [7. Mozilla Public License 2.0 (MPL)](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Open-sources%20Licenes.md#7-mozilla-public-license-20-mpl)
 
+
+
 ## Giới thiệu chung
 
 Phần mềm mã nguồn mở (Open Source) là những phần mềm được cung cấp dưới cả dạng mã và nguồn , không chỉ là miễn phí về giá mua mà chủ yếu là miễn phí về bản quyền : người dùng có quyền sửa đổi, cải tiến, phát triển, nâng cấp theo một số nguyên tắc chung quy định trong giấy phép phần mềm nguồn mở mà không cần xin phép ai, điều mà họ không được phép làm đối với các phần mềm nguồn đóng (tức là phần mềm thương mại)
@@ -101,6 +103,7 @@ Unless required by applicable law or agreed to in writing, software distributed 
 ### 2. BSD 3-Clause “New” or “Revised” license
 
 #### a. Nhà phát hành
+
 Thời gian phát hành: 22/07/1999.
 
 Giấy phép ***BSD (Berkeley Software Distribution License)*** có thể nói là lâu đời nhất trong các giấy phép nguồn mở, nó đã và đang tồn tại ở một số dạng kể từ những năm 1980.
@@ -193,3 +196,11 @@ Nội dung License: https://www.mozilla.org/en-US/MPL/2.0/
 - **MPL** yêu cầu việc công bố mã nguồn của mọi thay đổi được đưa ra công chúng.
 
 - Thời gian yêu cầu để công bố được giới hạn trong vòng khoảng **6 tháng – 1 năm** tuỳ theo từng trường hợp.
+
+### Tài liệu tham khảo
+
+https://news.cloud365.vn/cac-loai-giay-phep-ma-nguon-mo-open-source-licences/
+
+https://thaiduynguyen.wordpress.com/2009/10/30/tim-hieu-ve-osl/
+
+https://viblo.asia/p/tim-hieu-cach-hoat-dong-cua-cac-loai-license-ma-nguon-mo-open-source-license-GrLZDknOKk0
