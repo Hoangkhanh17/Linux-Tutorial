@@ -13,7 +13,7 @@
 
 ## 2. Thao tác điều khiển Output trong Linux
 
-**Ghi Output ra file:**
+**Ghi Output ra file (> hoặc 1>):**
 
 ```
 root@ubuntu:/tmp# ls -l >outputtest.log
@@ -29,6 +29,29 @@ drwx------ 2 root root 4096 Aug 12 19:59 vmware-root_905-4013330159
 -rw-r--r-- 1 root root  208 Aug 12 20:47 xyz.log
 ```
 
+**Thêm Output vào file (>> hoặc 1>>):**
+
+```
+root@ubuntu:/tmp# df -h >>outputtest.log
+root@ubuntu:/tmp# cat outputtest.log
+total 28
+-rw-r--r-- 1 root root    0 Aug 12 20:50 outputtest.log
+drwx------ 3 root root 4096 Aug 12 19:59 systemd-private-30439cce77574714bb38e03822fbf50b-systemd-networkd.service-KLsRPt
+drwx------ 3 root root 4096 Aug 12 19:59 systemd-private-30439cce77574714bb38e03822fbf50b-systemd-resolved.service-QCT3T9
+drwx------ 3 root root 4096 Aug 12 19:59 systemd-private-30439cce77574714bb38e03822fbf50b-systemd-timesyncd.service-mTRMmR
+drwxrwxrwt 2 root root 4096 Aug 12 19:59 VMwareDnD
+drwx------ 2 root root 4096 Aug 12 19:59 vmware-root
+drwx------ 2 root root 4096 Aug 12 19:59 vmware-root_905-4013330159
+-rw-r--r-- 1 root root  208 Aug 12 20:47 xyz.log
+Filesystem      Size  Used Avail Use% Mounted on
+udev            963M     0  963M   0% /dev
+tmpfs           197M  836K  197M   1% /run
+/dev/sda1        40G  3.5G   34G  10% /
+tmpfs           985M     0  985M   0% /dev/shm
+tmpfs           5.0M     0  5.0M   0% /run/lock
+tmpfs           985M     0  985M   0% /sys/fs/cgroup
+tmpfs           197M     0  197M   0% /run/user/1000
+```
 
 
 
