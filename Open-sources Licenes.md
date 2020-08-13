@@ -150,6 +150,5 @@ Giấy phép MIT là loại giấy phép cho phép sử dụng mã nguồn tự 
 
 Với giấy phép MIT bạn có thể sử dụng , sao chép , sửa đổi , hợp nhất , xuất bản , phân phối và/hoặc bán các bản sao của phần mềm mà không vi phạm bản quyền. Bạn chỉ cần tuân thủ điều kiện duy nhất sau:
 
-```
-Thông báo bản quyền và thông báo cho phép của phần mềm gốc sử dụng giấy phép MIT sẽ phải bao gồm trong tất cả các bản sao hoặc phần quan trọng của phần mềm.
-```
+- Thông báo bản quyền và thông báo cho phép của phần mềm gốc sử dụng giấy phép MIT sẽ phải bao gồm trong tất cả các bản sao hoặc phần quan trọng của phần mềm.
+
