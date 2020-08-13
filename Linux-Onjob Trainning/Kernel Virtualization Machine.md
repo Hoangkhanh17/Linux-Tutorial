@@ -35,3 +35,7 @@ KVM VPS không có tài nguyên dùng chung, tất cả đã được mặc đ�
 ### b) Nhược điểm
 
 - **Yêu cầu cao về server/máy chủ:** Là công nghệ ảo hóa hoàn toàn phần cứng, VPS KVM yêu cầu cấu hình server vật lý khá cao. Thậm chí yêu cầu phải sử dụng các server của các thương hiệu lớn như IBM, Dell thì mới đảm bảo hoạt động tốt được.
+
+## Tài liệu tham khảo
+
+https://blog.tinohost.com/cong-nghe-ao-hoa-kvm-vmware/
