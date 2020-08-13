@@ -8,6 +8,16 @@
 
 [2. Cấu trúc LVM](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob%20Trainning/Logical%20Volume%20Manager.md#2-c%E1%BA%A5u-tr%C3%BAc-lvm)
 
+[Phần 2. Tạo và quản lý LVM](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob%20Trainning/Logical%20Volume%20Manager.md#ph%E1%BA%A7n-2-t%E1%BA%A1o-v%C3%A0-qu%E1%BA%A3n-l%C3%BD-lvm)
+
+[1. Tạo LVM](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob%20Trainning/Logical%20Volume%20Manager.md#1-t%E1%BA%A1o-lvm)
+
+[2. Mở rộng Volume Group và thay đổi kích thước các Logical Volume](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob%20Trainning/Logical%20Volume%20Manager.md#2-m%E1%BB%9F-r%E1%BB%99ng-volume-group-v%C3%A0-thay-%C4%91%E1%BB%95i-k%C3%ADch-th%C6%B0%E1%BB%9Bc-c%C3%A1c-logical-volume)
+
+[3. Giảm kích cỡ Logical Volume](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob%20Trainning/Logical%20Volume%20Manager.md#3-gi%E1%BA%A3m-k%C3%ADch-c%E1%BB%A1-logical-volume)
+
+[Tài liệu tham khảo](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob%20Trainning/Logical%20Volume%20Manager.md#t%C3%A0i-li%E1%BB%87u-tham-kh%E1%BA%A3o)
+
 ## Phần 1. Giới thiệu về LVM
 
 ### 1. LVM là gì ?
