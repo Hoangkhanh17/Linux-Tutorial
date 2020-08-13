@@ -152,3 +152,20 @@ Với giấy phép MIT bạn có thể sử dụng , sao chép , sửa đổi , 
 
 - Thông báo bản quyền và thông báo cho phép của phần mềm gốc sử dụng giấy phép MIT sẽ phải bao gồm trong tất cả các bản sao hoặc phần quan trọng của phần mềm.
 
+### 7. Mozilla Public License 2.0 (MPL)
+
+Giấy phép MPL 2.0 là một giấy phép phần mềm tự do của Quỹ Mozilla.
+
+Thời gian phát hành: 03/01/2020.
+
+Nội dung License: https://www.mozilla.org/en-US/MPL/2.0/
+
+- MPL là sự kết hợp giữa giấy phép BSD có chỉnh sửa và giấy phép GNU.
+
+- Một số lập trình viên đóng góp cho cộng đồng phần mềm mã nguồn mở nhưng không muốn từ bỏ hoàn toàn quyền sở hữu đối với những sửa đổi của họ và **MPL** là một ví dụ điển hình nhất đáp ứng nhu cầu này của họ.
+
+- Nó ra đời để giúp phân phối trình duyệt web **Mozilla** (nền tảng nguồn mở của **Netscape**).
+
+- **MPL** yêu cầu việc công bố mã nguồn của mọi thay đổi được đưa ra công chúng.
+
+- Thời gian yêu cầu để công bố được giới hạn trong vòng khoảng **6 tháng – 1 năm** tuỳ theo từng trường hợp.
