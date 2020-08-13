@@ -28,13 +28,37 @@ Với kỹ thuật Logical Volume Manager (LVM), ta có thể thay đổi kích 
 
 <img src="https://imgur.com/gHIAFxL.png">
 
-
-
 - **Logical Volume:** Một Volume Group được chia nhỏ thành nhiều Logical Volume. Nó được dùng để mount tới hệ thống tập tin (File System) và được format với những chuẩn định dạng khác nhau như ext2, ext3, ext4…
 
+<img src="https://i.imgur.com/UNmyHQI.png">
 
-<img scr="https://i.imgur.com/U2aX6X1.png">
+## Phần 2. Tạo và quản lý LVM
 
+### 1. Tạo LVM
+
+#### Bước 1. Tạo Physical Volume
+
+Để tạo Physical Volume, ta sử dụng lệnh `pvcreate`
+
+```
+[root@localhost ~]# pvcreate /dev/sdb /dev/sdc /dev/sdd
+  Physical volume "/dev/sdb" successfully created.
+  Physical volume "/dev/sdc" successfully created.
+  Physical volume "/dev/sdd" successfully created.
+```
+
+- Chúng ta có thể liệt kê các danh sách các Physical Volume bằng lệnh `pvs`
+
+- Để xem thông tin chi tiết cho từng Physical Volume, ta dùng lệnh `pvdisplay`. Ví dụ: `pvdisplay /dev/sdb`
+
+#### Bước 2. Tạo Volume Group
+
+Để tạo 
+
+```
+$ vgcreate new_vol_group /dev/sdd
+Volume group "new_vol_group" successfully created
+```
 
 ## Tài liệu tham khảo
 
