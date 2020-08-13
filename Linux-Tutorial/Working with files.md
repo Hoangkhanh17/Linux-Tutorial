@@ -170,19 +170,6 @@ root@ubuntu:~# locate zip | grep bin
 /usr/lib/klibc/bin/gzip
 ```
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Refrences - Special thanks !
 
 https://trungquan710.com/linux/luong-du-lieu-doi-voi-linux-process.html
