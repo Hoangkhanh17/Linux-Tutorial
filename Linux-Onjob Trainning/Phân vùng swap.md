@@ -41,3 +41,38 @@ Nếu phân vùng **Swap** được sử dụng quá nhiều, điều đó cản
 ```
 
 ```
+
+### 2. Xóa một phân vùng Swap
+
+#### Bước 1. Huỷ kích hoạt swap
+
+```
+root@ubuntu:~# swapoff /swapfile
+```
+
+#### Bước 2. Chỉnh sửa file `/etc/fstab` xoá dòng `/swapfile`
+
+```
+root@ubuntu:~# vi /etc/fstab
+# /etc/fstab: static file system information.
+#
+# Use 'blkid' to print the universally unique identifier for a
+# device; this may be used with UUID= as a more robust way to name devices
+# that works even if disks are added and removed. See fstab(5).
+#
+# <file system> <mount point>   <type>  <options>       <dump>  <pass>
+# / was on /dev/sda1 during installation
+UUID=28fd8efc-aca4-4fde-a1a0-a6ded408d262 /               ext4    errors=remount-ro 0       1
+/swapfile                       swap    defaults        0 0
+/dev/fd0        /media/floppy0  auto    rw,user,noauto,exec,utf8 0       0
+```
+
+#### Bước 4. Xóa file **Swap**, sau đó kiểm tra lại đã thành công chưa
+
+```
+root@ubuntu:~# rm -rf /swapfile
+root@ubuntu:~# free -m
+            total        used        free      shared  buff/cache   available
+Mem:           1969         139        1616           0         214        1678
+Swap:             0           0           0
+```
