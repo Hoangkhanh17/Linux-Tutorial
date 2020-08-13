@@ -36,13 +36,89 @@ Nếu phân vùng **Swap** được sử dụng quá nhiều, điều đó cản
 
 Để thêm một phân vùng Swap vào hệ thống, ta cần tài khoản root hoặc một user có quyền sudo.
 
-#### Bước 1. Trước khi bắt đầu, hãy kiểm tra xem hệ thống đã được kích hoạt sử dụng Swap chưa:
+#### Bước 1. Kiểm tra hệ thống đã được kích hoạt sử dụng Swap chưa
 
 ```
+[root@localhost ~]# swapon -s
 [root@localhost ~]# free -m
                 total        used        free      shared  buff/cache   available
 Mem:            972         166         664           7         141         663
 Swap:             0           0           0
+```
+
+#### Bước 2. Tạo kích thước cho /swap
+
+```
+[root@localhost ~]# fallocate -l 512M /swapfile
+```
+
+512M là dung lượng tạo cho /swap, chúng ta có thể tùy chọn thay đổi theo mong muốn.
+
+Nếu lệnh ``fallocate`` không có sẵn và báo lỗi **fallocate failed: Operation not supported**, ta sử dụng lệnh sau:
+
+```
+[root@localhost ~]# sudo dd if=/dev/zero of=/swapfile bs=1024 count=512
+```
+Có thể thay đổi dung lượng /swap tại `count=512` với dung lượng mong muốn.
+
+Sau khi tạo xong, kiểm tra lại dung lượng file /swap:
+
+```
+[root@localhost ~]# ls -lh /swapfile
+-rw-r--r--. 1 root root 512M Aug 13 14:48 /swapfile
+```
+
+#### Bước 3. Chỉ gắn quyền cho root có thể đọc và ghi file /swap
+
+```
+[root@localhost ~]# chmod 600 /swapfile
+[root@localhost ~]# ls -lh /swapfile
+-rw-------. 1 root root 512M Aug 13 14:48 /swapfile
+```
+
+#### Bước 4. Thiết lập phân vùng Swap
+
+```
+[root@localhost ~]# mkswap /swapfile
+Setting up swapspace version 1, size = 524284 KiB
+no label, UUID=df0ab48e-e652-4c5d-b1cf-207c60014647
+```
+
+#### Bước 5. Thiết lập swap tự động kích hoạt mỗi khi reboot
+
+Ta cần thêm dòng lệnh `/swapfile swap swap defaults 0 0` vào `/etc/fstab`
+
+```
+[root@localhost ~]# vi /etc/fstab
+[root@localhost ~]# cat /etc/fstab
+
+#
+# /etc/fstab
+# Created by anaconda on Thu Aug 13 14:26:12 2020
+#
+# Accessible filesystems, by reference, are maintained under '/dev/disk'
+# See man pages fstab(5), findfs(8), mount(8) and/or blkid(8) for more info
+#
+/dev/mapper/centos-root /                       ext4    defaults        1 1
+UUID=fbb21271-d977-4e1e-8db8-abb96324d0fe /boot                   ext4    defaults        1 2
+/swapfile swap swap defaults 0 0
+```
+
+#### Bước 6. Kiểm tra hệ thống đã báo cáo phân vùng /swap chưa
+
+```
+[root@localhost ~]# free -m
+              total        used        free      shared  buff/cache   available
+Mem:            972         169         659           7         142         660
+Swap:             0           0           0
+[root@localhost ~]# swapon -a
+[root@localhost ~]# swapon -s
+Filename                                Type            Size    Used    Priority
+/swapfile                               file    524284  0       -2
+[root@localhost ~]# free -m
+              total        used        free      shared  buff/cache   available
+Mem:            972         170         659           7         142         660
+Swap:           511           0         511
 ```
 
 ### 2. Xóa một phân vùng Swap
