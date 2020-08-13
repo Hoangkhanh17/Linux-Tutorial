@@ -104,6 +104,34 @@ drwx------ 2 root root 4096 Aug 12 19:59 vmware-root_905-4013330159
 -rw-r--r-- 1 root root  208 Aug 12 20:47 xyz.log
 ```
 
+**Ghi log lại toàn bộ thao tác:**
+
+```
+root@ubuntu:/tmp# script testxyt.log
+Script started, file is testxyt.log
+root@ubuntu:/tmp# helo
+
+Command 'helo' not found, did you mean:
+
+  command 'hello' from deb hello
+  command 'hello' from deb hello-traditional
+
+Try: apt install <deb name>
+
+root@ubuntu:/tmp# df -h
+Filesystem      Size  Used Avail Use% Mounted on
+udev            963M     0  963M   0% /dev
+tmpfs           197M  836K  197M   1% /run
+/dev/sda1        40G  3.5G   34G  10% /
+tmpfs           985M     0  985M   0% /dev/shm
+tmpfs           5.0M     0  5.0M   0% /run/lock
+tmpfs           985M     0  985M   0% /sys/fs/cgroup
+tmpfs           197M     0  197M   0% /run/user/1000
+root@ubuntu:/tmp# exit
+exit
+Script done, file is testxyt.log
+```
+
 
 
 
