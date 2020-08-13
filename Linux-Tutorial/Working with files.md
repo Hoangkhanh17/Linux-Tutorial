@@ -147,7 +147,7 @@ root@ubuntu:~# locate mysql
 
 Đôi khi việc tìm kiếm sẽ cho ra danh sách kết quả rất dài. Ta có thể sử dụng thêm lệnh `grep` để tiến hành lọc kết quả mong muốn.
 
-**Ví dụ:** Tìm kiếm các tệp và thư mục `zip` có `bin` trong tên.
+**Ví dụ:** Tìm kiếm các tệp và thư mục `zip` có chứa `bin` trong tên.
 
 ```
 root@ubuntu:~# locate zip | grep bin
