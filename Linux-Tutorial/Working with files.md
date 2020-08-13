@@ -132,6 +132,43 @@ exit
 Script done, file is testxyt.log
 ```
 
+## Tìm kiếm các tệp tin
+
+Lệnh `locate` được sử dụng để thực hiện việc tìm kiếm hông qua cơ sở dữ liệu tệp và thư mục được xây dựng trước đó trên hệ thống của bạn, khớp với tất cả các mục nhập có chứa chuỗi ký tự được chỉ định.
+
+**Ví dụ:** Muốn tìm kiếm các tệp tin hoặc thư mục có chứa `mysql`
+
+```
+root@ubuntu:~# locate mysql
+/etc/apparmor.d/abstractions/mysql
+/usr/share/bash-completion/completions/mysql
+/usr/share/bash-completion/completions/mysqladmin
+```
+
+Đôi khi việc tìm kiếm sẽ cho ra danh sách kết quả rất dài. Ta có thể sử dụng thêm lệnh `grep` để tiến hành lọc kết quả mong muốn.
+
+**Ví dụ:** Tìm kiếm các tệp và thư mục `zip` có `bin` trong tên.
+
+```
+root@ubuntu:~# locate zip | grep bin
+/bin/bunzip2
+/bin/bzip2
+/bin/bzip2recover
+/bin/gunzip
+/bin/gzip
+/lib/firmware/qed/qed_init_values_zipped-8.10.10.0.bin
+/lib/firmware/qed/qed_init_values_zipped-8.10.5.0.bin
+/lib/firmware/qed/qed_init_values_zipped-8.15.3.0.bin
+/lib/firmware/qed/qed_init_values_zipped-8.20.0.0.bin
+/lib/firmware/qed/qed_init_values_zipped-8.33.1.0.bin
+/lib/firmware/qed/qed_init_values_zipped-8.33.11.0.bin
+/lib/firmware/qed/qed_init_values_zipped-8.37.2.0.bin
+/lib/firmware/qed/qed_init_values_zipped-8.37.7.0.bin
+/lib/firmware/qed/qed_init_values_zipped-8.4.2.0.bin
+/lib/firmware/qed/qed_init_values_zipped-8.7.3.0.bin
+/usr/lib/klibc/bin/gunzip
+/usr/lib/klibc/bin/gzip
+```
 
 
 
