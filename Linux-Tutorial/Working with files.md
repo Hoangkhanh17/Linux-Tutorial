@@ -71,6 +71,39 @@ root@ubuntu:/tmp# ls -l /tmp/acsavas 2>/dev/null
 root@ubuntu:/tmp#
 ```
 
+**Ghi output ra cả màn hình và file (tee)**
+
+```
+root@ubuntu:/tmp# ls -l | tee logtest.log
+total 44
+-rw-r--r-- 1 root root 1029 Aug 12 20:57 outputtest.log
+-rw-r--r-- 1 root root  868 Aug 12 21:08 outtput.log
+drwx------ 3 root root 4096 Aug 12 19:59 systemd-private-30439cce77574714bb38e03822fbf50b-systemd-networkd.service-KLsRPt
+drwx------ 3 root root 4096 Aug 12 19:59 systemd-private-30439cce77574714bb38e03822fbf50b-systemd-resolved.service-QCT3T9
+drwx------ 3 root root 4096 Aug 12 19:59 systemd-private-30439cce77574714bb38e03822fbf50b-systemd-timesyncd.service-mTRMmR
+-rw-r--r-- 1 root root   58 Aug 12 21:05 testerror.log
+-rw-r--r-- 1 root root  376 Aug 12 21:02 testoutput.log
+-rw-r--r-- 1 root root    0 Aug 12 21:05 testt.log
+drwxrwxrwt 2 root root 4096 Aug 12 19:59 VMwareDnD
+drwx------ 2 root root 4096 Aug 12 19:59 vmware-root
+drwx------ 2 root root 4096 Aug 12 19:59 vmware-root_905-4013330159
+-rw-r--r-- 1 root root  208 Aug 12 20:47 xyz.log
+root@ubuntu:/tmp# cat logtest.log
+total 44
+-rw-r--r-- 1 root root 1029 Aug 12 20:57 outputtest.log
+-rw-r--r-- 1 root root  868 Aug 12 21:08 outtput.log
+drwx------ 3 root root 4096 Aug 12 19:59 systemd-private-30439cce77574714bb38e03822fbf50b-systemd-networkd.service-KLsRPt
+drwx------ 3 root root 4096 Aug 12 19:59 systemd-private-30439cce77574714bb38e03822fbf50b-systemd-resolved.service-QCT3T9
+drwx------ 3 root root 4096 Aug 12 19:59 systemd-private-30439cce77574714bb38e03822fbf50b-systemd-timesyncd.service-mTRMmR
+-rw-r--r-- 1 root root   58 Aug 12 21:05 testerror.log
+-rw-r--r-- 1 root root  376 Aug 12 21:02 testoutput.log
+-rw-r--r-- 1 root root    0 Aug 12 21:05 testt.log
+drwxrwxrwt 2 root root 4096 Aug 12 19:59 VMwareDnD
+drwx------ 2 root root 4096 Aug 12 19:59 vmware-root
+drwx------ 2 root root 4096 Aug 12 19:59 vmware-root_905-4013330159
+-rw-r--r-- 1 root root  208 Aug 12 20:47 xyz.log
+```
+
 
 
 
