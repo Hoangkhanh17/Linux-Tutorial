@@ -53,7 +53,14 @@ tmpfs           985M     0  985M   0% /sys/fs/cgroup
 tmpfs           197M     0  197M   0% /run/user/1000
 ```
 
+**Ghi output ra file (>, >>, 1>, 1>>) và lỗi nếu có vào file khác (2> hoặc 2>>):**
 
+```
+root@ubuntu:/tmp# ls -l /tmp/abcde >testt.log 2>testerror.log
+root@ubuntu:/tmp# cat testt.log
+root@ubuntu:/tmp# cat testerror.log
+ls: cannot access '/tmp/abcde': No such file or directory
+```
 
 
 
