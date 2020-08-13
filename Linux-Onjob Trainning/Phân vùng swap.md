@@ -40,7 +40,7 @@ Nếu phân vùng **Swap** được sử dụng quá nhiều, điều đó cản
 
 ```
 [root@localhost ~]# free -m
-                 total        used        free      shared  buff/cache   available
+                total        used        free      shared  buff/cache   available
 Mem:            972         166         664           7         141         663
 Swap:             0           0           0
 ```
@@ -75,7 +75,7 @@ UUID=28fd8efc-aca4-4fde-a1a0-a6ded408d262 /               ext4    errors=remount
 ```
 root@ubuntu:~# rm -rf /swapfile
 root@ubuntu:~# free -m
-                 total        used        free      shared  buff/cache   available
+               total        used        free      shared  buff/cache   available
 Mem:           1969         139        1616           0         214        1678
 Swap:             0           0           0
 ```
