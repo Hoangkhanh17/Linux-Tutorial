@@ -101,3 +101,55 @@ Giấy phép **BSD 2-Clause “Simplified” or “FreeBSD” license** về cơ
 
 Nội dung License: https://opensource.org/licenses/BSD-2-Clause
 
+### 4. GNU General Public License ( GPL )
+
+#### a) Nhà phát hành
+Giấy phép GNU hiện đang có 2 phiên bản được sử dụng phổ biến là GPL-2.0 và GPL-3.0.
+
+Nội dung license: https://www.gnu.org/licenses/gpl.html
+
+#### b) Nội dung chính
+
+**Quyền lợi** khi sử dụng phần mềm áp dụng giấy phép GPL:
+
+- Được sao chép và phân phối chương trình, được yêu cầu trả phí cho việc phân phối đó.
+
+- Được thay đổi chương trình để sử dụng cho mục đích cá nhân.
+
+- Được phân phối bản đã được thay đổi đó.
+
+**Nghĩa vụ:**
+
+- Khi sao chép và phân phối chương trình, phải đính kèm các thông báo về bản quyền gốc và không bảo hành(trừ trường hợp có văn bản thêm về quy định bảo hành)
+
+- Khi phân phối bản đã được thay đổi bởi bản thân , phải chú thích rõ đó là bản đã được thay đổi, các thành phần được thay đổi, và áp dụng giấy phép GNU cho bản đã được thay đổi đó.
+
+- Khi phát hành chương trình phải công khai mã nguồn của chương trình, đồng thời phải công bố mã nguồn của chương trình trong tối thiểu 3 năm mà không được đòi một khoản phí nào từ những người yêu cầu mã nguồn trừ chi phí vận chuyển hay tương đương.
+
+### 5. GNU Library or “Lesser” General Public License (LGPL)
+
+Thời gian phát hành: Phiên bản mới nhất **LGPL-3.0** phát hành năm 2007.
+
+Nội dung License: https://www.gnu.org/copyleft/lesser.html
+
+- **LGPL** là một phiên bản sửa đổi của **GPL**.
+
+- Giấy phép này thường bị hạn chế đối với các thư viện phần mềm.
+
+- Cung cấp sự bảo vệ ít hơn so với **GPL**.
+
+- Điều này cho phép các chương trình không phải là Open source có thể truy cập hoặc liên kết tới các thư viện nguồn mở mà không phải công khai mã nguồn như giấy phép **GPL**.
+
+### 6. MIT License
+
+Được phát hành bởi **Massachusetts Institute of Technology (MIT)**
+
+Nội dung License: https://opensource.org/licenses/MIT
+
+Giấy phép MIT là loại giấy phép cho phép sử dụng mã nguồn tự do nhất , nó có thể kết hợp với các mã nguồn khác và đảm bảo tương thích theo điều kiện của mọi loại giấy phép khác.
+
+Với giấy phép MIT bạn có thể sử dụng , sao chép , sửa đổi , hợp nhất , xuất bản , phân phối và/hoặc bán các bản sao của phần mềm mà không vi phạm bản quyền. Bạn chỉ cần tuân thủ điều kiện duy nhất sau:
+
+```
+Thông báo bản quyền và thông báo cho phép của phần mềm gốc sử dụng giấy phép MIT sẽ phải bao gồm trong tất cả các bản sao hoặc phần quan trọng của phần mềm.
+```
