@@ -4,7 +4,9 @@
 
 [Phần 1. Giới thiệu về LVM](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob%20Trainning/Logical%20Volume%20Manager.md#ph%E1%BA%A7n-1-gi%E1%BB%9Bi-thi%E1%BB%87u-v%E1%BB%81-lvm)
 
-[]
+[1. LVM là gì?](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob%20Trainning/Logical%20Volume%20Manager.md#1-lvm-l%C3%A0-g%C3%AC-)
+
+[2. Cấu trúc LVM](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob%20Trainning/Logical%20Volume%20Manager.md#2-c%E1%BA%A5u-tr%C3%BAc-lvm)
 
 ## Phần 1. Giới thiệu về LVM
 
