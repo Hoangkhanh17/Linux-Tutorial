@@ -13,4 +13,5 @@ Before We start, please check My [GitHub Tutorial](https://github.com/quanganh19
 
 ## References - Special thanks !
 
+This Tutorial is base on:
 https://github.com/MinhKMA/Linux-Tutorial/blob/master/content/working_with_files.md
