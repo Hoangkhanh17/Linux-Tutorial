@@ -155,3 +155,38 @@ root@ubuntu:~# free -m
 Mem:           1969         139        1616           0         214        1678
 Swap:             0           0           0
 ```
+
+### 3. Thay đổi dung lượng phân vùng /Swap
+
+#### Bước 1. Tắt phân vùng /swap
+
+```
+[root@localhost ~]# swapoff /swapfile
+```
+
+#### Bước 2. Thiết lập dung lượng mới cho /swap
+
+```
+[root@localhost ~]# sudo dd if=/dev/zero of=/swapfile bs=1M count=1024
+1024+0 records in
+1024+0 records out
+1073741824 bytes (1.1 GB) copied, 1.48122 s, 725 MB/s
+```
+
+#### Bước 3. Thiết lập file vừa tạo thành phân vùng /swap
+
+```
+[root@localhost ~]# mkswap /swapfile
+Setting up swapspace version 1, size = 1048572 KiB
+no label, UUID=c4232459-abbe-4128-85bf-653a67178e80
+```
+
+#### Bước 4. Bật phân vùng /swap và kiểm tra
+
+```
+[root@localhost ~]# swapon /swapfile
+[root@localhost ~]# free -m
+              total        used        free      shared  buff/cache   available
+Mem:            972         171          85           7         715         649
+Swap:          1023           0        1023
+```
