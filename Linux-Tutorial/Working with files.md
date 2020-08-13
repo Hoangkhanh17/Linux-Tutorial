@@ -13,7 +13,7 @@
 
 ## 2. Thao tác điều khiển Output trong Linux
 
-**Ghi Output ra file**
+**Ghi Output ra file:**
 
 ```
 root@ubuntu:/tmp# ls -l >outputtest.log
