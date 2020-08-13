@@ -13,7 +13,7 @@
 
 ## 2. Thao tác điều khiển Output trong Linux
 
-**Ghi Output ra file (> hoặc 1>):**
+### **Ghi Output ra file (> hoặc 1>):**
 
 ```
 root@ubuntu:/tmp# ls -l >outputtest.log
@@ -29,7 +29,7 @@ drwx------ 2 root root 4096 Aug 12 19:59 vmware-root_905-4013330159
 -rw-r--r-- 1 root root  208 Aug 12 20:47 xyz.log
 ```
 
-**Thêm Output vào file (>> hoặc 1>>):**
+### **Thêm Output vào file (>> hoặc 1>>):**
 
 ```
 root@ubuntu:/tmp# df -h >>outputtest.log
@@ -53,7 +53,7 @@ tmpfs           985M     0  985M   0% /sys/fs/cgroup
 tmpfs           197M     0  197M   0% /run/user/1000
 ```
 
-**Ghi output ra file (>, >>, 1>, 1>>) và lỗi nếu có vào file khác (2> hoặc 2>>):**
+### **Ghi output ra file (>, >>, 1>, 1>>) và lỗi nếu có vào file khác (2> hoặc 2>>):**
 
 ```
 root@ubuntu:/tmp# ls -l /tmp/abcde >testt.log 2>testerror.log
@@ -62,7 +62,7 @@ root@ubuntu:/tmp# cat testerror.log
 ls: cannot access '/tmp/abcde': No such file or directory
 ```
 
-**Không ghi lỗi (2>/dev/null)**
+### **Không ghi lỗi (2>/dev/null)**
 
 ```
 root@ubuntu:/tmp# ls -l /tmp/acsavas
@@ -71,7 +71,7 @@ root@ubuntu:/tmp# ls -l /tmp/acsavas 2>/dev/null
 root@ubuntu:/tmp#
 ```
 
-**Ghi output ra cả màn hình và file (tee)**
+### **Ghi output ra cả màn hình và file (tee)**
 
 ```
 root@ubuntu:/tmp# ls -l | tee logtest.log
@@ -104,7 +104,7 @@ drwx------ 2 root root 4096 Aug 12 19:59 vmware-root_905-4013330159
 -rw-r--r-- 1 root root  208 Aug 12 20:47 xyz.log
 ```
 
-**Ghi log lại toàn bộ thao tác:**
+### **Ghi log lại toàn bộ thao tác:**
 
 ```
 root@ubuntu:/tmp# script testxyt.log
