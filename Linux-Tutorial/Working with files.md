@@ -62,6 +62,14 @@ root@ubuntu:/tmp# cat testerror.log
 ls: cannot access '/tmp/abcde': No such file or directory
 ```
 
+**Không ghi lỗi (2>/dev/null)**
+
+```
+root@ubuntu:/tmp# ls -l /tmp/acsavas
+ls: cannot access '/tmp/acsavas': No such file or directory
+root@ubuntu:/tmp# ls -l /tmp/acsavas 2>/dev/null
+root@ubuntu:/tmp#
+```
 
 
 
