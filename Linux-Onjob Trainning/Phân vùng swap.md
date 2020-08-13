@@ -10,7 +10,7 @@
 
 - [3. Kích thước cho phân vùng Swap](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob%20Trainning/Ph%C3%A2n%20v%C3%B9ng%20swap.md#3-k%C3%ADch-th%C6%B0%E1%BB%9Bc-cho-ph%C3%A2n-v%C3%B9ng-swap)
 
-[Phần 2. Thêm/xóa, thay đổi dung lượng một phân vùng Swap vào Ubuntu/CentOS](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob%20Trainning/Ph%C3%A2n%20v%C3%B9ng%20swap.md#ph%E1%BA%A7n-2-th%C3%AAmx%C3%B3a-m%E1%BB%99t-ph%C3%A2n-v%C3%B9ng-swap-v%C3%A0o-ubuntucentos)
+[Phần 2. Thêm/xóa, thay đổi dung lượng một phân vùng Swap vào Ubuntu/CentOS](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob%20Trainning/Ph%C3%A2n%20v%C3%B9ng%20swap.md#ph%E1%BA%A7n-2-th%C3%AAmx%C3%B3a-thay-%C4%91%E1%BB%95i-dung-l%C6%B0%E1%BB%A3ng-m%E1%BB%99t-ph%C3%A2n-v%C3%B9ng-swap-v%C3%A0o-ubuntucentos)
 
 - [1. Thêm một phân vùng Swap](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob%20Trainning/Ph%C3%A2n%20v%C3%B9ng%20swap.md#1-th%C3%AAm-m%E1%BB%99t-ph%C3%A2n-v%C3%B9ng-swap)
 
