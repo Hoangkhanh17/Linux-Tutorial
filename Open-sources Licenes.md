@@ -26,7 +26,7 @@
 
 - [7. Mozilla Public License 2.0 (MPL)](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Open-sources%20Licenes.md#7-mozilla-public-license-20-mpl)
 
-
+[Tài liệu tham khảo](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Open-sources%20Licenes.md#t%C3%A0i-li%E1%BB%87u-tham-kh%E1%BA%A3o)
 
 ## Giới thiệu chung
 
