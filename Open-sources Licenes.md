@@ -2,6 +2,30 @@
 
 ## Mục lục
 
+[Giới thiệu chung](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Open-sources%20Licenes.md#gi%E1%BB%9Bi-thi%E1%BB%87u-chung)
+
+[Phần 1. Giới thiệu về các giấy phép mã nguồn mở](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Open-sources%20Licenes.md#ph%E1%BA%A7n-1-gi%E1%BB%9Bi-thi%E1%BB%87u-v%E1%BB%81-c%C3%A1c-gi%E1%BA%A5y-ph%C3%A9p-m%C3%A3-ngu%E1%BB%93n-m%E1%BB%9F)
+
+[Phần 2. Các loại giấy phép mã nguồn mở thông dụng](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Open-sources%20Licenes.md#ph%E1%BA%A7n-2-c%C3%A1c-lo%E1%BA%A1i-gi%E1%BA%A5y-ph%C3%A9p-m%C3%A3-ngu%E1%BB%93n-m%E1%BB%9F-th%C3%B4ng-d%E1%BB%A5ng)
+
+- [1. Apache License 2.0](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Open-sources%20Licenes.md#1-apache-license-20)
+
+- [2. BSD 3-Clause “New” or “Revised” license](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Open-sources%20Licenes.md#2-bsd-3-clause-new-or-revised-license)
+
+- [3. BSD 2-Clause “Simplified” or “FreeBSD” license](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Open-sources%20Licenes.md#3-bsd-2-clause-simplified-or-freebsd-license)
+
+- [4. GNU General Public License (GPL)](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Open-sources%20Licenes.md#4-gnu-general-public-license--gpl-)
+
+    - [a) Nhà phát hành](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Open-sources%20Licenes.md#a-nh%C3%A0-ph%C3%A1t-h%C3%A0nh-1)
+
+    - [b) Nội dung chính](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Open-sources%20Licenes.md#b-n%E1%BB%99i-dung-ch%C3%ADnh-1)
+
+- [5. GNU Library or “Lesser” General Public License (LGPL)](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Open-sources%20Licenes.md#5-gnu-library-or-lesser-general-public-license-lgpl)
+
+- [6. MIT License](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Open-sources%20Licenes.md#6-mit-license)
+
+- [7. Mozilla Public License 2.0 (MPL)](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Open-sources%20Licenes.md#7-mozilla-public-license-20-mpl)
+
 ## Giới thiệu chung
 
 Phần mềm mã nguồn mở (Open Source) là những phần mềm được cung cấp dưới cả dạng mã và nguồn , không chỉ là miễn phí về giá mua mà chủ yếu là miễn phí về bản quyền : người dùng có quyền sửa đổi, cải tiến, phát triển, nâng cấp theo một số nguyên tắc chung quy định trong giấy phép phần mềm nguồn mở mà không cần xin phép ai, điều mà họ không được phép làm đối với các phần mềm nguồn đóng (tức là phần mềm thương mại)
