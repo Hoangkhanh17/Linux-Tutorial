@@ -30,6 +30,16 @@
 
 [2. Restore Logical Volume](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob%20Trainning/Logical%20Volume%20Manager.md#2-restore-logical-volume)
 
+[Phần 4. Tính năng Thin Provisioning Volume](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob%20Trainning/Logical%20Volume%20Manager.md#ph%E1%BA%A7n-4-t%C3%ADnh-n%C4%83ng-thin-provisioning-volume)
+
+[1. Setup Thin Pool và Volume](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob%20Trainning/Logical%20Volume%20Manager.md#1-setup-thin-pool-v%C3%A0-volume)
+
+  - [1.1. Tạo một Thin Pool](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob%20Trainning/Logical%20Volume%20Manager.md#11-t%E1%BA%A1o-m%E1%BB%99t-thin-pool)
+
+  - [1.2. Tạo Thin Volume](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob%20Trainning/Logical%20Volume%20Manager.md#12-t%E1%BA%A1o-thin-volume)
+
+[3. Tạo file system](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob%20Trainning/Logical%20Volume%20Manager.md#3-t%E1%BA%A1o-file-system)
+
 
 ## Phần 1. Giới thiệu về LVM
 
