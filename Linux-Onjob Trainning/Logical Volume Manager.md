@@ -538,6 +538,23 @@ Trong đó ý nghĩa các trường của lệnh `lvdisplay` như sau:
 
 - Snapshot chunk size: Cung cấp kích thước của chunk cho snapshot.
 
+Nếu tiếp tục sao chép tệp có dung lượng lớn hơn dung lượng ta cấp cho `snapshot`. Sẽ có lỗi báo:
+
+```
+/dev/vg0/snap1: read failed after 0 of 4096 at 10737355714: Input/output error
+  /dev/vg0/snap1: read failed after 0 of 4096 at 10737412422: Input/output error
+  /dev/vg0/snap1: read failed after 0 of 4096 at 0: Input/output error
+  /dev/vg0/snap1: read failed after 0 of 4096 at 4096: Input/output error
+  LV          VG  Attr       LSize  Pool Origin   Data%  Meta%  Move Log Cpy%Sync Convert
+  root        cl  -wi-ao---- 17.00g
+  swap        cl  -wi-ao----  2.00g
+  backups     vg0 -wi-ao----  9.99g
+  projects    vg0 owi-aos--- 17.81g
+  snap1 vg0 swi-I-s---  1.00g      projects 100.00
+```
+
+
+
 ## Tài liệu tham khảo
 
 https://news.cloud365.vn/lvm-gioi-thieu-ve-logical-volume-manager/
