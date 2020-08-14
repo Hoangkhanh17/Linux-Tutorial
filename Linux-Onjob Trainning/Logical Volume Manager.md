@@ -667,6 +667,56 @@ authconfig    games      lost+found  mysql           os-prober  polkit-1  rpm-st
 dbus          initramfs  machines    NetworkManager  php        postfix   rsyslog    tuned
 ```
 
+## Phần 4. Tính năng Thin Provisioning Volume
+
+Tính năng này cho phép chúng ta tạo ra số Volume có tổng dung lượng lớn hơn dung lượng cho phép.
+
+### 1. Setup Thin Pool và Volume
+
+Chúng ta tạo 1 Physical Volume `/dev/sde` và sau đó dùng lệnh sau để tạo ra 1 Volume group cho Thin-Pool:
+
+```
+[root@localhost ~]# pvcreate /dev/sde
+  Physical volume "/dev/sde" successfully created.
+[root@localhost ~]# vgcreate vg-thin /dev/sde
+  Volume group "vg-thin" successfully created
+```
+
+Kiểm tra lại thông tin:
+
+```
+[root@localhost ~]# lvs
+  LV       VG     Attr       LSize   Pool Origin Data%  Meta%  Move Log Cpy%Sync Convert
+  root     centos -wi-ao---- <38.00g
+  swap     centos -wi-ao----   1.00g
+  backups  vg0    -wi-ao----   5.99g
+  projects vg0    -wi-ao----   4.00g
+[root@localhost ~]# vgs
+  VG      #PV #LV #SN Attr   VSize   VFree
+  centos    1   2   0 wz--n- <39.00g     0
+  vg-thin   1   0   0 wz--n-  <5.00g <5.00g
+  vg0       3   2   0 wz--n- <14.99g <5.00g
+```
+
+#### 1.1. Tạo một Thin Pool
+
+```
+[root@localhost ~]# lvcreate -L 4.8GB --thinpool demo vg-thin
+  Rounding up size to full physical extent 4.80 GiB
+  Thin pool volume with chunk size 64.00 KiB can address at most 15.81 TiB of data.
+  Logical volume "demo" created.
+```
+
+Trong đó ý nghĩa các tùy chọn:
+
+- `-L`: Kích thước của volume group.
+
+- `--thinpool`: Tạo mới một thinpool.
+
+- `demo`: Tên của thinpool.
+
+- `vg-thin`: Tên của volume group mà chúng ta muốn tạo thinpool.
+
 ## Tài liệu tham khảo
 
 https://news.cloud365.vn/lvm-gioi-thieu-ve-logical-volume-manager/
