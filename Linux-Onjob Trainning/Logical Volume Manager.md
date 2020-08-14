@@ -447,6 +447,39 @@ Nếu có lỗi, không reboot server để tránh tình trạng server không t
 
 #### 1.1. Tạo Snapshot LVM
 
+Kiểm tra không gian trống trong volume group để tạo snapshot:
+
+```
+[root@localhost ~]# vgs
+  VG     #PV #LV #SN Attr   VSize   VFree
+  centos   1   2   0 wz--n- <39.00g     0
+  vg0      3   2   0 wz--n- <14.99g <5.00g
+```
+
+Sau khi kiểm tra ta thấy `vg0` có khoảng 5GB trống. Tạo một snapshot có tên là snapshot_1 với dung lượng 1GB
+
+```
+[root@localhost ~]# lvcreate -L 2GB -s -n snap1 /dev/vg0/backups
+  Logical volume "snap1" created.
+```
+
+Trong đó:
+
+- `-s`: Tạo snapshot
+- `-n`: Tên cho snapshot
+
+Kiểm tra snapshot vừa được tạo:
+
+```
+[root@localhost ~]# lvs
+  LV       VG     Attr       LSize   Pool Origin  Data%  Meta%  Move Log Cpy%Sync Convert
+  root     centos -wi-ao---- <38.00g
+  swap     centos -wi-ao----   1.00g
+  backups  vg0    owi-aos---   5.99g
+  projects vg0    -wi-ao----   4.00g
+  snap1    vg0    swi-a-s---   2.00g      backups 0.01
+```
+
 ## Tài liệu tham khảo
 
 https://news.cloud365.vn/lvm-gioi-thieu-ve-logical-volume-manager/
