@@ -644,7 +644,15 @@ tmpfs                    tmpfs     191M     0  191M   0% /run/user/1000
 /dev/mapper/vg0-backups  ext4      6.2G   26M  5.9G   1% /backups
 ```
 
+Kiểm tra lại thư mục `/backups/` để xem kết quả:
 
+```
+[root@localhost ~]# cd /backups/
+[root@localhost backups]# ls
+alternatives  dhclient   logrotate   misc            nginx      plymouth  rpm        stateless  vmware
+authconfig    games      lost+found  mysql           os-prober  polkit-1  rpm-state  systemd    yum
+dbus          initramfs  machines    NetworkManager  php        postfix   rsyslog    tuned
+```
 
 ## Tài liệu tham khảo
 
