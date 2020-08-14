@@ -18,6 +18,19 @@
 
 [Tài liệu tham khảo](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob%20Trainning/Logical%20Volume%20Manager.md#t%C3%A0i-li%E1%BB%87u-tham-kh%E1%BA%A3o)
 
+[4. Mounting Logical Volume](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob%20Trainning/Logical%20Volume%20Manager.md#4-mounting-logical-volume)
+
+[Phần 3. Snapshot và restore của Logical Volume](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob%20Trainning/Logical%20Volume%20Manager.md#ph%E1%BA%A7n-3-snapshot-v%C3%A0-restore-c%E1%BB%A7a-logical-volume)
+
+[1. Snapshot Logical Volume](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob%20Trainning/Logical%20Volume%20Manager.md#1-snapshot-logical-volume)
+
+  - [1.1. Tạo Snapshot LVM](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob%20Trainning/Logical%20Volume%20Manager.md#11-t%E1%BA%A1o-snapshot-lvm)
+
+  - [1.2. Tăng dung lượng snapshot trong LVM](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob%20Trainning/Logical%20Volume%20Manager.md#12-t%C4%83ng-dung-l%C6%B0%E1%BB%A3ng-snapshot-trong-lvm)
+
+[2. Restore Logical Volume](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob%20Trainning/Logical%20Volume%20Manager.md#2-restore-logical-volume)
+
+
 ## Phần 1. Giới thiệu về LVM
 
 ### 1. LVM là gì ?
