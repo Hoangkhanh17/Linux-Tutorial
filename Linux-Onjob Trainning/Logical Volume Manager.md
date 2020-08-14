@@ -553,6 +553,97 @@ Nếu tiếp tục sao chép tệp có dung lượng lớn hơn dung lượng ta
   snap1 vg0 swi-I-s---  1.00g      projects 100.00
 ```
 
+#### 1.2. Tăng dung lượng snapshot trong LVM
+
+Để tăng dung lượng cho snapshot, ta sử dụng lệnh:
+
+```
+[root@localhost ~]# lvextend -L +1GB /dev/vg0/snap1
+  Size of logical volume vg0/snap1 changed from 2.00 GiB (512 extents) to 3.00 GiB (768 extents).
+  Logical volume vg0/snap1 successfully resized.
+```
+
+Kiểm tra lại kích thước:
+
+```
+[root@localhost ~]# lvdisplay /dev/vg0/snap1
+  --- Logical volume ---
+  LV Path                /dev/vg0/snap1
+  LV Name                snap1
+  VG Name                vg0
+  LV UUID                iOP6EB-pPSW-rI7w-rgeE-Kgq8-1mKD-bPEy9I
+  LV Write Access        read/write
+  LV Creation host, time localhost.localdomain, 2020-08-15 15:55:17 +0700
+  LV snapshot status     active destination for backups
+  LV Status              available
+  # open                 0
+  LV Size                5.99 GiB
+  Current LE             1534
+  COW-table size         3.00 GiB
+  COW-table LE           768
+  Allocated to snapshot  7.29%
+  Snapshot chunk size    4.00 KiB
+  Segments               1
+  Allocation             inherit
+  Read ahead sectors     auto
+  - currently set to     8192
+  Block device           253:6
+```
+
+### 2. Restore Logical Volume
+
+Để restore snapshot, chúng ta cần hủy gắn kết hệ thống tệp.
+
+```
+[root@localhost ~]# umount /backups/
+[root@localhost ~]# df -h
+Filesystem                Size  Used Avail Use% Mounted on
+devtmpfs                  898M     0  898M   0% /dev
+tmpfs                     910M     0  910M   0% /dev/shm
+tmpfs                     910M  9.6M  901M   2% /run
+tmpfs                     910M     0  910M   0% /sys/fs/cgroup
+/dev/mapper/centos-root    38G  1.9G   37G   5% /
+/dev/sda1                 976M  165M  745M  19% /boot
+tmpfs                     182M     0  182M   0% /run/user/1000
+/dev/mapper/vg0-projects  3.9G   16M  3.6G   1% /projects
+```
+
+Tiến hành Restore Snapshot:
+
+```
+[root@localhost ~]# lvs
+  LV       VG     Attr       LSize   Pool Origin  Data%  Meta%  Move Log Cpy%Sync Convert
+  root     centos -wi-ao---- <38.00g
+  swap     centos -wi-ao----   1.00g
+  backups  vg0    owi-a-s---   5.99g
+  projects vg0    -wi-ao----   4.00g
+  snap1    vg0    swi-a-s---   3.00g      backups 7.29
+[root@localhost ~]# lvconvert --merge /dev/vg0/snap1
+  Merging of volume vg0/snap1 started.
+  vg0/backups: Merged: 92.73%
+  vg0/backups: Merged: 95.59%
+  vg0/backups: Merged: 98.73%
+  vg0/backups: Merged: 100.00%
+[root@localhost ~]# lvs
+  LV       VG     Attr       LSize   Pool Origin Data%  Meta%  Move Log Cpy%Sync Convert
+  root     centos -wi-ao---- <38.00g
+  swap     centos -wi-ao----   1.00g
+  backups  vg0    -wi-a-----   5.99g
+  projects vg0    -wi-ao----   4.00g
+[root@localhost ~]# mount /dev/vg0/backups /backups/
+[root@localhost ~]# df -TH
+Filesystem               Type      Size  Used Avail Use% Mounted on
+devtmpfs                 devtmpfs  942M     0  942M   0% /dev
+tmpfs                    tmpfs     954M     0  954M   0% /dev/shm
+tmpfs                    tmpfs     954M   11M  944M   2% /run
+tmpfs                    tmpfs     954M     0  954M   0% /sys/fs/cgroup
+/dev/mapper/centos-root  xfs        41G  2.1G   39G   5% /
+/dev/sda1                ext4      1.1G  173M  781M  19% /boot
+tmpfs                    tmpfs     191M     0  191M   0% /run/user/1000
+/dev/mapper/vg0-projects ext4      4.1G   17M  3.9G   1% /projects
+/dev/mapper/vg0-backups  ext4      6.2G   26M  5.9G   1% /backups
+```
+
 
 
 ## Tài liệu tham khảo
