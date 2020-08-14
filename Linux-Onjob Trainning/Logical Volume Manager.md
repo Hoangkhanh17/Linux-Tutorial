@@ -439,6 +439,13 @@ UUID=1b5aae9b-d5be-44a0-b4ef-a47a2a9590c8 /projects ext4 defaults 0 0
 UUID=a7d4a1e6-d9a7-481b-adad-7c07d684a43b /backups ext4 defaults 0 0
 ```
 
+Nếu có lỗi, không reboot server để tránh tình trạng server không thể khởi động. Kiểm tra cấu hình trong file `etc/fstab` và chạy lại lệnh cho tới khi không có thông báo lỗi.
+
+## Phần 3. Snapshot và restore của Logical Volume
+
+### 1. Snapshot Logical Volume
+
+#### 1.1. Tạo Snapshot LVM
 
 ## Tài liệu tham khảo
 
