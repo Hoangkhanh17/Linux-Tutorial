@@ -407,6 +407,10 @@ tmpfs                    tmpfs     103M     0  103M   0% /run/user/0
 /dev/mapper/vg0-projects ext4       11G  4.4G  5.6G  44% /projects
 ```
 
+### 4. Mounting Logical Volume
+
+
+
 ## Tài liệu tham khảo
 
 https://news.cloud365.vn/lvm-gioi-thieu-ve-logical-volume-manager/
