@@ -480,6 +480,21 @@ Kiểm tra snapshot vừa được tạo:
   snap1    vg0    swi-a-s---   2.00g      backups 0.01
 ```
 
+Thêm một số tệp vào `dev/vg0/backups` và kiểm tra:
+
+```
+[root@localhost ~]# sudo cp -a /var/lib/* /backups/
+[root@localhost ~]# lvs
+  LV       VG     Attr       LSize   Pool Origin  Data%  Meta%  Move Log Cpy%Sync Convert
+  root     centos -wi-ao---- <38.00g
+  swap     centos -wi-ao----   1.00g
+  backups  vg0    owi-aos---   5.99g
+  projects vg0    -wi-ao----   4.00g
+  snap1    vg0    swi-a-s---   2.00g      backups 10.79
+```
+
+
+
 ## Tài liệu tham khảo
 
 https://news.cloud365.vn/lvm-gioi-thieu-ve-logical-volume-manager/
