@@ -409,6 +409,35 @@ tmpfs                    tmpfs     103M     0  103M   0% /run/user/0
 
 ### 4. Mounting Logical Volume
 
+Để thực hiện việc liên kết vĩnh viễn Logical Volume, ta cần phải khai báo UUID của mỗi ổ đĩa trong `/etc/fstab`.
+
+- Kiểm tra UUID:
+
+```
+[root@qawordpress ~]# blkid /dev/vg0/projects
+/dev/vg0/projects: UUID="e04a6408-c0be-4e37-97ad-bddd2a1ca43a" TYPE="ext4"
+[root@qawordpress ~]# blkid /dev/vg0/backups
+/dev/vg0/backups: UUID="d4c69ff0-82d4-44f3-adf2-0ce96d6ff1dd" TYPE="ext4"
+```
+
+- Thêm các UUID vào `/etc/fstab`:
+
+```
+[root@qawordpress ~]# cat /etc/fstab
+
+#
+# /etc/fstab
+# Created by anaconda on Wed Aug 12 16:22:49 2020
+#
+# Accessible filesystems, by reference, are maintained under '/dev/disk'
+# See man pages fstab(5), findfs(8), mount(8) and/or blkid(8) for more info
+#
+/dev/mapper/centos-root /                       ext4    defaults        1 1
+UUID=a1499e6c-afb1-4745-981b-bc98f8a12491 /boot                   ext4    defaults        1 2
+/dev/mapper/centos-swap swap                    swap    defaults        0 0
+UUID=1b5aae9b-d5be-44a0-b4ef-a47a2a9590c8 /projects ext4 defaults 0 0
+UUID=a7d4a1e6-d9a7-481b-adad-7c07d684a43b /backups ext4 defaults 0 0
+```
 
 
 ## Tài liệu tham khảo
