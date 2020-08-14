@@ -717,6 +717,71 @@ Trong đó ý nghĩa các tùy chọn:
 
 - `vg-thin`: Tên của volume group mà chúng ta muốn tạo thinpool.
 
+#### 1.2. Tạo Thin Volume
+
+```
+[root@localhost ~]# lvcreate -V 4.8G --thin -n thin-client1 vg-thin/demo
+  Rounding up size to full physical extent 4.80 GiB
+  Logical volume "thin-client1" created.
+[root@localhost ~]# lvs
+  LV           VG      Attr       LSize   Pool Origin Data%  Meta%  Move Log Cpy%Sync Convert
+  root         centos  -wi-ao---- <38.00g
+  swap         centos  -wi-ao----   1.00g
+  demo         vg-thin twi-aotz--   4.80g             0.00   10.64
+  thin-client1 vg-thin Vwi-a-tz--   4.80g demo        0.00
+  backups      vg0     -wi-ao----   5.99g
+  projects     vg0     -wi-ao----   4.00g
+```
+
+#### 3. Tạo file system
+
+Tạo file System cho Thin Volume vừa tạo:
+
+```
+[root@localhost ~]# mkdir -p /client1
+[root@localhost ~]# mkfs.ext4 /dev/vg-thin/thin-client1
+mke2fs 1.42.9 (28-Dec-2013)
+Discarding device blocks: done
+Filesystem label=
+OS type: Linux
+Block size=4096 (log=2)
+Fragment size=4096 (log=2)
+Stride=16 blocks, Stripe width=16 blocks
+315120 inodes, 1258496 blocks
+62924 blocks (5.00%) reserved for the super user
+First data block=0
+Maximum filesystem blocks=1289748480
+39 block groups
+32768 blocks per group, 32768 fragments per group
+8080 inodes per group
+Superblock backups stored on blocks:
+        32768, 98304, 163840, 229376, 294912, 819200, 884736
+
+Allocating group tables: done
+Writing inode tables: done
+Creating journal (32768 blocks): done
+Writing superblocks and filesystem accounting information: done
+
+[root@localhost ~]# mount /dev/vg-thin/thin-client1 /client1/
+```
+
+Kiểm tra lại xem Volume đã được mount chưa:
+
+```
+[root@localhost ~]# df -h
+Filesystem                          Size  Used Avail Use% Mounted on
+devtmpfs                            898M     0  898M   0% /dev
+tmpfs                               910M     0  910M   0% /dev/shm
+tmpfs                               910M  9.6M  901M   2% /run
+tmpfs                               910M     0  910M   0% /sys/fs/cgroup
+/dev/mapper/centos-root              38G  1.9G   37G   5% /
+/dev/sda1                           976M  165M  745M  19% /boot
+/dev/mapper/vg0-projects            3.9G   16M  3.6G   1% /projects
+/dev/mapper/vg0-backups             5.8G  244M  5.3G   5% /backups
+tmpfs                               182M     0  182M   0% /run/user/0
+/dev/mapper/vg--thin-thin--client1  4.7G   20M  4.4G   1% /client1
+```
+
 ## Tài liệu tham khảo
 
 https://news.cloud365.vn/lvm-gioi-thieu-ve-logical-volume-manager/
