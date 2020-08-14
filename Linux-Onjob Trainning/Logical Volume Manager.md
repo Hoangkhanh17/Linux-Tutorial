@@ -493,7 +493,50 @@ Thêm một số tệp vào `dev/vg0/backups` và kiểm tra:
   snap1    vg0    swi-a-s---   2.00g      backups 10.79
 ```
 
+Có khoảng 10.79% dung lượng snapshot đã được sử dụng. Để biết thêm thông tin chi tiết chúng ta sử dụng lệnh sau:
 
+```
+[root@localhost ~]# lvdisplay /dev/vg0/snap1
+  --- Logical volume ---
+  LV Path                /dev/vg0/snap1
+  LV Name                snap1
+  VG Name                vg0
+  LV UUID                iOP6EB-pPSW-rI7w-rgeE-Kgq8-1mKD-bPEy9I
+  LV Write Access        read/write
+  LV Creation host, time localhost.localdomain, 2020-08-15 15:55:17 +0700
+  LV snapshot status     active destination for backups
+  LV Status              available
+  # open                 0
+  LV Size                5.99 GiB
+  Current LE             1534
+  COW-table size         2.00 GiB
+  COW-table LE           512
+  Allocated to snapshot  10.93%
+  Snapshot chunk size    4.00 KiB
+  Segments               1
+  Allocation             inherit
+  Read ahead sectors     auto
+  - currently set to     8192
+  Block device           253:6
+```
+
+Trong đó ý nghĩa các trường của lệnh `lvdisplay` như sau:
+
+- LV Name: Tên của Snapshot Logical Volume.
+
+- VG Name.: Tên Volume group đang được sử dụng.
+
+- LV Write Access: Snapshot volume ở chế độ đọc và ghi.
+
+- LV Creation host, time: Thời gian khi snapshot được tạo. Nó rất quan trọng vì snapshot sẽ tìm mọi thay đổi sau thời gian này.
+
+- LV snapshot status: Snapshot này thuộc vào logical volume projects.
+
+- LV Size: Kích thước của Source volume mà bạn đã snapshot.
+
+- COW-table size: Kích thước bảng Cow.
+
+- Snapshot chunk size: Cung cấp kích thước của chunk cho snapshot.
 
 ## Tài liệu tham khảo
 
