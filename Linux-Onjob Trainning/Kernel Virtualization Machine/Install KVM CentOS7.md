@@ -141,3 +141,20 @@ Kiểm tra trạng thái hoạt động của các máy ảo trên máy chủ c�
  1     centos7.0                      running
 ```
 
+Sau khi cài đặt thành công, kiểm tra địa chỉ IP của VM vừa tạo khi gắn card mạng NAT. Địa chỉ IP nhận được là 192.168.100.197
+
+<img src="https://imgur.com/O9fFQc4.png">
+
+Tiến hành kiểm tra ping từ máy chủ CentOS cài KVM
+
+```
+[root@localhost file-iso]# ping 192.168.100.197
+PING 192.168.100.197 (192.168.100.197) 56(84) bytes of data.
+64 bytes from 192.168.100.197: icmp_seq=1 ttl=64 time=0.583 ms
+64 bytes from 192.168.100.197: icmp_seq=2 ttl=64 time=0.715 ms
+64 bytes from 192.168.100.197: icmp_seq=3 ttl=64 time=0.709 ms
+^C
+--- 192.168.100.197 ping statistics ---
+3 packets transmitted, 3 received, 0% packet loss, time 2000ms
+rtt min/avg/max/mdev = 0.583/0.669/0.715/0.060 ms
+```
