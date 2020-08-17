@@ -121,3 +121,13 @@ Tạo thư mục để lưu trữ `file iso` cài đặt hệ điều hành. Ch�
 #### Bước 9: Tiến hành cài đặt hệ điều hành
 
 <img src="https://imgur.com/rPRrgYk.png">
+
+Kiểm tra trạng thái hoạt động của các máy ảo trên máy chủ cài KVM
+
+```
+[root@localhost file-iso]# virsh list --all
+ Id    Name                           State
+----------------------------------------------------
+ 1     centos7.0                      running
+```
+
