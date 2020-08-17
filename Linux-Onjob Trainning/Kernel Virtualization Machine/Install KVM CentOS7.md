@@ -10,6 +10,8 @@
 
 - [3.1. Tạo VM virt-manager](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob%20Trainning/Kernel%20Virtualization%20Machine/Install%20KVM%20CentOS7.md#31-t%E1%BA%A1o-vm-b%E1%BA%B1ng-virt-manager)
 
+- [3.2. Tạo VM bằng virt-install](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob%20Trainning/Kernel%20Virtualization%20Machine/Install%20KVM%20CentOS7.md#32-t%E1%BA%A1o-vm-b%E1%BA%B1ng-virt-install)
+
 [Tài liệu tham khảo](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob%20Trainning/Kernel%20Virtualization%20Machine/Install%20KVM%20CentOS7.md#t%C3%A0i-li%E1%BB%87u-tham-kh%E1%BA%A3o)
 
 ## 1. Chuẩn bị môi trường CentOS7
