@@ -8,7 +8,7 @@
 
 [3. Cài đặt VM trên KVM](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob%20Trainning/Kernel%20Virtualization%20Machine/Install%20KVM%20CentOS7.md#3-c%C3%A0i-%C4%91%E1%BA%B7t-vm-tr%C3%AAn-kvm)
 
-- [3.1. Tạo VM virt-manager](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob%20Trainning/Kernel%20Virtualization%20Machine/Install%20KVM%20CentOS7.md#31-t%E1%BA%A1o-1-vm-tr%C3%AAn-kvm-b%E1%BA%B1ng-virt-manager)
+- [3.1. Tạo VM virt-manager](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob%20Trainning/Kernel%20Virtualization%20Machine/Install%20KVM%20CentOS7.md#31-t%E1%BA%A1o-vm-b%E1%BA%B1ng-virt-manager)
 
 
 
