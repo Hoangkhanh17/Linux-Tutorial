@@ -163,7 +163,45 @@ rtt min/avg/max/mdev = 0.583/0.669/0.715/0.060 ms
 
 ### 3.2. Tạo VM bằng virt-install
 
+Có 3 cách tạo VM bằng `virt-install`: Tạo VM từ images, ISO và bằng lệnh tải về từ Internet.
 
+#### Tạo VM từ File ISO
+
+```
+virt-install \
+ -n myRHELVM1 \
+ --description "Test VM with RHEL 6" \
+ --os-type=Linux \
+ --os-variant=rhel6 \
+ --ram=2048 \
+ --vcpus=2 \
+ --disk path=/var/lib/libvirt/images/myRHELVM1.img,bus=virtio,size=10 \
+ --graphics none \
+ --cdrom /var/rhel-server-6.5-x86_64-dvd.iso \
+ --network bridge:br0
+```
+
+Trong đó: 
+
+- **-n** Tên VM muốn đặt.
+
+- **-- descriptop** Mô tả về VM.
+
+- **--os-type** Loại OS.
+
+- **--os-variant** Tên OS.
+
+- **--ram** dung lượng RAM ta đặt cho VM (theo MB).
+
+- **-vcpus** số nhân CPU cho VM.
+
+- **--disk path** Nơi lưu ổ cứng cho VM, `size` là dung lượng cấp cho ổ cứng.
+
+- **--graphics** Đồ họa cấp cho VM.
+
+- **--cdrom** Nơi lưu trữ file ISO để cài đặt.
+
+- **--network bridge** Chọn Virtual Network cho VM.
 
 ## Tài liệu tham khảo
 
