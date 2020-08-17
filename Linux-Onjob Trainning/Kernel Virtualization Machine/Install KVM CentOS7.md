@@ -2,6 +2,16 @@
 
 ## Mục lục
 
+[1. Chuẩn bị môi trường CentOS7](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob%20Trainning/Kernel%20Virtualization%20Machine/Install%20KVM%20CentOS7.md#1-chu%E1%BA%A9n-b%E1%BB%8B-m%C3%B4i-tr%C6%B0%E1%BB%9Dng-centos7)
+
+[2. Cài đặt KVM](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob%20Trainning/Kernel%20Virtualization%20Machine/Install%20KVM%20CentOS7.md#2-c%C3%A0i-%C4%91%E1%BA%B7t-kvm)
+
+[3. Cài đặt VM trên KVM](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob%20Trainning/Kernel%20Virtualization%20Machine/Install%20KVM%20CentOS7.md#3-c%C3%A0i-%C4%91%E1%BA%B7t-vm-tr%C3%AAn-kvm)
+
+    - [3.1. Tạo 1 VM trên KVM bằng virt-manager](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob%20Trainning/Kernel%20Virtualization%20Machine/Install%20KVM%20CentOS7.md#31-t%E1%BA%A1o-1-vm-tr%C3%AAn-kvm-b%E1%BA%B1ng-virt-manager)
+
+    
+
 ## 1. Chuẩn bị môi trường CentOS7
 
 Một máy chạy CentOS 7 hỗ trợ môi trường ảo hóa. Thông số:
@@ -27,7 +37,7 @@ Nếu giá trị trả về là `0` thì sẽ không hỗ trợ ảo hóa.
 
 ## 2. Cài đặt KVM
 
-Cài đặt các gói cần thiết
+### Cài đặt các gói cần thiết
 
 ```
 [root@localhost ~]# yum -y install qemu-kvm libvirt virt-install bridge-utils virt-manager
