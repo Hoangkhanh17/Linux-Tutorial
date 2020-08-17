@@ -158,3 +158,15 @@ PING 192.168.100.197 (192.168.100.197) 56(84) bytes of data.
 3 packets transmitted, 3 received, 0% packet loss, time 2000ms
 rtt min/avg/max/mdev = 0.583/0.669/0.715/0.060 ms
 ```
+
+### 3.2. Tạo VM bằng virt-install
+
+
+
+## Tài liệu tham khảo
+
+https://news.cloud365.vn/kvm-huong-dan-cai-dat-kvm-tren-centos-7/
+
+https://github.com/niemdinhtrong/thuctapsinh/blob/master/NiemDT/KVM/docs/Mo-hinh-mang-KVM.md
+
+https://github.com/thaonguyenvan/meditech-thuctap/blob/master/ThaoNV/KVM/tao-VM-KVM.md#virt-install
