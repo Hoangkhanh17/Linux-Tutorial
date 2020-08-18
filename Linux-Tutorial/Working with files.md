@@ -251,3 +251,5 @@ actions: -delete -print0 -printf FORMAT -fprintf FILE FORMAT -print
 ## Refrences - Special thanks !
 
 https://trungquan710.com/linux/luong-du-lieu-doi-voi-linux-process.html
+
+https://github.com/MinhKMA/Linux-Tutorial/blob/master/content/working_with_files.md
