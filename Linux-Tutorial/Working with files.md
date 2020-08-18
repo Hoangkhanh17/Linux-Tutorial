@@ -258,6 +258,18 @@ Các lệnh sử dụng để xem các tệp tin:
 |  tail |Quyền in 10 dòng cuối cùng của tệp theo mặc định. Bạn có thể thay đổi số dòng bằng cách thực hiện -n 15 hoặc chỉ -15 nếu bạn muốn xem 15 dòng cuối cùng thay vì mặc định|
 |  head |Đối lập với `tail`, lệnh này in 10 dòng đầu tiên của tệp|
 
+Lệnh `touch` thường được sử dụng thiết lập hoặc cập nhật truy cập, thay đổi, sửa đổi thời gian của tệp. Mặc định lệnh `touch` đặt lại dấu thời gian của tệp để khớp với thời gian của hệ thống.
+
+Lệnh `touch` cũng được dùng để tạo một tệp tin trống:
+
+```
+[root@localhost ~]# touch file.txt
+[root@localhost ~]# ls
+anaconda-ks.cfg  file.txt
+```
+
+
+
 ## Refrences - Special thanks !
 
 https://trungquan710.com/linux/luong-du-lieu-doi-voi-linux-process.html
