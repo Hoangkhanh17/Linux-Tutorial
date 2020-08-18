@@ -217,6 +217,32 @@ Connected to domain cent7os
 Escape character is ^]
 ```
 
+Sau khi cài đặt xong, nếu lần sau muốn truy cập vào VM, chúng ta truy cập bằng `ID` của VM đó, kiểm tra số ID của VM:
+
+```
+[root@localhost ~]# virsh list --all
+ Id    Name                           State
+----------------------------------------------------
+ 9     cent7os                        running
+ -     centos7.0                      shut off
+```
+
+Số `ID` của VM `cent7os` vừa cài đặt là `9`, chúng ta truy cập vào VM qua số `ID` đó:
+
+```
+[root@localhost ~]# virsh console 9
+Connected to domain cent7os
+Escape character is ^]
+
+CentOS Linux 7 (Core)
+Kernel 3.10.0-1127.el7.x86_64 on an x86_64
+
+localhost login: root
+Password:
+Last login: Tue Aug 18 09:36:45 on ttyS0
+[root@localhost ~]#
+```
+
 ## Tài liệu tham khảo
 
 https://news.cloud365.vn/kvm-huong-dan-cai-dat-kvm-tren-centos-7/
