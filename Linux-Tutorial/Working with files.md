@@ -215,7 +215,7 @@ actions: -delete -print0 -printf FORMAT -fprintf FILE FORMAT -print
       -execdir COMMAND ; -execdir COMMAND {} + -okdir COMMAND ;
 ```
 
-**Ví dụ:** Tìm kiếm các tệp tin có tên bất kỳ và đuôi `.log`
+**Ví dụ:** Tìm kiếm các tệp tin trong thư mục `/var` có tên bất kỳ và đuôi `.log`
 
 ```
 [root@localhost ~]# find /var -name *.log
