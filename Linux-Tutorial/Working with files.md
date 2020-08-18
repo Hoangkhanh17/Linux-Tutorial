@@ -246,7 +246,17 @@ actions: -delete -print0 -printf FORMAT -fprintf FILE FORMAT -print
 /var/log/vmware-network.1.log
 /var/log/vmware-network.log
 ```
+# Quản lý tệp tin
 
+Các lệnh sử dụng để xem các tệp tin:
+
+|Command| Usage |
+|-------|-------|
+|  cat  |Quyền xem tệp tin không quá dài|
+|  tac  |Quyền xem tệp tin từ dưới lên, bắt đầu từ dòng cuối cùng|
+|  less |Quyền xem các tệp lớn hơn vì nó là một chương trình phân trang; nó tạm dừng ở mỗi màn hình văn bản, cung cấp khả năng cuộn lại và cho phép bạn tìm kiếm và điều hướng trong tệp|
+|  tail |Quyền in 10 dòng cuối cùng của tệp theo mặc định. Bạn có thể thay đổi số dòng bằng cách thực hiện -n 15 hoặc chỉ -15 nếu bạn muốn xem 15 dòng cuối cùng thay vì mặc định|
+|  head |Đối lập với `tail`, lệnh này in 10 dòng đầu tiên của tệp|
 
 ## Refrences - Special thanks !
 
