@@ -170,17 +170,17 @@ Có 3 cách tạo VM bằng `virt-install`: Tạo VM từ images, ISO và bằng
 #### Tạo VM từ File ISO
 
 ```
-virt-install \
- -n myRHELVM1 \
- --description "Test VM with RHEL 6" \
- --os-type=Linux \
- --os-variant=rhel6 \
- --ram=2048 \
- --vcpus=2 \
- --disk path=/var/lib/libvirt/images/myRHELVM1.img,bus=virtio,size=10 \
- --graphics none \
- --cdrom /var/rhel-server-6.5-x86_64-dvd.iso \
- --network bridge:br0
+[root@localhost file-iso]# virt-install \
+> --name cent7os \
+> --description "Test virtinstall cent7" \
+> --os-type=Linux \
+> --os-variant=centos7.0 \
+> --ram=512 \
+> --vcpus=1 \
+> --disk path=/var/lib/libvirt/file-iso/centos7test.img,bus=virtio,size=10 \
+> --graphics none \
+> --cdrom /var/lib/libvirt/file-iso/CentOS-7-x86_64-DVD-2003.iso \
+> --network network=default
 ```
 
 Trong đó: 
