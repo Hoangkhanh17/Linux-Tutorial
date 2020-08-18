@@ -250,8 +250,8 @@ actions: -delete -print0 -printf FORMAT -fprintf FILE FORMAT -print
 
 Các lệnh sử dụng để xem các tệp tin:
 
-|Command| Usage |
-|-------|-------|
+|Lệnh   | Công dụng |
+|-------|-----------|
 |  cat  |Quyền xem tệp tin không quá dài|
 |  tac  |Quyền xem tệp tin từ dưới lên, bắt đầu từ dòng cuối cùng|
 |  less |Quyền xem các tệp lớn hơn vì nó là một chương trình phân trang; nó tạm dừng ở mỗi màn hình văn bản, cung cấp khả năng cuộn lại và cho phép bạn tìm kiếm và điều hướng trong tệp|
