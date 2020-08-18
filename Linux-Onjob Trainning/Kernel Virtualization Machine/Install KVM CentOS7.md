@@ -205,7 +205,7 @@ Trong đó:
 
 - **--network bridge** Chọn Virtual Network cho VM.
 
-Thông báo khởi tạo VM thành công
+Thông báo khởi tạo VM thành công:
 
 ```
 Starting install...
