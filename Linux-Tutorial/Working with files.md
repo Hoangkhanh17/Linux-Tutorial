@@ -170,6 +170,15 @@ root@ubuntu:~# locate zip | grep bin
 /usr/lib/klibc/bin/gzip
 ```
 
+Tìm kiếm các tệp tên chứa các ký tự cụ thể:
+
+|Wildcards| Results |
+|---------|---------|
+|    ?    |Tìm kiếm với bất kỳ ký tự đơn nào|
+|    *    |Tìm kiếm với bất kỳ chuỗi ký tự nào|
+|  [set]  |Tìm kiếm bất kỳ ký tự nào không có trong bộ ký tự|
+|  [!set] |Tìm kiếm bất kỳ ký tự nào không có trong bộ ký tự|
+
 ## Refrences - Special thanks !
 
 https://trungquan710.com/linux/luong-du-lieu-doi-voi-linux-process.html
