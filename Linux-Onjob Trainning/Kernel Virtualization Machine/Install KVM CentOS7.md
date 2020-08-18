@@ -205,6 +205,18 @@ Trong đó:
 
 - **--network bridge** Chọn Virtual Network cho VM.
 
+Thông báo khởi tạo VM thành công
+
+```
+Starting install...
+Retrieving file .treeinfo .                                                                                      |  353 B  00:00:00
+Retrieving file vmlinuz...                                                                                        | 6.4 MB  00:00:00
+Retrieving file initrd.img...                                                                                     |  53 MB  00:00:00
+Allocating 'centos7test.dsk'                                                                                      |  10 GB  00:00:00
+Connected to domain cent7os
+Escape character is ^]
+```
+
 ## Tài liệu tham khảo
 
 https://news.cloud365.vn/kvm-huong-dan-cai-dat-kvm-tren-centos-7/
