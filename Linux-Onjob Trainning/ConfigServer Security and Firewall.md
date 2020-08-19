@@ -8,6 +8,12 @@
 
 [3. Những file cấu hình của CSF](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob%20Trainning/ConfigServer%20Security%20and%20Firewall.md#3-nh%E1%BB%AFng-file-c%E1%BA%A5u-h%C3%ACnh-c%E1%BB%A7a-csf)
 
+[4. Một số lệnh thường dùng trong CSF](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob%20Trainning/ConfigServer%20Security%20and%20Firewall.md#4-m%E1%BB%99t-s%E1%BB%91-l%E1%BB%87nh-th%C6%B0%E1%BB%9Dng-d%C3%B9ng-trong-csf)
+
+[5. Xóa cài đặt CSF](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob%20Trainning/ConfigServer%20Security%20and%20Firewall.md#5-x%C3%B3a-c%C3%A0i-%C4%91%E1%BA%B7t-csf)
+
+[Tài liệu tham khảo](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob%20Trainning/ConfigServer%20Security%20and%20Firewall.md#t%C3%A0i-li%E1%BB%87u-tham-kh%E1%BA%A3o)
+
 ## 1. Khái niệm CSF
 
 CSF (ConfigServer & Firewall) là 1 gói ứng dụng hoạt động trên Linux như 1 Firewall được phát hành miễn phí để tăng tính bảo mật cho server (VPS và Dedicated). CSF hoạt động dựa trên iptables và tiến trình ldf để quyét các file log để phát hiện các dấu hiệu tấn công bất thường.
