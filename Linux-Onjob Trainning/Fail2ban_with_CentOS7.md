@@ -98,6 +98,69 @@ Trong đó:
 
 - **bantime:** thời gian ban IP 3600 giây = 1 giờ, bạn có thể chỉnh nếu muốn.
 
+Kiểm tra rules của fail2ban trên iptables
+
+```
+[root@srv-thuctapanh fail2ban]# iptables -L
+Chain INPUT (policy ACCEPT)
+target     prot opt source               destination
+f2b-SSH    tcp  --  anywhere             anywhere             tcp dpt:ssh
+
+Chain FORWARD (policy ACCEPT)
+target     prot opt source               destination
+
+Chain OUTPUT (policy ACCEPT)
+target     prot opt source               destination
+
+Chain f2b-SSH (1 references)
+target     prot opt source               destination
+REJECT     all  --  218.92.0.190         anywhere             reject-with icmp-port-unreachable
+REJECT     all  --  222.186.180.130      anywhere             reject-with icmp-port-unreachable
+REJECT     all  --  222.186.30.112       anywhere             reject-with icmp-port-unreachable
+RETURN     all  --  anywhere             anywhere
+```
+
+Trong đó `Chain f2b-SSH` là rules của Fail2ban, mặc định ban 3 IP của Trung Quốc và cho phép các IP còn lại truy cập.
+
+## 3. Giám sát cấu hình firewall và log fail2ban
+
+- Kiểm tra trạng thái dịch vụ
+
+`systemctl status fail2ban`
+
+- Kiểm tra log của fail2ban:
+
+`[root@srv-thuctapanh fail2ban]# sudo journalctl -b -u fail2ban`
+
+- Kiểm tra log để biết các hành động gần đây của fail2ban
+
+`[root@srv-thuctapanh fail2ban]# tail -F /var/log/fail2ban.log`
+
+## 4. Giám sát SSH login
+
+- Giám sát xem VPS/Server có bị tấn công hay chưa:
+
+`[root@srv-thuctapanh fail2ban]# cat /var/log/secure | grep 'Failed password' | sort | uniq -c`
+
+- Kiểm tra các IP bị banned bới Fail2ban:
+
+```
+[root@srv-thuctapanh fail2ban]# fail2ban-client status sshd
+Status for the jail: sshd
+|- Filter
+|  |- Currently failed: 1
+|  |- Total failed:     49
+|  `- Journal matches:  _SYSTEMD_UNIT=sshd.service + _COMM=sshd
+`- Actions
+   |- Currently banned: 3
+   |- Total banned:     3
+   `- Banned IP list:   222.186.30.112 222.186.180.130 218.92.0.190
+```
+
+- Xóa IP khỏi danh sách banned:
+
+`[root@srv-thuctapanh fail2ban]# fail2ban-client set sshd unbanip IPADDRESS`
+
 ## Tài liệu tham khảo
 
 https://hocvps.com/cai-dat-fail2ban-tren-centos/
