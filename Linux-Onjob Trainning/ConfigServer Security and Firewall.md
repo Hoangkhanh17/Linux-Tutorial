@@ -2,6 +2,12 @@
 
 ## Mục lục
 
+[1. Khái niệm CSF](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob%20Trainning/ConfigServer%20Security%20and%20Firewall.md#1-kh%C3%A1i-ni%E1%BB%87m-csf)
+
+[2. Cài đặt CSF trên CentOS7](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob%20Trainning/ConfigServer%20Security%20and%20Firewall.md#2-c%C3%A0i-%C4%91%E1%BA%B7t-csf-tr%C3%AAn-centos7)
+
+[3. Những file cấu hình của CSF](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob%20Trainning/ConfigServer%20Security%20and%20Firewall.md#3-nh%E1%BB%AFng-file-c%E1%BA%A5u-h%C3%ACnh-c%E1%BB%A7a-csf)
+
 ## 1. Khái niệm CSF
 
 CSF (ConfigServer & Firewall) là 1 gói ứng dụng hoạt động trên Linux như 1 Firewall được phát hành miễn phí để tăng tính bảo mật cho server (VPS và Dedicated). CSF hoạt động dựa trên iptables và tiến trình ldf để quyét các file log để phát hiện các dấu hiệu tấn công bất thường.
@@ -84,3 +90,32 @@ Toàn bộ thông tin cấu hình và quản lý CSF được lưu ở các file
 - **csf.ignore:** Danh sách địa chỉ IP cho phép qua firewall và không bị block nếu có vấn đề.
 
 - **csf.*ignore:** Danh sách user, IP bị ignore.
+
+## 4. Một số lệnh thường dùng trong CSF
+
+Một số câu lệnh sử dụng để add (-a) hoặc deny (-d) một địa chỉ IP.
+
+```
+csf -d IPADDRESS //Block địa chỉ IP
+csf -dr IPADDRESS //Xóa địa chỉ IP đã bị block
+csf -a IPADDRESS //Allow địa chỉ IP
+csf -ar IPADDRESS //Xóa địa chỉ IP đã được allow
+csf -g IPADDRESS //Kiểm tra địa chỉ IP có bị block không
+csf -r //Khởi động lại CSF
+csf -x //Tắt CSF
+csf -e //Mở CSF
+```
+
+## 5. Xóa cài đặt CSF
+
+Nếu muốn xóa cài đặt CSF, chỉ cần sử dụng lệnh
+
+`/etc/csf/uninstall.sh`
+
+Việc này sẽ xóa toàn bộ CSF nên bạn cần cân nhắc khi dùng. Nếu muốn tạm thời tắt CSF thì có thể chuyển chế độ TESTING sang 1.
+
+## Tài liệu tham khảo
+
+https://vinahost.vn/csf-la-gi
+
+https://hocvps.com/cai-dat-configserver-security-firewall-csf-tren-centos/
