@@ -1,0 +1,106 @@
+# Sử dụng Fail2ban để bảo mật máy chủ CentOS
+
+## Mục lục
+
+## 1. Giới thiệu Fail2ban
+
+Để kết nối với VPS chúng ta thường sử dụng port 22. Đây chính là lỗ hổng chết người các hacker có thể sử dụng để dò tìm password đăng nhập vào VPS.
+
+Một biện pháp hạn chế việc này đó là thay đổi port SSH từ 22 sang một port khác. Tuy nhiên, việc này chỉ hạn chế một chút thôi vì nếu muốn, hacker có thể scan open port để biết được bạn đang sử dụng port nào để tấn công tiếp.
+
+Giải pháp để chúng ta chấm dứt vấn đề này đó là sử dụng một công cụ tự động block IP khi VPS bị tấn công, đó là **Fail2Ban**.
+
+**Fail2Ban** là một ứng dụng chạy nền theo dõi log file để phát hiện những địa chỉ IP đăng nhập sai password SSH nhiều lần. Sau đó, **Fail2Ban** sử dụng iptable firewall rules để block ngay địa chỉ IP với một khoảng thời gian định trước.
+
+## 2. Cài đặt và cấu hình Fail2ban
+
+### 2.1. Cài đặt Fail2ban
+
+#### Bước 1: Đảm bảo hệ thống của bạn đã được cập nhật thời gian và cài đặt EPEL repository
+
+`[root@srv-thuctapanh ~]# yum update && yum install epel-release`
+
+#### Bước 2: Cài đặt fail2ban, sau đó bật fail2ban khởi động cùng hệ thống
+
+```
+[root@srv-thuctapanh ~]# yum -y install fail2ban
+[root@srv-thuctapanh ~]# systemctl start fail2ban
+[root@srv-thuctapanh ~]# systemctl enable fail2ban
+Created symlink from /etc/systemd/system/multi-user.target.wants/fail2ban.service to /usr/lib/systemd/system/fail2ban.service.
+```
+
+Vậy là đã cài đặt Fail2ban thành công.
+
+### 2.2. Cấu hình Fail2ban
+
+#### Một số thông số đáng chú ý
+
+Truy cập vào thư mục cấu hình của fail2ban:
+
+`[root@srv-thuctapanh fail2ban]# cat /etc/fail2ban/jail.conf`
+
+```
+[DEFAULT]
+
+# "ignoreip" can be an IP address, a CIDR mask or a DNS host. Fail2ban will not
+# ban a host which matches an address in this list. Several addresses can be
+# defined using space separator.
+ignoreip = 127.0.0.1
+
+# "bantime" is the number of seconds that a host is banned.
+bantime = 600
+
+# A host is banned if it has generated "maxretry" during the last "findtime"
+# seconds.
+findtime = 600
+
+# "maxretry" is the number of failures before a host get banned.
+maxretry = 3
+```
+
+Trong đó:
+
+- **ignoreip:** không block những địa chỉ này, thường địa chỉ IP ở VN là địa chỉ động, nên chúng ta không sử dụng được option này.
+
+- **bantime:** khoảng thời gian (giây) block IP.
+
+- **findtime:** khoảng thời gian (giây) một IP phải login thành công.
+
+- **maxretry:** số lần login false tối đa.
+
+#### Cấu hình fail2ban cho SSH
+
+Tạo file cấu hình:
+
+`[root@srv-thuctapanh fail2ban]# vi /etc/fail2ban/jail.local`
+
+```
+[sshd]
+enabled  = true
+filter   = sshd
+action   = iptables[name=SSH, port=ssh, protocol=tcp]
+logpath  = /var/log/secure
+maxretry = 5
+bantime = 3600
+```
+
+Trong đó:
+
+- **enabled:** kích hoạt bảo vệ
+
+- **filter:** giữ mặc định để sử dụng file cấu hình /etc/fail2ban/filter.d/sshd.conf
+
+- **action:** fail2ban sẽ ban địa chỉ IP nếu match filter /etc/fail2ban/action.d/iptables.conf
+
+- **logpath:** đường dẫn file log fail2ban
+
+- **maxretry:** số lần login false tối đa
+
+- **bantime:** thời gian ban IP 3600 giây = 1 giờ, bạn có thể chỉnh nếu muốn.
+
+## Tài liệu tham khảo
+
+https://hocvps.com/cai-dat-fail2ban-tren-centos/
+
+https://news.cloud365.vn/cach-su-dung-fail2ban-de-bao-mat-may-chu-centos/#1.-Gi%E1%BB%9Bi-thi%E1%BB%87u
+
