@@ -2,6 +2,24 @@
 
 ## Mục lục
 
+[1. Cấu hình Virtual Host](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob%20Trainning/Nginx/Configure%20Virtual%20Host%20and%20Letsencrypt.md#1-c%E1%BA%A5u-h%C3%ACnh-virtual-host)
+
+- [Bước 1: Tạo 2 thư mục cho 2 tên miền](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob%20Trainning/Nginx/Configure%20Virtual%20Host%20and%20Letsencrypt.md#b%C6%B0%E1%BB%9Bc-1-t%E1%BA%A1o-2-th%C6%B0-m%E1%BB%A5c-cho-2-t%C3%AAn-mi%E1%BB%81n)
+
+- [Bước 2: Tạo Virtual Host cho nginx](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob%20Trainning/Nginx/Configure%20Virtual%20Host%20and%20Letsencrypt.md#b%C6%B0%E1%BB%9Bc-2-t%E1%BA%A1o-virtual-host-cho-nginx)
+
+[2. Cài đặt SSL cho nginx Virtual hosts](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob%20Trainning/Nginx/Configure%20Virtual%20Host%20and%20Letsencrypt.md#2-c%C3%A0i-%C4%91%E1%BA%B7t-ssl-cho-nginx-virtual-hosts)
+
+- [Bước 1: Cài đặt Certbot](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob%20Trainning/Nginx/Configure%20Virtual%20Host%20and%20Letsencrypt.md#b%C6%B0%E1%BB%9Bc-1-c%C3%A0i-%C4%91%E1%BA%B7t-certbot)
+
+- [Bước 2: Tải về Certbot script](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob%20Trainning/Nginx/Configure%20Virtual%20Host%20and%20Letsencrypt.md#b%C6%B0%E1%BB%9Bc-2-t%E1%BA%A3i-v%E1%BB%81-certbot-script)
+
+- [Bước 3: Chuyển file certbot-auto mới tải về vào thư mục /usr/local/bin và cấp quyền cho file certbot-auto](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob%20Trainning/Nginx/Configure%20Virtual%20Host%20and%20Letsencrypt.md#b%C6%B0%E1%BB%9Bc-3-chuy%E1%BB%83n-file-certbot-auto-m%E1%BB%9Bi-t%E1%BA%A3i-v%E1%BB%81-v%C3%A0o-th%C6%B0-m%E1%BB%A5c-usrlocalbin-v%C3%A0-c%E1%BA%A5p-quy%E1%BB%81n-cho-file-certbot-auto)
+
+- [Bước 4: Thiết lập chứng chỉ miễn phí Let's Encrypt](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob%20Trainning/Nginx/Configure%20Virtual%20Host%20and%20Letsencrypt.md#b%C6%B0%E1%BB%9Bc-4-thi%E1%BA%BFt-l%E1%BA%ADp-ch%E1%BB%A9ng-ch%E1%BB%89-mi%E1%BB%85n-ph%C3%AD-lets-encrypt)
+
+- [Bước 5: Cấu hình Redirect cho tất cả các truy vấn tới HTTPS]
+
 ## 1. Cấu hình Virtual Host
 
 ### Bước 1: Tạo 2 thư mục cho 2 tên miền
@@ -218,7 +236,7 @@ server {
 
 Kết quả cho thấy cấu hình đã được thay đổi khi được thêm cấu hình SSL vào.
 
-### Bước 4: Cấu hình Redirect cho tất cả các truy vấn tới HTTPS
+### Bước 5: Cấu hình Redirect cho tất cả các truy vấn tới HTTPS
 
 Truy cập vào file cấu hình trên và thêm cấu hình sau:
 
