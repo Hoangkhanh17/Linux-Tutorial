@@ -148,3 +148,9 @@ Accept-Ranges: bytes
 Content-Length: 120
 Content-Type: text/html; charset=UTF-8
 ```
+
+Kiểm tra trên website:
+
+<img src="https://imgur.com/IYyNdKt.png">
+
+<img src="https://imgur.com/YhIbmcH.png">
