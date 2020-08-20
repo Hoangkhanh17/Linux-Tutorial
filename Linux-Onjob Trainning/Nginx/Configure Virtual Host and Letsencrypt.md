@@ -18,7 +18,9 @@
 
 - [Bước 4: Thiết lập chứng chỉ miễn phí Let's Encrypt](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob%20Trainning/Nginx/Configure%20Virtual%20Host%20and%20Letsencrypt.md#b%C6%B0%E1%BB%9Bc-4-thi%E1%BA%BFt-l%E1%BA%ADp-ch%E1%BB%A9ng-ch%E1%BB%89-mi%E1%BB%85n-ph%C3%AD-lets-encrypt)
 
-- [Bước 5: Cấu hình Redirect cho tất cả các truy vấn tới HTTPS]
+- [Bước 5: Cấu hình Redirect cho tất cả các truy vấn tới HTTPS](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob%20Trainning/Nginx/Configure%20Virtual%20Host%20and%20Letsencrypt.md#b%C6%B0%E1%BB%9Bc-5-c%E1%BA%A5u-h%C3%ACnh-redirect-cho-t%E1%BA%A5t-c%E1%BA%A3-c%C3%A1c-truy-v%E1%BA%A5n-t%E1%BB%9Bi-https)
+
+[Tài liệu tham khảo](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob%20Trainning/Nginx/Configure%20Virtual%20Host%20and%20Letsencrypt.md#t%C3%A0i-li%E1%BB%87u-tham-kh%E1%BA%A3o)
 
 ## 1. Cấu hình Virtual Host
 
