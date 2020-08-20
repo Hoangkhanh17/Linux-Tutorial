@@ -1,6 +1,8 @@
 # Cấu hình Virtual Host và Cài Let's Encrypt cho Nginx trên CentOS 7
 
-## Cấu hình Virtual Host
+## Mục lục
+
+## 1. Cấu hình Virtual Host
 
 ### Bước 1: Tạo 2 thư mục cho 2 tên miền
 
@@ -64,7 +66,7 @@ Sau khi cài đặt xong ta tiến hành khởi động lại `nginx`
 
 `systemctl restart nginx`
 
-## Cài đặt SSL cho nginx Virtual hosts
+## 2. Cài đặt SSL cho nginx Virtual hosts
 
 ### Bước 1: Cài đặt Certbot
 
