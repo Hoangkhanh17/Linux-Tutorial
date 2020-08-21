@@ -86,6 +86,32 @@ Rsyslog là một phần mềm mã nguồn mở sử dụng trên Linux dùng đ
 
 - [Library Modules](https://www.rsyslog.com/doc/v8-stable/configuration/modules/idx_library.html)
 
+### File cấu hình của rsyslog.conf
+
+Ta có thể tìm file cấu hình rsyslog tại `/etc/rsyslog.conf`
+
+```
+authpriv.*                                              /var/log/secure
+mail.*                                                  -/var/log/maillog
+cron.*                                                  /var/log/cron
+*.emerg                                                 :omusrmsg:*
+uucp,news.crit                                          /var/log/spooler
+local7.*                                                /var/log/boot.log
+```
+
+Cơ bản trên file rsyslog.conf mặc định cho chúng ta thấy nơi lưu trữ các log tiến trình của hệ thống.
+
+Cấu hình trên được chia làm 2 trường:
+
+- Trường 1: Seletor
+
+    - Trường Seletor : Chỉ ra nguồn tạo ra log và mức cảnh bảo của log đó.
+
+    - Trong trường seletor có 2 thành phần và được tách nhau bằng dấu “.“
+
+- Trường 2: Action là trường để chỉ ra nơi lưu log của tiến trình đó. Có 2 loại là lưu tại file trong localhost hoặc gửi đến IP của máy chủ Log.
+
+
 ## Tài liệu tham khảo
 
 https://news.cloud365.vn/log-ly-thuyet-tong-quan-ve-log-syslog-rsyslog/
