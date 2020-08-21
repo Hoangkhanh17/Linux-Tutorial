@@ -86,3 +86,11 @@ Có nhiều loại `log levels` bao gồm:
 - `debug` ghi lại tất cả mọi thứ, dùng để dò lỗi.
 
 Ở level debug, info, notice, warn thường ghi ra rất nhiều thông tin có thể không cần thiết. Ta nên để ở level emerg, alert, crit và error bởi vì nó ghi lại gần như tất cả các vấn đề ta cần để vận hành nginx rồi.
+
+## Tài liệu tham khảo
+
+https://www.thuysys.com/toi-uu/tim-hieu-cau-hinh-log-tren-webserver-nginx.html
+
+https://www.journaldev.com/26756/nginx-access-logs-error-logs#what-is-nginx-access-log
+
+http://nginx.org/en/docs/http/ngx_http_log_module.html#access_log
