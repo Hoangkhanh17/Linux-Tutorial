@@ -10,7 +10,54 @@ Nó rất đơn giản và không sử dụng bất kỳ kỹ thuật thông min
 
 Tấn công Brute Force là tốt hay xấu tùy thuộc vào người sử dụng nó. Nó có thể được bọn tội phạm mạng cố gắng sử dụng để hack vào một máy chủ mạng, hoặc nó có thể được một quản trị viên mạng dùng để xem mạng của mình được bảo mật có tốt không. Một số người dùng máy tính cũng sử dụng các ứng dụng brute force để khôi phục mật khẩu đã quên.
 
+### 2. Khả năng của Brute Force
+
+Nếu mật khẩu của bạn đang sử dụng tất cả các chữ cái thường và không có ký tự đặc biệt hoặc chữ số, chỉ mất 2-10 phút là một cuộc tấn công brute force có thể crack mật khẩu này. Ngược lại, một mật khẩu có sự kết hợp của cả chữ hoa và chữ thường cùng với một vài chữ số (giả sử có 8 chữ số) sẽ mất hơn 14-15 năm để bị crack.
+
+Chúng ta có thể kiểm tra mức độ mạnh của mật khẩu mà ta đã đặt [tại đây](https://www.grc.com/haystack.htm). Kết quả tại trang web trên là tương đối, chúng ta vẫn nên đặt một mật khẩu phức tạp để tránh bị Brute Force.
+
+**Brute Force SSH:** Việc đặt mặc định `port 22` cho SSH sẽ khiến cho hacker dễ dàng dò ra được thông tin tài khoản để SSH vào máy chủ. Nên việc sử dụng Brute Force SSH cũng khá dễ dàng.
+
+### 3. Cách phòng chống Brute Force Attack
+
+Cách dễ dàng nhất là đặt mật khẩu có mức độ phức tạp cao. Ví dụ:
+
+- Có ít nhất một chữ hoa.
+
+- Có ít nhất một chữ số.
+
+- Có ít nhất một ký tự đặc biệt.
+
+- Mật khẩu phải có tối thiểu 8-10 ký tự.
+
+- Bao gồm ký tự ASCII, nếu bạn muốn.
+
+Sử dụng các phần mềm chống tấn công để xác định IP đăng nhập sai nhiều lần và block IP đó. Ví dụ: Tham khảo phần mềm Fail2ban [tại đây](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob%20Trainning/Security%20and%20Firewall/Fail2ban_with_CentOS7.md).
+
+Đối với **Brute Force SSH**, ta có thể thay đổi `port 22` mặc định sang `port` khác để tránh bị scan SSH hoặc nâng cấp bảo mật cho SSH bằng cách sử dụng các key gen hoặc xác thực 2 bước.
+
+## Phần 2. Brute Force Password
+
+Để tiến hành Brute Force một máy chủ nào đó, ta có thể sử dung các phần mềm trên mạng hoặc tự tạo một Tool để quét.
+
+Một số phần mềm phục vụ việc Brute Force hiện nay: Medusa, NCrack, Hydra,...
+
+### Hydra
+
+Hydra là tool được sử dụng phổ biến, rất mạnh mẽ. Nếu bạn sử dụng hệ điều hành Kali Linux, thì tool này đã được cài đặt sẵn. Các hệ điều hành Debian có thể cài đặt tool này cũng khá dễ dàng.
+
+Có thể tham khảo demo Brute Force bằng Hydra [tại đây](https://tuanhdmsp.wordpress.com/2017/11/28/huong-dan-tan-cong-password-windows-su-dung-hydra-kali-linux/#:~:text=C%C3%B4ng%20c%E1%BB%A5%20Hydra%20s%E1%BB%AD%20d%E1%BB%A5ng,%C4%91%E1%BB%83%20t%C3%ACm%20ra%20m%E1%BA%ADt%20kh%E1%BA%A9u.)
+
+### Ncrack
+
+Ncrack cũng được cài đặt sẵn trong hệ điều hành Kali Linux. Việc cài đặt cho hệ điều hành Debian cũng tương tự Hydra.
+
+
+
 ## Tài liệu tham khảo
 
 https://quantrimang.com/cuoc-tan-cong-brute-force-la-gi-157987
 
+https://anninhmang.edu.vn/thu-thap-ssh-username-password-voi-brute-force-attack/
+
+https://news.cloud365.vn/brute-force-password-su-dung-medusa/
