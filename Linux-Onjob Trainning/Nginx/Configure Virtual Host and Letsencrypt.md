@@ -80,6 +80,7 @@ server {
         fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
         include fastcgi_params;
     }
+}
 ```
 
 Sau khi cài đặt xong ta tiến hành khởi động lại `nginx`
