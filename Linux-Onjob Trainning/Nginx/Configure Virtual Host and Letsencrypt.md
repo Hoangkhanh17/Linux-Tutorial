@@ -252,7 +252,7 @@ server {
 
 **Lưu ý:** Với mỗi tên miền ta chỉnh sửa lại cấu hình thêm vào ứng với tên miền đó.
 
-Sau đó lưu lại và tiến hành `systemctl restart restart`
+Sau đó lưu lại và tiến hành `systemctl restart nginx`
 
 Kiểm tra lại trên web đã nhận Https hay chưa:
 
