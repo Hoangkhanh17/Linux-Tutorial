@@ -96,7 +96,7 @@ Cài đặt các gói cần thiết:
 
 ```
 yum -y install python36
-yum-y install gcc mod_ssl python3-virtualenv redhat-rpm-config augeas-libs libffi-devel openssl-devel
+yum -y install gcc mod_ssl python3-virtualenv redhat-rpm-config augeas-libs libffi-devel openssl-devel
 ```
 
 ### Bước 2: Tải về Certbot script
