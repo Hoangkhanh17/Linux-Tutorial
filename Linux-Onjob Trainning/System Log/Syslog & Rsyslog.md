@@ -12,3 +12,6 @@ Các tập tin log được đặt trong thư mục /var/log. Bất kỳ ứng d
 
 <img src="https://imgur.com/HGWS3w8.png">
 
+### 2.1. Mục đích Syslog
+
+Syslog được sử dụng như một tiêu chuẩn, chuyển tiếp và thu thập log được sử dụng trên một phiên bản Linux. Syslog xác định mức độ nghiêm trọng (severity levels) cũng như mức độ cơ sở (facility levels) giúp người dùng hiểu rõ hơn về nhật ký được sinh ra trên máy tính của họ. 
