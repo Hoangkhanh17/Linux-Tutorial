@@ -64,6 +64,8 @@ Có thể tham khảo demo Brute Force bằng Hydra [tại đây](https://tuanhd
 
 Ncrack cũng được cài đặt sẵn trong hệ điều hành Kali Linux. Việc cài đặt cho hệ điều hành Debian cũng tương tự Hydra.
 
+Trang chủ giới thiệu NCrack: https://nmap.org/ncrack/
+
 ### Medusa
 
 Tham khảo [tại đây](https://news.cloud365.vn/brute-force-password-su-dung-medusa/)
