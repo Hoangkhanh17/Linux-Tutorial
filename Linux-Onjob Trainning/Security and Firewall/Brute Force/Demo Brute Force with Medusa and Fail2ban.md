@@ -1,4 +1,8 @@
-# Brute Force Password với Medusa
+# Brute Force Password với Medusa và Fail2ban
+
+## Mục lục
+
+## Phương án Demo
 
 Cấu hình 2 máy CentOS 7, trong đó 1 máy `Máy 1` cài fail2ban và 1 máy `Máy 2` cài medusa.
 
