@@ -57,3 +57,109 @@ Syntax: Medusa [-h host|-H file] [-u username|-U file] [-p password|-P file] [-C
   -V           : Display version
   -Z [TEXT]    : Resume scan based on map of previous scan
 ```
+
+## 3. Tiến hành Brute Force Password
+
+Có thể tải file chứa **12000 mật khẩu** hay sử dụng [tại đây](https://github.com/danielmiessler/SecLists/blob/master/Passwords/probable-v2-top12000.txt)
+
+Tạo 1 file `password.txt` có chứa các mật khẩu thông dụng, dễ bị quét ra.
+
+`[root@localhost ~]# vi password.txt`
+
+Tiến hành quét `Máy 1` có sử dụng fail2ban bằng lệnh sau:
+
+`[root@localhost ~]# medusa -h 172.16.2.194 -u root -P password.txt -M ssh`
+
+Kết quả nhận được như sau:
+
+```
+ACCOUNT CHECK: [ssh] Host: 172.16.2.194 (1 of 1, 0 complete) User: root (1 of 1, 0 complete) Password: 123456 (1 of 235 complete)
+ACCOUNT CHECK: [ssh] Host: 172.16.2.194 (1 of 1, 0 complete) User: root (1 of 1, 0 complete) Password: password (2 of 235 complete)
+ACCOUNT CHECK: [ssh] Host: 172.16.2.194 (1 of 1, 0 complete) User: root (1 of 1, 0 complete) Password: 123456789 (3 of 235 complete)
+ACCOUNT CHECK: [ssh] Host: 172.16.2.194 (1 of 1, 0 complete) User: root (1 of 1, 0 complete) Password: 12345678 (4 of 235 complete)
+ACCOUNT CHECK: [ssh] Host: 172.16.2.194 (1 of 1, 0 complete) User: root (1 of 1, 0 complete) Password: 12345 (5 of 235 complete)
+ACCOUNT CHECK: [ssh] Host: 172.16.2.194 (1 of 1, 0 complete) User: root (1 of 1, 0 complete) Password: qwerty (6 of 235 complete)
+ACCOUNT CHECK: [ssh] Host: 172.16.2.194 (1 of 1, 0 complete) User: root (1 of 1, 0 complete) Password: 123123 (7 of 235 complete)
+ACCOUNT CHECK: [ssh] Host: 172.16.2.194 (1 of 1, 0 complete) User: root (1 of 1, 0 complete) Password: 111111 (8 of 235 complete)
+ACCOUNT CHECK: [ssh] Host: 172.16.2.194 (1 of 1, 0 complete) User: root (1 of 1, 0 complete) Password: abc123 (9 of 235 complete)
+ACCOUNT CHECK: [ssh] Host: 172.16.2.194 (1 of 1, 0 complete) User: root (1 of 1, 0 complete) Password: 1234567 (10 of 235 complete)
+ACCOUNT CHECK: [ssh] Host: 172.16.2.194 (1 of 1, 0 complete) User: root (1 of 1, 0 complete) Password: dragon (11 of 235 complete)
+ACCOUNT CHECK: [ssh] Host: 172.16.2.194 (1 of 1, 0 complete) User: root (1 of 1, 0 complete) Password: 1q2w3e4r (12 of 235 complete)
+ACCOUNT CHECK: [ssh] Host: 172.16.2.194 (1 of 1, 0 complete) User: root (1 of 1, 0 complete) Password: sunshine (13 of 235 complete)
+ACCOUNT CHECK: [ssh] Host: 172.16.2.194 (1 of 1, 0 complete) User: root (1 of 1, 0 complete) Password: 654321 (14 of 235 complete)
+ACCOUNT CHECK: [ssh] Host: 172.16.2.194 (1 of 1, 0 complete) User: root (1 of 1, 0 complete) Password: master (15 of 235 complete)
+```
+
+Theo như kết quả nhận được, `Medusa` đã quét đến password thứ 15 thì không được nữa. Ta kiểm tra `log` của `fail2ban` tại `Máy 1`.
+
+```
+[root@localhost ~]# tail -F /var/log/fail2ban.log
+2020-08-21 14:15:21,207 fail2ban.filter         [1822]: INFO    [sshd] Found 172.16.2.193 - 2020-08-21 14:15:21
+2020-08-21 14:15:23,054 fail2ban.filter         [1822]: INFO    [sshd] Found 172.16.2.193 - 2020-08-21 14:15:23
+2020-08-21 14:15:24,762 fail2ban.filter         [1822]: INFO    [sshd] Found 172.16.2.193 - 2020-08-21 14:15:24
+2020-08-21 14:15:27,281 fail2ban.filter         [1822]: INFO    [sshd] Found 172.16.2.193 - 2020-08-21 14:15:27
+2020-08-21 14:15:27,285 fail2ban.filter         [1822]: INFO    [sshd] Found 172.16.2.193 - 2020-08-21 14:15:27
+2020-08-21 14:15:27,286 fail2ban.filter         [1822]: INFO    [sshd] Found 172.16.2.193 - 2020-08-21 14:15:27
+2020-08-21 14:15:28,958 fail2ban.filter         [1822]: INFO    [sshd] Found 172.16.2.193 - 2020-08-21 14:15:28
+2020-08-21 14:15:31,021 fail2ban.filter         [1822]: INFO    [sshd] Found 172.16.2.193 - 2020-08-21 14:15:31
+2020-08-21 14:15:31,497 fail2ban.actions        [1822]: NOTICE  [sshd] Ban 172.16.2.193
+2020-08-21 14:15:33,496 fail2ban.filter         [1822]: INFO    [sshd] Found 172.16.2.193 - 2020-08-21 14:15:33
+```
+
+Ta thấy `log` cảnh báo đã ban IP **172.16.2.193** của `Máy 2`. Kiểm tra trên firewall của `Máy 1`:
+
+```
+[root@localhost ~]# iptables -L
+Chain INPUT (policy ACCEPT)
+target     prot opt source               destination
+f2b-SSH    tcp  --  anywhere             anywhere             tcp dpt:ssh
+
+Chain FORWARD (policy ACCEPT)
+target     prot opt source               destination
+
+Chain OUTPUT (policy ACCEPT)
+target     prot opt source               destination
+
+Chain f2b-SSH (1 references)
+target     prot opt source               destination
+REJECT     all  --  172.16.2.193         anywhere             reject-with icmp-port-unreachable
+RETURN     all  --  anywhere             anywhere
+```
+
+Địa chỉ IP **172.16.2.193** đã bị block.
+
+Trên `Máy 2` thử SSH vào `Máy 1` thì nhận được thông báo k thể kết nối mặc dù vẫn ping được bình thường.
+
+```
+[root@localhost ~]# ping 172.16.2.194
+PING 172.16.2.194 (172.16.2.194) 56(84) bytes of data.
+64 bytes from 172.16.2.194: icmp_seq=1 ttl=64 time=0.381 ms
+64 bytes from 172.16.2.194: icmp_seq=2 ttl=64 time=0.392 ms
+^C
+--- 172.16.2.194 ping statistics ---
+2 packets transmitted, 2 received, 0% packet loss, time 1000ms
+rtt min/avg/max/mdev = 0.381/0.386/0.392/0.020 ms
+[root@localhost ~]# ssh root@172.16.2.194
+ssh: connect to host 172.16.2.194 port 22: Connection refused
+```
+
+Để unban IP của `Máy 2`, ta sử dụng lệnh:
+
+```
+[root@localhost ~]# fail2ban-client set sshd unbanip 172.16.2.193
+```
+
+Từ `Máy 2` SSH lại và thành công:
+
+```
+[root@localhost ~]# ssh root@172.16.2.194
+The authenticity of host '172.16.2.194 (172.16.2.194)' can't be established.
+ECDSA key fingerprint is SHA256:bVTZ8dZ6oPko8Qc0lvA5ntQwU7XKM2qtvfoK/ZLp96g.
+ECDSA key fingerprint is MD5:37:d6:c5:de:fd:b4:1f:7f:01:14:bd:20:5b:a1:d2:86.
+Are you sure you want to continue connecting (yes/no)? yes
+Warning: Permanently added '172.16.2.194' (ECDSA) to the list of known hosts.
+root@172.16.2.194's password:
+Last failed login: Fri Aug 21 14:15:33 +07 2020 from 172.16.2.193 on ssh:notty
+There were 15 failed login attempts since the last successful login.
+Last login: Fri Aug 21 11:48:55 2020 from 172.16.2.179
+```
