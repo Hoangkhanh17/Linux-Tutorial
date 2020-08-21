@@ -2,6 +2,22 @@
 
 ## Mục lục
 
+[Phương án Demo](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob%20Trainning/Security%20and%20Firewall/Brute%20Force/Demo%20Brute%20Force%20with%20Medusa%20and%20Fail2ban.md#ph%C6%B0%C6%A1ng-%C3%A1n-demo)
+
+[1. Cài đặt Medusa trên CentOS 7](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob%20Trainning/Security%20and%20Firewall/Brute%20Force/Demo%20Brute%20Force%20with%20Medusa%20and%20Fail2ban.md#1-c%C3%A0i-%C4%91%E1%BA%B7t-medusa-tr%C3%AAn-centos-7)
+
+- [Bước 1: Cài đặt một số gói cần thiết](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob%20Trainning/Security%20and%20Firewall/Brute%20Force/Demo%20Brute%20Force%20with%20Medusa%20and%20Fail2ban.md#b%C6%B0%E1%BB%9Bc-1-c%C3%A0i-%C4%91%E1%BA%B7t-m%E1%BB%99t-s%E1%BB%91-g%C3%B3i-c%E1%BA%A7n-thi%E1%BA%BFt)
+
+- [Bước 2: Cài đặt gói Medusa](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob%20Trainning/Security%20and%20Firewall/Brute%20Force/Demo%20Brute%20Force%20with%20Medusa%20and%20Fail2ban.md#b%C6%B0%E1%BB%9Bc-2-c%C3%A0i-%C4%91%E1%BA%B7t-g%C3%B3i-medusa)
+
+[2. Cách thức sử dụng Medusa](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob%20Trainning/Security%20and%20Firewall/Brute%20Force/Demo%20Brute%20Force%20with%20Medusa%20and%20Fail2ban.md#2-c%C3%A1ch-th%E1%BB%A9c-s%E1%BB%AD-d%E1%BB%A5ng-medusa)
+
+[3. Tiến hành Brute Force Password](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob%20Trainning/Security%20and%20Firewall/Brute%20Force/Demo%20Brute%20Force%20with%20Medusa%20and%20Fail2ban.md#3-ti%E1%BA%BFn-h%C3%A0nh-brute-force-password)
+
+- [Trường hợp Medusa quét thành công](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob%20Trainning/Security%20and%20Firewall/Brute%20Force/Demo%20Brute%20Force%20with%20Medusa%20and%20Fail2ban.md#tr%C6%B0%E1%BB%9Dng-h%E1%BB%A3p-medusa-qu%C3%A9t-th%C3%A0nh-c%C3%B4ng)
+
+[Tài liệu tham khảo](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob%20Trainning/Security%20and%20Firewall/Brute%20Force/Demo%20Brute%20Force%20with%20Medusa%20and%20Fail2ban.md#t%C3%A0i-li%E1%BB%87u-tham-kh%E1%BA%A3o)
+
 ## Phương án Demo
 
 Cấu hình 2 máy CentOS 7, trong đó 1 máy `Máy 1` cài fail2ban và 1 máy `Máy 2` cài medusa.
