@@ -68,6 +68,11 @@ Ncrack cũng được cài đặt sẵn trong hệ điều hành Kali Linux. Vi�
 
 Tham khảo [tại đây](https://news.cloud365.vn/brute-force-password-su-dung-medusa/)
 
+
+## Kết luận
+
+Nhìn chung các Tools hoặc việc tự tạo Tool riêng để Brute Force đều dựa trên việc truy quét các mật khẩu yếu, dễ bị quét. Chúng ta nên cảnh giác và sử dụng mật khẩu mạnh cũng như các phần mềm bảo mật để bảo vệ máy chủ của mình.
+
 ## Tài liệu tham khảo
 
 https://quantrimang.com/cuoc-tan-cong-brute-force-la-gi-157987
