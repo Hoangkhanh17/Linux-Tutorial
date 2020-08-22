@@ -91,12 +91,12 @@ Rsyslog là một phần mềm mã nguồn mở sử dụng trên Linux dùng đ
 Ta có thể tìm file cấu hình rsyslog tại `/etc/rsyslog.conf`
 
 ```
-authpriv.*                                              /var/log/secure
-mail.*                                                  -/var/log/maillog
-cron.*                                                  /var/log/cron
-*.emerg                                                 :omusrmsg:*
-uucp,news.crit                                          /var/log/spooler
-local7.*                                                /var/log/boot.log
+authpriv.*                        /var/log/secure
+mail.*                            -/var/log/maillog
+cron.*                            /var/log/cron
+*.emerg                           :omusrmsg:*
+uucp,news.crit                    /var/log/spooler
+local7.*                          /var/log/boot.log
 ```
 
 Cơ bản trên file `rsyslog.conf` mặc định cho chúng ta thấy nơi lưu trữ các log tiến trình của hệ thống.
