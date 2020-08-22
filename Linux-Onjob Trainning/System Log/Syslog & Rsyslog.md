@@ -99,7 +99,7 @@ uucp,news.crit                                          /var/log/spooler
 local7.*                                                /var/log/boot.log
 ```
 
-Cơ bản trên file rsyslog.conf mặc định cho chúng ta thấy nơi lưu trữ các log tiến trình của hệ thống.
+Cơ bản trên file `rsyslog.conf` mặc định cho chúng ta thấy nơi lưu trữ các log tiến trình của hệ thống.
 
 Cấu hình trên được chia làm 2 trường:
 
