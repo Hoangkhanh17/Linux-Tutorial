@@ -66,7 +66,7 @@ Phần PRI hay Priority là một số được đặt trong ngoặc nhọn, th�
 
 - 3 bit đầu tiên thể hiện cho tính nghiêm trọng của thông báo.
 
-- 5 bit còn lại đại diện cho sơ sở sinh ra thông báo.
+- 5 bit còn lại đại diện cho cơ sở sinh ra thông báo.
 
 <img src="https://imgur.com/hvfzAgS.png">
 
