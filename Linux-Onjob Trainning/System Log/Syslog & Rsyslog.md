@@ -104,7 +104,7 @@ Rsyslog là một phần mềm mã nguồn mở sử dụng trên Linux dùng đ
 
 - [Library Modules](https://www.rsyslog.com/doc/v8-stable/configuration/modules/idx_library.html)
 
-### File cấu hình của rsyslog.conf
+#### File cấu hình của rsyslog.conf
 
 Ta có thể tìm file cấu hình rsyslog tại `/etc/rsyslog.conf`
 
