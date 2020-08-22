@@ -1,5 +1,23 @@
 # Tổng quan về Syslog, Rsyslog và Log tập trung
 
+## Mục lục
+
+[1. Log là gì?](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob%20Trainning/System%20Log/Syslog%20%26%20Rsyslog.md#1-log-l%C3%A0-g%C3%AC)
+
+[2. Tổng quan Syslog](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob%20Trainning/System%20Log/Syslog%20%26%20Rsyslog.md#2-t%E1%BB%95ng-quan-syslog)
+
+- [2.1. Mục đích của Syslog](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob%20Trainning/System%20Log/Syslog%20%26%20Rsyslog.md#21-m%E1%BB%A5c-%C4%91%C3%ADch-c%E1%BB%A7a-syslog)
+
+- [2.2. Định dạng của Syslog](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob%20Trainning/System%20Log/Syslog%20%26%20Rsyslog.md#22-%C4%91%E1%BB%8Bnh-d%E1%BA%A1ng-c%E1%BB%A7a-syslog)
+
+    -  [a) PRI](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob%20Trainning/System%20Log/Syslog%20%26%20Rsyslog.md#a-pri)
+
+    - [b) Hearder](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob%20Trainning/System%20Log/Syslog%20%26%20Rsyslog.md#b-hearder)
+
+[3. Tổng quan Rsyslog](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob%20Trainning/System%20Log/Syslog%20%26%20Rsyslog.md#3-t%E1%BB%95ng-quan-rsyslog)
+
+[Tài liệu tham khảo](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob%20Trainning/System%20Log/Syslog%20%26%20Rsyslog.md#t%C3%A0i-li%E1%BB%87u-tham-kh%E1%BA%A3o)
+
 ## 1. Log là gì?
 
 Log ghi lại liên tục các thông báo về hoạt động của cả hệ thống hoặc của các dịch vụ được triển khai trên hệ thống và file tương ứng. Log file thường là các file văn bản thông thường dưới dạng “clear text” tức là bạn có thể dễ dàng đọc được nó, vì thế có thể sử dụng các trình soạn thảo văn bản.
