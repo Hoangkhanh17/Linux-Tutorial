@@ -6,7 +6,7 @@
 
 [Bước 2: Chỉnh sửa các thông số cần thiết](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob%20Trainning/SingleMode_Linux/ResetPassword%20Linux%20CentOS%207.md#b%C6%B0%E1%BB%9Bc-2-ch%E1%BB%89nh-s%E1%BB%ADa-c%C3%A1c-th%C3%B4ng-s%E1%BB%91-c%E1%BA%A7n-thi%E1%BA%BFt)
 
-[3. Bước 3: remount filesystem và chuyển chế độ chroot]
+[Bước 3: remount filesystem và chuyển chế độ chroot]
 
 ## Tại sao lại phải Reset mật khẩu ?
 
@@ -28,7 +28,7 @@ Khi hệ thống boot lên màn hình GRUB2, ta gõ phím `e` để hiện lên 
 
 - Sau đó Ctrl X để lưu và tự động boot vào môi trường initramfs.
 
-### Bước 3: remount filesystem và chuyển chế độ chroot
+### Bước 3: Remount filesystem và chuyển chế độ chroot
 
 - Hệ thống filesystem hiện tại đang ở chế độ “read only” được mount ở thư mục /sysroot/, để thực hiện khôi phục mật khẩu root thì ta cần thêm quyền ghi (write) trên filesystem. Ta sẽ tiến hành remount lại filesystem /sysroot/ với quyền đọc-ghi (read-write).
 
