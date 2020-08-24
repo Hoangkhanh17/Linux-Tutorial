@@ -1,6 +1,10 @@
 # Reset Password Root CentOS 7
 
-## Mục lục
+## Các bước thực hiện
+
+[]
+
+## Tại sao lại phải Reset mật khẩu ?
 
 Việc quên password là việc xảy ra thường xuyên trong việc đăng nhập vào bất kỳ hệ thống cũng như ứng dụng nào. Hệ thống Linux cũng vậy, để reset lại mật khẩu cho `root` cũng không quá phức tạp.
 
