@@ -8,6 +8,8 @@
 
 [Bước 3: Remount filesystem và chuyển chế độ chroot](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob%20Trainning/SingleMode_Linux/ResetPassword%20Linux%20CentOS%207.md#b%C6%B0%E1%BB%9Bc-3-remount-filesystem-v%C3%A0-chuy%E1%BB%83n-ch%E1%BA%BF-%C4%91%E1%BB%99-chroot)
 
+[Tài liệu tham khảo thêm](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob%20Trainning/SingleMode_Linux/ResetPassword%20Linux%20CentOS%207.md#t%C3%A0i-li%E1%BB%87u-tham-kh%E1%BA%A3o)
+
 ## Tại sao lại phải Reset mật khẩu ?
 
 Việc quên password là việc xảy ra thường xuyên trong việc đăng nhập vào bất kỳ hệ thống cũng như ứng dụng nào. Hệ thống Linux cũng vậy, để reset lại mật khẩu cho `root` cũng không quá phức tạp.
