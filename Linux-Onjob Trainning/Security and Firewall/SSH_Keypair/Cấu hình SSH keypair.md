@@ -162,3 +162,11 @@ sudo sed -i 's|#PubkeyAuthentication yes|PubkeyAuthentication yes|' /etc/ssh/ssh
 <img src="https://imgur.com/tHb9BkP.png">
 
 <img src="https://imgur.com/dNXtNnM.png">
+
+## Tài liệu tham khảo
+
+https://news.cloud365.vn/ssh-phan1-huong-dan-tao-user-sudo-va-cau-hinh-disable-ssh-doi-voi-user-root/
+
+https://news.cloud365.vn/ssh-phan-2-cau-hinh-dang-nhap-ssh-key-cho-user-tren-centos-7/
+
+https://docs.vhost.vn/article/h%C6%B0%E1%BB%9Bng-d%E1%BA%ABn-t%E1%BA%A1o-v%C3%A0-s%E1%BB%AD-d%E1%BB%A5ng-ssh-key-450.html
