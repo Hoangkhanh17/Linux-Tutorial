@@ -63,3 +63,9 @@ Khi hệ thống boot lên màn hình GRUB2, ta gõ phím `e` để hiện lên 
 `exec /sbin/reboot`
  
 - Bạn sẽ thấy hệ thống reboot và chậm hơn bình thường , do hệ thống đang tiến hành hoạt động SELINUX relabel. Sau khi boot vào hệ thống prompt console thành công thì bạn có thể đăng nhập bằng mật khẩu mới.
+
+## Tài liệu tham khảo
+
+https://news.cloud365.vn/huong-dan-reset-password-bang-single-mode-tren-linux-1/
+
+https://cuongquach.com/khoi-phuc-mat-khau-root-tren-centos7-rhel7.html
