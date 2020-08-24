@@ -6,7 +6,7 @@
 
 [Bước 2: Chỉnh sửa các thông số cần thiết](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob%20Trainning/SingleMode_Linux/ResetPassword%20Linux%20CentOS%207.md#b%C6%B0%E1%BB%9Bc-2-ch%E1%BB%89nh-s%E1%BB%ADa-c%C3%A1c-th%C3%B4ng-s%E1%BB%91-c%E1%BA%A7n-thi%E1%BA%BFt)
 
-[Bước 3: remount filesystem và chuyển chế độ chroot](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob%20Trainning/SingleMode_Linux/ResetPassword%20Linux%20CentOS%207.md#b%C6%B0%E1%BB%9Bc-3-remount-filesystem-v%C3%A0-chuy%E1%BB%83n-ch%E1%BA%BF-%C4%91%E1%BB%99-chroot)
+[Bước 3: Remount filesystem và chuyển chế độ chroot](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob%20Trainning/SingleMode_Linux/ResetPassword%20Linux%20CentOS%207.md#b%C6%B0%E1%BB%9Bc-3-remount-filesystem-v%C3%A0-chuy%E1%BB%83n-ch%E1%BA%BF-%C4%91%E1%BB%99-chroot)
 
 ## Tại sao lại phải Reset mật khẩu ?
 
