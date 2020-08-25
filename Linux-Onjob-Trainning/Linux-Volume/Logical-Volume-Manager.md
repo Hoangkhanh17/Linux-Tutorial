@@ -2,44 +2,43 @@
 
 ## Mục Lục
 
-[Phần 1. Giới thiệu về LVM](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob%20Trainning/Logical%20Volume%20Manager.md#ph%E1%BA%A7n-1-gi%E1%BB%9Bi-thi%E1%BB%87u-v%E1%BB%81-lvm)
+[Phần 1. Giới thiệu về LVM](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob-Trainning/Linux-Volume/Logical-Volume-Manager.md#ph%E1%BA%A7n-1-gi%E1%BB%9Bi-thi%E1%BB%87u-v%E1%BB%81-lvm)
 
-[1. LVM là gì?](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob%20Trainning/Logical%20Volume%20Manager.md#1-lvm-l%C3%A0-g%C3%AC-)
+- [1. LVM là gì?](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob-Trainning/Linux-Volume/Logical-Volume-Manager.md#1-lvm-l%C3%A0-g%C3%AC-)
 
-[2. Cấu trúc LVM](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob%20Trainning/Logical%20Volume%20Manager.md#2-c%E1%BA%A5u-tr%C3%BAc-lvm)
+- [2. Cấu trúc LVM](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob-Trainning/Linux-Volume/Logical-Volume-Manager.md#2-c%E1%BA%A5u-tr%C3%BAc-lvm)
 
-[Phần 2. Tạo và quản lý LVM](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob%20Trainning/Logical%20Volume%20Manager.md#ph%E1%BA%A7n-2-t%E1%BA%A1o-v%C3%A0-qu%E1%BA%A3n-l%C3%BD-lvm)
+[Phần 2. Tạo và quản lý LVM](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob-Trainning/Linux-Volume/Logical-Volume-Manager.md#ph%E1%BA%A7n-2-t%E1%BA%A1o-v%C3%A0-qu%E1%BA%A3n-l%C3%BD-lvm)
 
-[1. Tạo LVM](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob%20Trainning/Logical%20Volume%20Manager.md#1-t%E1%BA%A1o-lvm)
+- [1. Tạo LVM](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob-Trainning/Linux-Volume/Logical-Volume-Manager.md#1-t%E1%BA%A1o-lvm)
 
-[2. Mở rộng Volume Group và thay đổi kích thước các Logical Volume](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob%20Trainning/Logical%20Volume%20Manager.md#2-m%E1%BB%9F-r%E1%BB%99ng-volume-group-v%C3%A0-thay-%C4%91%E1%BB%95i-k%C3%ADch-th%C6%B0%E1%BB%9Bc-c%C3%A1c-logical-volume)
+- [2. Mở rộng Volume Group và thay đổi kích thước các Logical Volume](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob-Trainning/Linux-Volume/Logical-Volume-Manager.md#2-m%E1%BB%9F-r%E1%BB%99ng-volume-group-v%C3%A0-thay-%C4%91%E1%BB%95i-k%C3%ADch-th%C6%B0%E1%BB%9Bc-c%C3%A1c-logical-volume)
 
-[3. Giảm kích cỡ Logical Volume](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob%20Trainning/Logical%20Volume%20Manager.md#3-gi%E1%BA%A3m-k%C3%ADch-c%E1%BB%A1-logical-volume)
+- [3. Giảm kích cỡ Logical Volume](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob-Trainning/Linux-Volume/Logical-Volume-Manager.md#3-gi%E1%BA%A3m-k%C3%ADch-c%E1%BB%A1-logical-volume)
 
-[Tài liệu tham khảo](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob%20Trainning/Logical%20Volume%20Manager.md#t%C3%A0i-li%E1%BB%87u-tham-kh%E1%BA%A3o)
+- [4. Mounting Logical Volume](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob-Trainning/Linux-Volume/Logical-Volume-Manager.md#4-mounting-logical-volume)
 
-[4. Mounting Logical Volume](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob%20Trainning/Logical%20Volume%20Manager.md#4-mounting-logical-volume)
+[Phần 3. Snapshot và restore của Logical Volume](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob-Trainning/Linux-Volume/Logical-Volume-Manager.md#ph%E1%BA%A7n-3-snapshot-v%C3%A0-restore-c%E1%BB%A7a-logical-volume)
 
-[Phần 3. Snapshot và restore của Logical Volume](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob%20Trainning/Logical%20Volume%20Manager.md#ph%E1%BA%A7n-3-snapshot-v%C3%A0-restore-c%E1%BB%A7a-logical-volume)
+- [1. Snapshot Logical Volume](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob-Trainning/Linux-Volume/Logical-Volume-Manager.md#1-snapshot-logical-volume)
 
-[1. Snapshot Logical Volume](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob%20Trainning/Logical%20Volume%20Manager.md#1-snapshot-logical-volume)
+  - [1.1. Tạo Snapshot LVM](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob-Trainning/Linux-Volume/Logical-Volume-Manager.md#11-t%E1%BA%A1o-snapshot-lvm)
 
-  - [1.1. Tạo Snapshot LVM](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob%20Trainning/Logical%20Volume%20Manager.md#11-t%E1%BA%A1o-snapshot-lvm)
+  - [1.2. Tăng dung lượng snapshot trong LVM](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob-Trainning/Linux-Volume/Logical-Volume-Manager.md#12-t%C4%83ng-dung-l%C6%B0%E1%BB%A3ng-snapshot-trong-lvm)
 
-  - [1.2. Tăng dung lượng snapshot trong LVM](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob%20Trainning/Logical%20Volume%20Manager.md#12-t%C4%83ng-dung-l%C6%B0%E1%BB%A3ng-snapshot-trong-lvm)
+- [2. Restore Logical Volume](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob-Trainning/Linux-Volume/Logical-Volume-Manager.md#2-restore-logical-volume)
 
-[2. Restore Logical Volume](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob%20Trainning/Logical%20Volume%20Manager.md#2-restore-logical-volume)
+[Phần 4. Tính năng Thin Provisioning Volume](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob-Trainning/Linux-Volume/Logical-Volume-Manager.md#ph%E1%BA%A7n-4-t%C3%ADnh-n%C4%83ng-thin-provisioning-volume)
 
-[Phần 4. Tính năng Thin Provisioning Volume](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob%20Trainning/Logical%20Volume%20Manager.md#ph%E1%BA%A7n-4-t%C3%ADnh-n%C4%83ng-thin-provisioning-volume)
+- [1. Setup Thin Pool và Volume](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob-Trainning/Linux-Volume/Logical-Volume-Manager.md#1-setup-thin-pool-v%C3%A0-volume)
 
-[1. Setup Thin Pool và Volume](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob%20Trainning/Logical%20Volume%20Manager.md#1-setup-thin-pool-v%C3%A0-volume)
+  - [1.1. Tạo một Thin Pool](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob-Trainning/Linux-Volume/Logical-Volume-Manager.md#11-t%E1%BA%A1o-m%E1%BB%99t-thin-pool)
 
-  - [1.1. Tạo một Thin Pool](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob%20Trainning/Logical%20Volume%20Manager.md#11-t%E1%BA%A1o-m%E1%BB%99t-thin-pool)
+  - [1.2. Tạo Thin Volume](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob-Trainning/Linux-Volume/Logical-Volume-Manager.md#12-t%E1%BA%A1o-thin-volume)
 
-  - [1.2. Tạo Thin Volume](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob%20Trainning/Logical%20Volume%20Manager.md#12-t%E1%BA%A1o-thin-volume)
+- [3. Tạo file system](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob-Trainning/Linux-Volume/Logical-Volume-Manager.md#3-t%E1%BA%A1o-file-system)
 
-[3. Tạo file system](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob%20Trainning/Logical%20Volume%20Manager.md#3-t%E1%BA%A1o-file-system)
-
+[Tài liệu tham khảo](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob-Trainning/Linux-Volume/Logical-Volume-Manager.md#t%C3%A0i-li%E1%BB%87u-tham-kh%E1%BA%A3o)
 
 ## Phần 1. Giới thiệu về LVM
 
