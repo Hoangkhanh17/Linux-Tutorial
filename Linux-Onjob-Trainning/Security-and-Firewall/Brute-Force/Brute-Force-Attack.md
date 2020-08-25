@@ -12,6 +12,8 @@
 
 [Phần 2. Brute Force Password](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob-Trainning/Security-and-Firewall/Brute-Force/Brute-Force-Attack.md#ph%E1%BA%A7n-2-brute-force-password)
 
+[Tài liệu tham khảo](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob-Trainning/Security-and-Firewall/Brute-Force/Brute-Force-Attack.md#t%C3%A0i-li%E1%BB%87u-tham-kh%E1%BA%A3o)
+
 ## Phần 1. Giới thiệu về Brute Force Password
 
 ### 1. Brute Force là gì ?
