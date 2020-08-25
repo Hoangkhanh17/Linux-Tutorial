@@ -2,6 +2,14 @@
 
 ## Mục lục
 
+[1. TCP Wrappers là gì ?](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob-Trainning/Security-and-Firewall/TCP-Wrappers.md#1-tcp-wrappers-l%C3%A0-g%C3%AC-)
+
+[2.Cách cài đặt TCP Wrappers](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob-Trainning/Security-and-Firewall/TCP-Wrappers.md#2c%C3%A1ch-c%C3%A0i-%C4%91%E1%BA%B7t-tcp-wrappers)
+
+- [2.1. Cách tiếp cận được đề xuất để bảo mật máy chủ](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob-Trainning/Security-and-Firewall/TCP-Wrappers.md#21-c%C3%A1ch-ti%E1%BA%BFp-c%E1%BA%ADn-%C4%91%C6%B0%E1%BB%A3c-%C4%91%E1%BB%81-xu%E1%BA%A5t-%C4%91%E1%BB%83-b%E1%BA%A3o-m%E1%BA%ADt-m%C3%A1y-ch%E1%BB%A7)
+
+[Tài liệu tham khảo](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob-Trainning/Security-and-Firewall/TCP-Wrappers.md#t%C3%A0i-li%E1%BB%87u-tham-kh%E1%BA%A3o)
+
 ## 1. TCP Wrappers là gì ?
 
 TCP Wrappers xuất hiện vào những năm 1990 trên các máy trạm Unix để bảo khỏi các cuộc tấn công mạng. TCP Wrappers là danh sách kiểm soát truy cập **Access list Control (ACL)**. Nó cho phép bạn từ chối và cho phép các kết nối dựa trên các đặc điểm của yêu cầu kết nối như địa chỉ IP hoặc tên máy chủ.
