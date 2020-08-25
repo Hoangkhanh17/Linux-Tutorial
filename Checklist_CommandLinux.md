@@ -64,7 +64,7 @@ Trong đó:
 
 - `uniq -c`: Báo cáo các dòng lặp lại để tổng hợp IP truy cập nhiều.
 
-- `sort -nr`: Sắp xếp theo thứ tự từ lớn đến bé kết quả.
+- `sort -nr`: Kết quả khi in ra sẽ được sắp xếp theo thứ tự từ lớn đến bé.
 
 - `head -n 10`: Hiển thị ra 10 dòng đầu tiên theo bộ lọc.
 
