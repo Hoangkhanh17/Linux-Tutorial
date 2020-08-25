@@ -2,17 +2,17 @@
 
 ## Mục Lục
 
-[1. Công nghệ ảo hóa KVM](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob%20Trainning/Kernel%20Virtualization%20Machine.md#1-c%C3%B4ng-ngh%E1%BB%87-%E1%BA%A3o-h%C3%B3a-kvm)
+[1. Công nghệ ảo hóa KVM](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob-Trainning/Kernel-Virtualization-Machine/Kernel-Virtualization-Machine.md#1-c%C3%B4ng-ngh%E1%BB%87-%E1%BA%A3o-h%C3%B3a-kvm)
 
-[2. Cách thức hoạt động của KVM](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob%20Trainning/Kernel%20Virtualization%20Machine.md#2-c%C3%A1ch-th%E1%BB%A9c-ho%E1%BA%A1t-%C4%91%E1%BB%99ng-c%E1%BB%A7a-kvm)
+[2. Cách thức hoạt động của KVM](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob-Trainning/Kernel-Virtualization-Machine/Kernel-Virtualization-Machine.md#2-c%C3%A1ch-th%E1%BB%A9c-ho%E1%BA%A1t-%C4%91%E1%BB%99ng-c%E1%BB%A7a-kvm)
 
-[3. Ưu điểm và nhược điểm của KVM](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob%20Trainning/Kernel%20Virtualization%20Machine.md#3-%C6%B0u-%C4%91i%E1%BB%83m-v%C3%A0-nh%C6%B0%E1%BB%A3c-%C4%91i%E1%BB%83m-c%E1%BB%A7a-kvm)
+[3. Ưu điểm và nhược điểm của KVM](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob-Trainning/Kernel-Virtualization-Machine/Kernel-Virtualization-Machine.md#3-%C6%B0u-%C4%91i%E1%BB%83m-v%C3%A0-nh%C6%B0%E1%BB%A3c-%C4%91i%E1%BB%83m-c%E1%BB%A7a-kvm)
 
-- [a) Ưu điểm](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob%20Trainning/Kernel%20Virtualization%20Machine.md#a-%C6%B0u-%C4%91i%E1%BB%83m)
+- [a) Ưu điểm](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob-Trainning/Kernel-Virtualization-Machine/Kernel-Virtualization-Machine.md#a-%C6%B0u-%C4%91i%E1%BB%83m)
 
-- [b) Nhược điểm](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob%20Trainning/Kernel%20Virtualization%20Machine.md#b-nh%C6%B0%E1%BB%A3c-%C4%91i%E1%BB%83m)
+- [b) Nhược điểm](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob-Trainning/Kernel-Virtualization-Machine/Kernel-Virtualization-Machine.md#b-nh%C6%B0%E1%BB%A3c-%C4%91i%E1%BB%83m)
 
-[Tài liệu tham khảo](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob%20Trainning/Kernel%20Virtualization%20Machine.md#t%C3%A0i-li%E1%BB%87u-tham-kh%E1%BA%A3o)
+[Tài liệu tham khảo](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob-Trainning/Kernel-Virtualization-Machine/Kernel-Virtualization-Machine.md#t%C3%A0i-li%E1%BB%87u-tham-kh%E1%BA%A3o)
 
 ## 1. Công nghệ ảo hóa KVM
 
