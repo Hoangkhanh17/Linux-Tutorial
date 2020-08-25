@@ -2,21 +2,21 @@
 
 ## Mục Lục
 
-[Phần 1. Cấu hình và cài đặt Github](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/GitHub%20Tutorial.md#ph%E1%BA%A7n-1-c%E1%BA%A5u-h%C3%ACnh-v%C3%A0-c%C3%A0i-%C4%91%E1%BA%B7t-github)
+[Phần 1. Cấu hình và cài đặt Github](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/GitHub-Tutorial.md#ph%E1%BA%A7n-1-c%E1%BA%A5u-h%C3%ACnh-v%C3%A0-c%C3%A0i-%C4%91%E1%BA%B7t-github)
 
-- [1. Nguyên tắc hoạt động](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/GitHub%20Tutorial.md#1-nguy%C3%AAn-t%E1%BA%AFc-ho%E1%BA%A1t-%C4%91%E1%BB%99ng)
+- [1. Nguyên tắc hoạt động](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/GitHub-Tutorial.md#1-nguy%C3%AAn-t%E1%BA%AFc-ho%E1%BA%A1t-%C4%91%E1%BB%99ng)
 
-- [2. Đăng ký tài khoản GitHub](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/GitHub%20Tutorial.md#2-%C4%91%C4%83ng-k%C3%BD-t%C3%A0i-kho%E1%BA%A3n-github)
+- [2. Đăng ký tài khoản GitHub](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/GitHub-Tutorial.md#2-%C4%91%C4%83ng-k%C3%BD-t%C3%A0i-kho%E1%BA%A3n-github)
 
-- [3. Tạo một Repository trên GitHub](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/GitHub%20Tutorial.md#3-t%E1%BA%A1o-m%E1%BB%99t-repository-tr%C3%AAn-github)
+- [3. Tạo một Repository trên GitHub](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/GitHub-Tutorial.md#3-t%E1%BA%A1o-m%E1%BB%99t-repository-tr%C3%AAn-github)
 
-- [4. Cài đặt GitHub Desktop](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/GitHub%20Tutorial.md#4-c%C3%A0i-%C4%91%E1%BA%B7t-github-desktop)
+- [4. Cài đặt GitHub Desktop](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/GitHub-Tutorial.md#4-c%C3%A0i-%C4%91%E1%BA%B7t-github-desktop)
 
-[Phần 2. Tích hợp GitHub với Visual Studio](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/GitHub%20Tutorial.md#ph%E1%BA%A7n-2-t%C3%ADch-h%E1%BB%A3p-github-v%E1%BB%9Bi-visual-studio)
+[Phần 2. Tích hợp GitHub với Visual Studio](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/GitHub-Tutorial.md#ph%E1%BA%A7n-2-t%C3%ADch-h%E1%BB%A3p-github-v%E1%BB%9Bi-visual-studio)
 
-- [1. Cài đặt Visual Studio Code](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/GitHub%20Tutorial.md#1-c%C3%A0i-%C4%91%E1%BA%B7t-visual-studio-code)
+- [1. Cài đặt Visual Studio Code](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/GitHub-Tutorial.md#1-c%C3%A0i-%C4%91%E1%BA%B7t-visual-studio-code)
 
-- [2. Tích hợp Visual Studio Code với GitHub](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/GitHub%20Tutorial.md#2-t%C3%ADch-h%E1%BB%A3p-visual-studio-code-v%E1%BB%9Bi-github)
+- [2. Tích hợp Visual Studio Code với GitHub](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/GitHub-Tutorial.md#2-t%C3%ADch-h%E1%BB%A3p-visual-studio-code-v%E1%BB%9Bi-github)
 
 
 ## Phần 1. Cấu hình và cài đặt Github
