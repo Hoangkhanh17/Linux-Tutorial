@@ -179,6 +179,10 @@ sudo sed -i 's|#PubkeyAuthentication yes|PubkeyAuthentication yes|' /etc/ssh/ssh
 
 <img src="https://imgur.com/dNXtNnM.png">
 
+## Kết luận
+
+Việc đổi `port SSH` sẽ tăng tính bảo mật lên so với `port 22` thông thường. Tuy nhiên, hiện nay có rất nhiều cách thức để truy cập vào hệ thống. Chúng ta vẫn nên sử dụng những mật khẩu có độ phức tạp cao cũng như sử dụng các tường lửa để tăng thêm tính bảo mật cho hệ thống.
+
 ## Tài liệu tham khảo
 
 https://news.cloud365.vn/ssh-phan1-huong-dan-tao-user-sudo-va-cau-hinh-disable-ssh-doi-voi-user-root/
