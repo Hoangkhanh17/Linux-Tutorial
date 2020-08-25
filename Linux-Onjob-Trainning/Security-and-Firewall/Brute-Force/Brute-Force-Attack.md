@@ -2,15 +2,15 @@
 
 ## Mục lục
 
-[Phần 1. Giới thiệu về Brute Force Password](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob%20Trainning/Security%20and%20Firewall/Brute%20Force/Brute%20Force%20Attack.md#ph%E1%BA%A7n-1-gi%E1%BB%9Bi-thi%E1%BB%87u-v%E1%BB%81-brute-force-password)
+[Phần 1. Giới thiệu về Brute Force Password](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob-Trainning/Security-and-Firewall/Brute-Force/Brute-Force-Attack.md#ph%E1%BA%A7n-1-gi%E1%BB%9Bi-thi%E1%BB%87u-v%E1%BB%81-brute-force-password)
 
-- [1. Brute Force là gì ?](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob%20Trainning/Security%20and%20Firewall/Brute%20Force/Brute%20Force%20Attack.md#1-brute-force-l%C3%A0-g%C3%AC-)
+- [1. Brute Force là gì ?](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob-Trainning/Security-and-Firewall/Brute-Force/Brute-Force-Attack.md#1-brute-force-l%C3%A0-g%C3%AC-)
 
-- [2. Khả năng của Brute Force](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob%20Trainning/Security%20and%20Firewall/Brute%20Force/Brute%20Force%20Attack.md#2-kh%E1%BA%A3-n%C4%83ng-c%E1%BB%A7a-brute-force)
+- [2. Khả năng của Brute Force](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob-Trainning/Security-and-Firewall/Brute-Force/Brute-Force-Attack.md#2-kh%E1%BA%A3-n%C4%83ng-c%E1%BB%A7a-brute-force)
 
-- [3. Cách phòng chống Brute Force Attack](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob%20Trainning/Security%20and%20Firewall/Brute%20Force/Brute%20Force%20Attack.md#3-c%C3%A1ch-ph%C3%B2ng-ch%E1%BB%91ng-brute-force-attack)
+- [3. Cách phòng chống Brute Force Attack](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob-Trainning/Security-and-Firewall/Brute-Force/Brute-Force-Attack.md#3-c%C3%A1ch-ph%C3%B2ng-ch%E1%BB%91ng-brute-force-attack)
 
-[Phần 2. Brute Force Password](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob%20Trainning/Security%20and%20Firewall/Brute%20Force/Brute%20Force%20Attack.md#ph%E1%BA%A7n-2-brute-force-password)
+[Phần 2. Brute Force Password](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob-Trainning/Security-and-Firewall/Brute-Force/Brute-Force-Attack.md#ph%E1%BA%A7n-2-brute-force-password)
 
 ## Phần 1. Giới thiệu về Brute Force Password
 
