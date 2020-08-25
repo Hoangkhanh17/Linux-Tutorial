@@ -2,13 +2,13 @@
 
 ## Mục lục
 
-[1. Log trên nginx](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob%20Trainning/Nginx/Nginx%20Log.md#1-log-tr%C3%AAn-nginx)
+[1. Log trên nginx](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob-Trainning/Nginx/Nginx-Log.md#1-log-tr%C3%AAn-nginx)
 
-[2. Access Log](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob%20Trainning/Nginx/Nginx%20Log.md#2-access-log)
+[2. Access Log](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob-Trainning/Nginx/Nginx-Log.md#2-access-log)
 
 [3. Error log](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob%20Trainning/Nginx/Nginx%20Log.md#3-error-log)
 
-[Tài liệu tham khảo](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob%20Trainning/Nginx/Nginx%20Log.md#t%C3%A0i-li%E1%BB%87u-tham-kh%E1%BA%A3o)
+[Tài liệu tham khảo](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob-Trainning/Nginx/Nginx-Log.md#3-error-log)
 
 ## 1. Log trên nginx
 
