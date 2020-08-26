@@ -4,7 +4,7 @@
 
 
 
-## 1. Giới thiêu
+## 1. Giới thiệu về PhpMyAdmin
 
 - PhpMyAdmin là công cụ miễn phí (free tool) quản trị MySQL bằng giao diện GUI. Cài đặt phpMyAdmin được thực hiện sau khi đã cài đặt Apache, MySQL và PHP. Việc quản lý MariaDB bằng dòng lệnh khó khăn đối với bạn, thì việc cài đặt phpMyAdmin sẽ giúp bạn giải quyết vấn đền này một cách trực quan, thuận tiện với giao diện web.
 
