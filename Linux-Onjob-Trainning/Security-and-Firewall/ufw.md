@@ -2,6 +2,22 @@
 
 ## Mục lục
 
+[1. Giới thiếu về UFW](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob-Trainning/Security-and-Firewall/ufw.md#1-gi%E1%BB%9Bi-thi%E1%BA%BFu-v%E1%BB%81-ufw)
+
+[2. Cấu hình Ubuntu Firewall với UFW](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob-Trainning/Security-and-Firewall/ufw.md#2-c%E1%BA%A5u-h%C3%ACnh-ubuntu-firewall-v%E1%BB%9Bi-ufw)
+
+[3. Thiết lập UFW](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob-Trainning/Security-and-Firewall/ufw.md#3-thi%E1%BA%BFt-l%E1%BA%ADp-ufw)
+
+- [3.1. Mở và đóng port bằng UFW](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob-Trainning/Security-and-Firewall/ufw.md#31-m%E1%BB%9F-v%C3%A0-%C4%91%C3%B3ng-port-b%E1%BA%B1ng-ufw)
+
+- [3.2. Làm việc với dịch vụ trên UFW](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob-Trainning/Security-and-Firewall/ufw.md#32-l%C3%A0m-vi%E1%BB%87c-v%E1%BB%9Bi-d%E1%BB%8Bch-v%E1%BB%A5-tr%C3%AAn-ufw)
+
+- [3.3. Chặn hoặc cho phép địa chỉ IP](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob-Trainning/Security-and-Firewall/ufw.md#33-ch%E1%BA%B7n-ho%E1%BA%B7c-cho-ph%C3%A9p-%C4%91%E1%BB%8Ba-ch%E1%BB%89-ip)
+
+- [3.4. Xóa một rule nhất định trên UFW](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob-Trainning/Security-and-Firewall/ufw.md#34-x%C3%B3a-m%E1%BB%99t-rule-nh%E1%BA%A5t-%C4%91%E1%BB%8Bnh-tr%C3%AAn-ufw)
+
+[Tài liệu tham khảo](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob-Trainning/Security-and-Firewall/ufw.md#t%C3%A0i-li%E1%BB%87u-tham-kh%E1%BA%A3o)
+
 ## 1. Giới thiếu về UFW
 
 Firewall của máy lá tính có thể là phần cứng hay phần mềm quản lý inbound và outbound traffic (dữ liệu truyền đưa). Nó là một yếu tố bảo mật máy tính.
