@@ -1,5 +1,13 @@
 # Cài đặt MySQL-MariaDB và PHP với phiên bản mong muốn
 
+## Mục lục
+
+[1. Cài đặt chỉ định phiên bản MySQL](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Install-MySQL-MariaDB-PHP-with-version.md#1-c%C3%A0i-%C4%91%E1%BA%B7t-ch%E1%BB%89-%C4%91%E1%BB%8Bnh-phi%C3%AAn-b%E1%BA%A3n-mysql)
+
+[2. Cài đặt chỉ định phiên bản MariaDB](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Install-MySQL-MariaDB-PHP-with-version.md#2-c%C3%A0i-%C4%91%E1%BA%B7t-ch%E1%BB%89-%C4%91%E1%BB%8Bnh-phi%C3%AAn-b%E1%BA%A3n-mariadb)
+
+[3. Cài đặt chỉ định phiên bản PHP]
+
 ## 1. Cài đặt chỉ định phiên bản MySQL
 
 Để cài đặt phiên bản MySQL mà ta mong muốn, trước tiên ta phải kích hoạt kho lưu trữ (Repository) đúng với phiên bản mà ta muốn
@@ -50,7 +58,7 @@ Lúc này chúng ta đã chỉ định phiên bản cài đặt cho MariaDB, ta 
 
 `yum -y install MariaDB-server MariaDB-client`
 
-## 3. Cài đặt phiên bản chỉ định PHP
+## 3. Cài đặt chỉ định phiên bản PHP
 
 Trong kho phần mềm chính thức của CentOS 7 thì PHP 5.4 đã cũ và không còn được các nhà phát triển hỗ trợ, duy trì và cập nhật bản vá lỗi.
 
