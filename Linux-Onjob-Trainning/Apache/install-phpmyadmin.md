@@ -2,7 +2,11 @@
 
 ## Mục lục
 
+[1. Giới thiệu về PhpMyAdmin](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob-Trainning/Apache/install-phpmyadmin.md#1-gi%E1%BB%9Bi-thi%E1%BB%87u-v%E1%BB%81-phpmyadmin)
 
+[2. Cài đặt](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob-Trainning/Apache/install-phpmyadmin.md#2-c%C3%A0i-%C4%91%E1%BA%B7t)
+
+[Tài liệu tham khảo](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob-Trainning/Apache/install-phpmyadmin.md#t%C3%A0i-li%E1%BB%87u-tham-kh%E1%BA%A3o)
 
 ## 1. Giới thiệu về PhpMyAdmin
 
