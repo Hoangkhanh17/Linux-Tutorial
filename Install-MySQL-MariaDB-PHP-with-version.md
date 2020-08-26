@@ -6,7 +6,7 @@
 
 [2. Cài đặt chỉ định phiên bản MariaDB](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Install-MySQL-MariaDB-PHP-with-version.md#2-c%C3%A0i-%C4%91%E1%BA%B7t-ch%E1%BB%89-%C4%91%E1%BB%8Bnh-phi%C3%AAn-b%E1%BA%A3n-mariadb)
 
-[3. Cài đặt chỉ định phiên bản PHP]
+[3. Cài đặt chỉ định phiên bản PHP](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Install-MySQL-MariaDB-PHP-with-version.md#3-c%C3%A0i-%C4%91%E1%BA%B7t-ch%E1%BB%89-%C4%91%E1%BB%8Bnh-phi%C3%AAn-b%E1%BA%A3n-php)
 
 ## 1. Cài đặt chỉ định phiên bản MySQL
 
