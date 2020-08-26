@@ -58,9 +58,11 @@ Kết quả nhận được:
 
 <img src="https://imgur.com/03sAUKM.png">
 
-**Cách 3**: Gửi cảnh báo sử dụng `jq` 
+**Cách 3**: Gửi cảnh báo sử dụng `jq`
 
-jq là một ứng dụng để  đọc thông tin file JSON trên linux. Để tìm hiểu ta có thể truy cập [tại đây](https://stedolan.github.io/jq/)
+Với 2 cách trên, ta chỉ sử dụng để kiểm tra gửi cảnh báo về Telegram. Để thực hiện việc thông báo về đăng nhập SSH tới Telegram. Ta phải sử dụng script gửi cảnh báo để tự động hóa. Ở đây ta sẽ sử dụng ứng dụng `jq`
+
+`jq` là một ứng dụng để  đọc thông tin file JSON trên linux. Để tìm hiểu ta có thể truy cập [tại đây](https://stedolan.github.io/jq/)
 
 - Cài đặt jq:
 
