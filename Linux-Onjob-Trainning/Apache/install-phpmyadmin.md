@@ -34,7 +34,7 @@
         
 `#Require ip ::1`
     
-Và thêm dòng ` Require all granted ` như hình :
+Và thêm dòng ` Require all granted ` như hình:
 
 <img src="https://imgur.com/I5WbVTH.png">
 
