@@ -1,5 +1,17 @@
 # Cấu hình gửi report tới Telegram khi có truy cập SSH
 
+## Mục lục
+
+[1. Tạo một Telegram bot](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob-Trainning/Security-and-Firewall/SSH-Configuration/Report-SSH-Telegram.md#1-t%E1%BA%A1o-m%E1%BB%99t-telegram-bot)
+
+- [Bước 1: Tạo 1 Telegram bot](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob-Trainning/Security-and-Firewall/SSH-Configuration/Report-SSH-Telegram.md#b%C6%B0%E1%BB%9Bc-1-t%E1%BA%A1o-1-telegram-bot)
+
+- [Bước 2: Thêm bot vào group](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob-Trainning/Security-and-Firewall/SSH-Configuration/Report-SSH-Telegram.md#b%C6%B0%E1%BB%9Bc-2-th%C3%AAm-bot-v%C3%A0o-group)
+
+- [Bước 3: Lấy chat_id](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob-Trainning/Security-and-Firewall/SSH-Configuration/Report-SSH-Telegram.md#b%C6%B0%E1%BB%9Bc-3-l%E1%BA%A5y-chat_id)
+
+- [Bước 4: Kiểm tra cảnh báo tới Telegram qua API](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob-Trainning/Security-and-Firewall/SSH-Configuration/Report-SSH-Telegram.md#b%C6%B0%E1%BB%9Bc-3-l%E1%BA%A5y-chat_id)
+
 ## 1. Tạo một Telegram bot
 
 ### Bước 1: Tạo 1 Telegram bot
@@ -58,7 +70,7 @@ Kết quả nhận được:
 
 <img src="https://imgur.com/03sAUKM.png">
 
-**Cách 3**: Gửi cảnh báo sử dụng `jq`
+## 2. Gửi cảnh báo sử dụng `jq`
 
 Với 2 cách trên, ta chỉ sử dụng để kiểm tra gửi cảnh báo về Telegram. Để thực hiện việc thông báo về đăng nhập SSH tới Telegram. Ta phải sử dụng script gửi cảnh báo để tự động hóa. Ở đây ta sẽ sử dụng ứng dụng `jq`
 
@@ -136,3 +148,7 @@ Trong đó, ta chỉ cần điền `chat_id` và `TOKEN` mà ta nhận được 
 <img src="https://imgur.com/sAnAGwB.png">
 
 Cảnh báo được gửi về ngay sau khi đăng nhập SSH.
+
+## Tài liệu tham khảo
+
+https://dotrungquan.info/huong-dan-tao-bot-giam-sat-truy-cap-ssh-thong-qua-ung-dung-telegram/
