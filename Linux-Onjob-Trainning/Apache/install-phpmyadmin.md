@@ -46,6 +46,6 @@ Và thêm dòng ` Require all granted ` như hình:
 
 Nếu bạn đăng nhập địa chỉ và trình duyệt hiển thị như hình thì bạn đã cài đặt thành công PhpMyAdmin
 
-## Nguồn tham khảo
+## Tài liệu tham khảo
 
 https://tuanvd.com/huong-dan-cai-dat-phpmyadmin-tren-centos-7/
