@@ -12,6 +12,10 @@
 
 - [Bước 4: Kiểm tra cảnh báo tới Telegram qua API](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob-Trainning/Security-and-Firewall/SSH-Configuration/Report-SSH-Telegram.md#b%C6%B0%E1%BB%9Bc-3-l%E1%BA%A5y-chat_id)
 
+[2. Gửi cảnh báo sử dụng jq](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob-Trainning/Security-and-Firewall/SSH-Configuration/Report-SSH-Telegram.md#2-g%E1%BB%ADi-c%E1%BA%A3nh-b%C3%A1o-s%E1%BB%AD-d%E1%BB%A5ng-jq)
+
+[Tài liệu tham khảo](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob-Trainning/Security-and-Firewall/SSH-Configuration/Report-SSH-Telegram.md#t%C3%A0i-li%E1%BB%87u-tham-kh%E1%BA%A3o)
+
 ## 1. Tạo một Telegram bot
 
 ### Bước 1: Tạo 1 Telegram bot
@@ -152,3 +156,5 @@ Cảnh báo được gửi về ngay sau khi đăng nhập SSH.
 ## Tài liệu tham khảo
 
 https://dotrungquan.info/huong-dan-tao-bot-giam-sat-truy-cap-ssh-thong-qua-ung-dung-telegram/
+
+https://blog.cloud365.vn/linux/tao-canh-bao-su-dung-telegram-python/
