@@ -129,4 +129,8 @@ Trong đó, ta chỉ cần điền `chat_id` và `TOKEN` mà ta nhận được 
 
 <img src="https://imgur.com/G8aD8az.png">
 
+- Kiểm tra đăng nhập bằng SSH qua một máy khác:
+
+<img src="https://imgur.com/sAnAGwB.png">
+
 Cảnh báo được gửi về ngay sau khi đăng nhập SSH.
