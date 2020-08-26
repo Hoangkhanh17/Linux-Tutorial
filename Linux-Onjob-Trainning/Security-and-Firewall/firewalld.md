@@ -228,3 +228,11 @@ firewall-cmd --zone=public --remove-port=9999/tcp
 
 firewall-cmd --zone=public --remove-port=9999/tcp --permanent
 ```
+
+## Tài liệu tham khảo
+
+https://lcdung.top/gioi-thieu-va-huong-dan-ve-firewalld-tren-centos-7/
+
+https://hocvps.com/firewalld-centos-7/
+
+https://vicloud.vn/community/cach-thiet-lap-firewall-su-dung-firewalld-tren-centos-7-466.html
