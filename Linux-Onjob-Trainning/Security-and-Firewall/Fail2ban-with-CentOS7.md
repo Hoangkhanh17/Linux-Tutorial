@@ -136,6 +136,67 @@ RETURN     all  --  anywhere             anywhere
 
 Trong đó `Chain f2b-SSH` là rules của Fail2ban, mặc định ban 3 IP của Trung Quốc và cho phép các IP còn lại truy cập.
 
+#### Cấu hình chống DDOS cho Apache
+
+Chúng ta cũng truy cập vào `vi /etc/fail2ban/jail.local` để thêm cấu hình:
+
+```
+# detect password authentication failures
+[apache]
+enabled  = true
+filter   = apache-auth
+port     = http,https
+action   = iptables-multiport[name=auth, port="http,https"]
+logpath  = /var/log/secure
+bantime  = 3600
+maxretry = 10
+ignoreip = 117.5.255.125 42.115.206.150 127.0.0.1
+
+# detect spammer robots crawling email addresses
+[apache-badbots]
+enabled  = true
+filter   = apache-badbots
+port     = http,https
+action   = iptables-multiport[name=badbots, port="http,https"]
+logpath  = /var/log/secure
+bantime  = 3600
+maxretry = 10
+ignoreip = 117.5.255.125 42.115.206.150 127.0.0.1
+
+# detect potential search for exploits
+[apache-noscript]
+enabled  = true
+filter   = apache-noscript
+port     = http,https
+action   = iptables-multiport[name=noscript, port="http,https"]
+logpath  = /var/log/secure
+bantime  = 3600
+maxretry = 10
+ignoreip = 117.5.255.125 42.115.206.150 127.0.0.1
+
+# detect Apache overflow attempts
+[apache-overflows]
+enabled  = true
+filter   = apache-overflows
+port     = http,https
+action   = iptables-multiport[name=overflows, port="http,https"]
+logpath  = /var/log/secure
+bantime  = 3600
+maxretry = 10
+ignoreip = 117.5.255.125 42.115.206.150 127.0.0.1
+
+##To stop DOS attack from remote host
+[http-get-dos]
+enabled  = true
+port     = http,https
+filter   = http-get-dos
+logpath  = /var/log/secure
+maxretry = 10
+bantime  = 3600
+ignoreip = 117.5.255.125 42.115.206.150 127.0.0.1
+action   = iptables[name=HTTP, port=http, protocol=tcp
+```
+
 ## 3. Giám sát cấu hình firewall và log fail2ban
 
 - Kiểm tra trạng thái dịch vụ
