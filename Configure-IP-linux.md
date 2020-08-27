@@ -204,3 +204,13 @@ network:
 - Bước 3: Xác nhận thay đổi cấu hình
 
 `sudo netplan apply`
+
+### 3.2. Cấu hình Static IP bằng lệnh
+
+Sử dụng lệnh `nmcli` để cấu hình Static IP cho Ubuntu 18.04.
+
+- Trước tiên, ta phải cài đặt một gói Network-manager để sử dụng được lệnh `nmcli`:
+
+`sudo apt install network-manager`
+
+- Các bước tiếp theo cũng tương tự như việc cấu hình bằng lệnh `nmcli` trên CentOS 7 và CentOS 8.
