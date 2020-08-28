@@ -4,6 +4,12 @@ Mặc định trong Apache sẽ có một file tên là `.htaccess`. File `.htac
 
 Nếu như trong Apache không có sẵn `.htaccess` ta cũng có thể tạo một file
 
+Trước khi bắt đầu, ta phải cho phép Apache đọc file `.htaccess`. Truy cập vào file:
+
+`vi /etc/httpd/conf/httpd.conf`
+
+Tìm đến đoạn cấu hình cho thư mục `/var/www/html` và thay đổi cấu hình `AllowOverride None` thành `AllowOverride All`.
+
 ## 1. Cấu hình từ non-www sang www
 
 ```
@@ -49,3 +55,11 @@ X-Redirect-By: WordPress
 Location: http://quanganh.abc/
 Content-Type: text/html; charset=UTF-8
 ```
+
+### Chúc các bạn thành công !
+
+## Tài liệu tham khảo
+
+https://hostpresto.com/community/tutorials/how-to-use-htaccess-with-apache/
+
+https://www.bkns.vn/huong-dan-chuyen-doi-non-www-sang-www-va-nguoc-lai.html
