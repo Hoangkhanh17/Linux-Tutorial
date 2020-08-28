@@ -1,4 +1,4 @@
-# Reset Password Root CentOS 7
+# Reset Password Root Linux
 
 ## Các bước thực hiện
 
