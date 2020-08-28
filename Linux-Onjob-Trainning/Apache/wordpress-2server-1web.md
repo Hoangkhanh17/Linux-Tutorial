@@ -10,7 +10,13 @@
 
 - Một máy chạy CentOS 7 cài đặt MariaDB làm Máy chủ Database: Địa chỉ IP 192.168.20.132.
 
-- Ta nên tắt Firewall hoặc mở port để kết nối 2 máy chủ với nhau.
+### Cấu hình máy chủ
+
+<img src="https://imgur.com/25oYDt7.png">
+
+### Mô hình mạng
+
+<img src="https://imgur.com/iy7li4M.png">
 
 ## 1. Cài đặt MariaDB cho DB Server
 
