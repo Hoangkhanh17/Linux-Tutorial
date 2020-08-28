@@ -2,13 +2,13 @@
 
 ## Các bước thực hiện
 
-[Bước 1: Khởi động lại hệ thống](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob-Trainning/SingleMode-Linux/ResetPassword-Linux-CentOS%207.md#b%C6%B0%E1%BB%9Bc-1-kh%E1%BB%9Fi-%C4%91%E1%BB%99ng-l%E1%BA%A1i-h%E1%BB%87-th%E1%BB%91ng)
+[Bước 1: Khởi động lại hệ thống](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob-Trainning/SingleMode-Linux/ResetPassword-Linux.md#b%C6%B0%E1%BB%9Bc-1-kh%E1%BB%9Fi-%C4%91%E1%BB%99ng-l%E1%BA%A1i-h%E1%BB%87-th%E1%BB%91ng)
 
-[Bước 2: Chỉnh sửa các thông số cần thiết](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob-Trainning/SingleMode-Linux/ResetPassword-Linux-CentOS%207.md#b%C6%B0%E1%BB%9Bc-2-ch%E1%BB%89nh-s%E1%BB%ADa-c%C3%A1c-th%C3%B4ng-s%E1%BB%91-c%E1%BA%A7n-thi%E1%BA%BFt)
+[Bước 2: Chỉnh sửa các thông số cần thiết](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob-Trainning/SingleMode-Linux/ResetPassword-Linux.md#b%C6%B0%E1%BB%9Bc-2-ch%E1%BB%89nh-s%E1%BB%ADa-c%C3%A1c-th%C3%B4ng-s%E1%BB%91-c%E1%BA%A7n-thi%E1%BA%BFt)
 
-[Bước 3: Remount filesystem và chuyển chế độ chroot](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob-Trainning/SingleMode-Linux/ResetPassword-Linux-CentOS%207.md#b%C6%B0%E1%BB%9Bc-3-remount-filesystem-v%C3%A0-chuy%E1%BB%83n-ch%E1%BA%BF-%C4%91%E1%BB%99-chroot)
+[Bước 3: Remount filesystem và chuyển chế độ chroot](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob-Trainning/SingleMode-Linux/ResetPassword-Linux.md#b%C6%B0%E1%BB%9Bc-3-remount-filesystem-v%C3%A0-chuy%E1%BB%83n-ch%E1%BA%BF-%C4%91%E1%BB%99-chroot)
 
-[Tài liệu tham khảo thêm](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob-Trainning/SingleMode-Linux/ResetPassword-Linux-CentOS%207.md#t%C3%A0i-li%E1%BB%87u-tham-kh%E1%BA%A3o)
+[Tài liệu tham khảo](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob-Trainning/SingleMode-Linux/ResetPassword-Linux.md#t%C3%A0i-li%E1%BB%87u-tham-kh%E1%BA%A3o)
 
 ## Tại sao lại phải Reset mật khẩu ?
 
