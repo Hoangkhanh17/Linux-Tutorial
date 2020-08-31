@@ -65,6 +65,8 @@ define('WP_HOME','http://IP or yourdomain');
 define('WP_SITEURL','http://IP or yourdomain');
 ```
 
+Tại đây ta thay đổi URL ứng với tên miền hoặc địa chỉ IP (nếu dựng LAB) của hệ thống mới.
+
 Sau đó lưu lại và khởi động lại httpd:
 
 `systemctl restart httpd`
@@ -72,5 +74,9 @@ Sau đó lưu lại và khởi động lại httpd:
 Kiểm tra lại hoạt động của WordPress thành công:
 
 <img src="https://imgur.com/0u56v3d.png">
+
+### Lưu ý
+
+Nếu sử dụng trên môi trường thật ta cần phải trỏ tên miền về địa chỉ IP Public của hệ thống mới.
 
 ### Chúc các bạn thành công !
