@@ -68,6 +68,10 @@ Ta sẽ cài đặt các phiên bản PHP 7.
 
 ### Bước 1: Kích hoạt EPEL và Remi repository trên hệ thống
 
+- Cài đặt `yum-utils`
+
+`yum -y install epel-release yum-utils`
+
 - Cài đặt EPEL repository:
 
 `yum -y install https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm`
