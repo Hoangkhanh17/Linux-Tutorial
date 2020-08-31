@@ -8,7 +8,7 @@
 
 - [2.1 Migrate Cơ sở dữ liệu](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob-Trainning/wordpress/manual-backup-wordpress.md#21-migrate-c%C6%A1-s%E1%BB%9F-d%E1%BB%AF-li%E1%BB%87u)
 
-
+- [2.2. Cấu hình WordPress mới](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob-Trainning/wordpress/manual-backup-wordpress.md#22-c%E1%BA%A5u-h%C3%ACnh-wordpress-m%E1%BB%9Bi)
 
 ## 1. Backup Cơ sở dữ liệu
 
