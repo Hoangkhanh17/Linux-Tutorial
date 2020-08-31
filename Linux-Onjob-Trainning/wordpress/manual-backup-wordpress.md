@@ -2,6 +2,14 @@
 
 ## Mục lục
 
+[1. Backup Cơ sở dữ liệu](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob-Trainning/wordpress/manual-backup-wordpress.md#1-backup-c%C6%A1-s%E1%BB%9F-d%E1%BB%AF-li%E1%BB%87u)
+
+[2. Migrate WordPress](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob-Trainning/wordpress/manual-backup-wordpress.md#2-migrate-wordpress)
+
+- [2.1 Migrate Cơ sở dữ liệu](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob-Trainning/wordpress/manual-backup-wordpress.md#21-migrate-c%C6%A1-s%E1%BB%9F-d%E1%BB%AF-li%E1%BB%87u)
+
+
+
 ## 1. Backup Cơ sở dữ liệu
 
 #### Bước 1: Tạo thư mục lưu trữ bản Backup
@@ -40,7 +48,7 @@ Sau khi Restore thành công ta khởi động lại MySQL hoặc MariaDB.
 
 `systemctl restart httpd`
 
-### 2.3. Cấu hình WordPress mới
+### 2.2. Cấu hình WordPress mới
 
 #### Bước 1: Chuyển Source Code của WordPress sang hệ thống mới
 
@@ -64,3 +72,5 @@ Sau đó lưu lại và khởi động lại httpd:
 Kiểm tra lại hoạt động của WordPress thành công:
 
 <img src="https://imgur.com/0u56v3d.png">
+
+### Chúc các bạn thành công !
