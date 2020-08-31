@@ -2,23 +2,17 @@
 
 ## Mục lục
 
-[1. Tạo User được cấp quyền sudo và Tắt tính năng SSH cho User root](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob-Trainning/Security-and-Firewall/SSH-Configuration/Configure-SSH-PrivateKey.md#1-t%E1%BA%A1o-user-%C4%91%C6%B0%E1%BB%A3c-c%E1%BA%A5p-quy%E1%BB%81n-sudo-v%C3%A0-t%E1%BA%AFt-t%C3%ADnh-n%C4%83ng-ssh-cho-user-root)
+[1. Tạo User được cấp quyền sudo và Tắt tính năng SSH cho User root](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob-Trainning/Security-and-Firewall/SSH-Configuration/Configure-SSH-keypair.md#1-t%E1%BA%A1o-user-%C4%91%C6%B0%E1%BB%A3c-c%E1%BA%A5p-quy%E1%BB%81n-sudo-v%C3%A0-t%E1%BA%AFt-t%C3%ADnh-n%C4%83ng-ssh-cho-user-root)
 
-- [1.1. Tạo User với quyền sudo](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob-Trainning/Security-and-Firewall/SSH-Configuration/Configure-SSH-PrivateKey.md#11-t%E1%BA%A1o-user-v%E1%BB%9Bi-quy%E1%BB%81n-sudo)
+- [1.1. Tạo User với quyền sudo](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob-Trainning/Security-and-Firewall/SSH-Configuration/Configure-SSH-keypair.md#11-t%E1%BA%A1o-user-v%E1%BB%9Bi-quy%E1%BB%81n-sudo)
 
-- [1.2. Tắt tính năng SSH cho user root](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob-Trainning/Security-and-Firewall/SSH-Configuration/Configure-SSH-PrivateKey.md#12-t%E1%BA%AFt-t%C3%ADnh-n%C4%83ng-ssh-cho-user-root)
+- [1.2. Tắt tính năng SSH cho user root](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob-Trainning/Security-and-Firewall/SSH-Configuration/Configure-SSH-keypair.md#12-t%E1%BA%AFt-t%C3%ADnh-n%C4%83ng-ssh-cho-user-root)
 
-[2. Tạo khóa SSH key cho user](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob-Trainning/Security-and-Firewall/SSH-Configuration/Configure-SSH-PrivateKey.md#2-t%E1%BA%A1o-kh%C3%B3a-ssh-key-cho-user)
+[2. Tạo khóa SSH key cho user](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob-Trainning/Security-and-Firewall/SSH-Configuration/Configure-SSH-keypair.md#2-t%E1%BA%A1o-kh%C3%B3a-ssh-key-cho-user)
 
-- [2.1. Tạo khóa SSH key](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob-Trainning/Security-and-Firewall/SSH-Configuration/Configure-SSH-PrivateKey.md#21-t%E1%BA%A1o-kh%C3%B3a-ssh-key)
+- [2.1. Tạo khóa SSH Public key](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob-Trainning/Security-and-Firewall/SSH-Configuration/Configure-SSH-keypair.md#21-t%E1%BA%A1o-kh%C3%B3a-ssh-public-key)
 
-- [2.2. Cài đặt SSH cho Client với public key](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob-Trainning/Security-and-Firewall/SSH-Configuration/Configure-SSH-PrivateKey.md#22-c%C3%A0i-%C4%91%E1%BA%B7t-ssh-cho-client-v%E1%BB%9Bi-public-key)
-
-- [2.3. Kiểm tra đăng nhập bằng SSH](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob-Trainning/Security-and-Firewall/SSH-Configuration/Configure-SSH-PrivateKey.md#23-ki%E1%BB%83m-tra-%C4%91%C4%83ng-nh%E1%BA%ADp-b%E1%BA%B1ng-ssh)
-
-[Kết luận](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob-Trainning/Security-and-Firewall/SSH-Configuration/Configure-SSH-PrivateKey.md#k%E1%BA%BFt-lu%E1%BA%ADn)
-
-[Tài liệu tham khảo](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob-Trainning/Security-and-Firewall/SSH-Configuration/Configure-SSH-PrivateKey.md#t%C3%A0i-li%E1%BB%87u-tham-kh%E1%BA%A3o)
+- [2.2. Tạo khóa SSH key cho User được tạo](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob-Trainning/Security-and-Firewall/SSH-Configuration/Configure-SSH-keypair.md#22-t%E1%BA%A1o-kh%C3%B3a-ssh-key-cho-user-%C4%91%C6%B0%E1%BB%A3c-t%E1%BA%A1o)
 
 ## 1. Tạo User được cấp quyền sudo và Tắt tính năng SSH cho User root
 
