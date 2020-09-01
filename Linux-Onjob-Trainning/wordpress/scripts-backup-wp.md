@@ -1,6 +1,6 @@
 # Tạo Scripts Backup Source Code và Database WordPress
 
-Để tạo Scripts Backup cho WordPress, ta nên tạo 2 file Scripts riêng biệt để Backup Source Code riêng và Backup cho Cơ Sở dữ liệu riêng.
+Để tạo Scripts Backup cho WordPress, ta nên tạo 2 file Scripts riêng biệt để Backup Source Code riêng và Backup cho Cơ Sở dữ liệu riêng để dễ dàng quản lý.
 
 Tạo thư mục làm nơi chứa các bản Backup:
 
