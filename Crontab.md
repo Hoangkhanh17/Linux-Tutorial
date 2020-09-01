@@ -79,3 +79,16 @@ Nếu một cột được gán ký tự *, nó có nghĩa là tác vụ sau đ�
 
 `11 08 10 07 * /backups/backup-code/code-backup.sh`
 
+Trong đó:
+
+11 – phút 11
+
+08 – lúc 8 giờ
+
+10 – ngày mùng 10
+
+07 – tháng 07
+
+- Tạo 1 tác vụ thực hiện 2 lần trong một ngày. Ví dụ: Backup dữ liệu 
+
+``
