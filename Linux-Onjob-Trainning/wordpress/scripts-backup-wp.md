@@ -19,12 +19,10 @@ Trong đó `/backup-code` để chứa Backup Source Code cho WordPress, `/backu
 Thêm nội dung dưới vào file vừa tạo:
 
 ```
-#/bin/bash
-
-SRCDIR="/var/www/html/" #Thư mục chứa Source Code
-DESTDIR="/backups/backup-code/" #Thư mục ta sẽ lưu các bản Backup
-FILENAME=wpsourcecode-$(date +%-Y%-m%-d)-$(date +%-T).tgz #Nén bản backup lại để tiết kiệm dung lượng
-tar --create --gzip --file=$DESTDIR$FILENAME $SRCDIR
+SRCDIR="/var/www/html/*"
+DESTDIR="/backups/backup-code/wp/"
+FILENAME=wpcode-$(date +%-Y%-m%-d)-$(date +%-T).tgz
+tar -P --create --gzip --file=$DESTDIR$FILENAME $SRCDIR
 ```
 
 #### Bước 2: Gán quyền thực thi cho tệp Script vừa tạo
