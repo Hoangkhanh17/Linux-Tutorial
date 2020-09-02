@@ -4,13 +4,13 @@
 
 [1. Tạo User được cấp quyền sudo và Tắt tính năng SSH cho User root](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob-Trainning/Security-and-Firewall/SSH-Configuration/Configure-SSH-keypair.md#1-t%E1%BA%A1o-user-%C4%91%C6%B0%E1%BB%A3c-c%E1%BA%A5p-quy%E1%BB%81n-sudo-v%C3%A0-t%E1%BA%AFt-t%C3%ADnh-n%C4%83ng-ssh-cho-user-root)
 
-- [1.1. Tạo User với quyền sudo](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob-Trainning/Security-and-Firewall/SSH-Configuration/Configure-SSH-keypair.md#11-t%E1%BA%A1o-user-v%E1%BB%9Bi-quy%E1%BB%81n-sudo)
+- [1. Tạo User với quyền sudo](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob-Trainning/Security-and-Firewall/SSH-Configuration/Configure-SSH-keypair.md#11-t%E1%BA%A1o-user-v%E1%BB%9Bi-quy%E1%BB%81n-sudo)
 
 - [1.2. Tắt tính năng SSH cho user root](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob-Trainning/Security-and-Firewall/SSH-Configuration/Configure-SSH-keypair.md#12-t%E1%BA%AFt-t%C3%ADnh-n%C4%83ng-ssh-cho-user-root)
 
-## 1. Tạo User được cấp quyền sudo và Tắt tính năng SSH cho User root
+## Tạo User được cấp quyền sudo và Tắt tính năng SSH cho User root
 
-### 1.1. Tạo User với quyền sudo
+### 1. Tạo User với quyền sudo
 
 - Tạo tài khoản có tên là `quanganh`:
 
@@ -32,7 +32,7 @@ wheel:x:10:quanganh
 quanganh:x:1000:
 ```
 
-### 1.2. Tắt tính năng SSH cho user root
+### 1. Tắt tính năng SSH cho user root
 
 Để tắt tính năng SSH cho user `root`. Ta phải đảm bảo có một user khác có quyền sudo trước khi tắt tính năng SSH bằng user `root`. Ta đã tạo user `quanganh` có quyền sudo ở trên.
 
