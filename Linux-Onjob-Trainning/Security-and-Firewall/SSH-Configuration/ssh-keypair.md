@@ -2,6 +2,20 @@ Cấu hình SSH Key Pair cho Linux
 
 ## Mục lục
 
+[1. Mô hình hoạt động](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob-Trainning/Security-and-Firewall/SSH-Configuration/ssh-keypair.md#1-m%C3%B4-h%C3%ACnh-ho%E1%BA%A1t-%C4%91%E1%BB%99ng)
+
+[2. Các bước cấu hình](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob-Trainning/Security-and-Firewall/SSH-Configuration/ssh-keypair.md#2-c%C3%A1c-b%C6%B0%E1%BB%9Bc-c%E1%BA%A5u-h%C3%ACnh)
+
+- [2.1. Cấu hình trên máy Master](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob-Trainning/Security-and-Firewall/SSH-Configuration/ssh-keypair.md#21-c%E1%BA%A5u-h%C3%ACnh-tr%C3%AAn-m%C3%A1y-master)
+
+- [2.2. Cấu hình trên máy Slave](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob-Trainning/Security-and-Firewall/SSH-Configuration/ssh-keypair.md#22-c%E1%BA%A5u-h%C3%ACnh-tr%C3%AAn-m%C3%A1y-slave)
+
+[3. Kiểm tra lại cấu hình](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob-Trainning/Security-and-Firewall/SSH-Configuration/ssh-keypair.md#3-ki%E1%BB%83m-tra-l%E1%BA%A1i-c%E1%BA%A5u-h%C3%ACnh)
+
+[4. Cấu hình Disable đăng nhập bằng Password cho các máy Slave](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob-Trainning/Security-and-Firewall/SSH-Configuration/ssh-keypair.md#4-c%E1%BA%A5u-h%C3%ACnh-disable-%C4%91%C4%83ng-nh%E1%BA%ADp-b%E1%BA%B1ng-password-cho-c%C3%A1c-m%C3%A1y-slave)
+
+[Tài liệu tham khảo](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob-Trainning/Security-and-Firewall/SSH-Configuration/ssh-keypair.md#t%C3%A0i-li%E1%BB%87u-tham-kh%E1%BA%A3o)
+
 ## 1. Mô hình hoạt động
 
 <img src="https://imgur.com/MhwzU0q.png">
@@ -116,7 +130,7 @@ Ta gõ `yes` để truy cập vào máy **Slave**
 
 Sau khi gõ Passphrase thành công ta đã thành công việc đăng nhập bằng Public Key.
 
-## 4. Cấu hình Disable đăng nhập bằng Password cho các máy Slave.
+## 4. Cấu hình Disable đăng nhập bằng Password cho các máy Slave
 
 Việc tắt đăng nhập bằng Password sẽ tăng khả năng bảo mật cho các máy **Slave**. Không những thế, nếu không tắt đăng nhập bằng Password, ta vẫn có thể đăng nhập SSH vào các máy **Slave** bằng Password mặc dù đã cấu hình cài đặt đăng nhập bằng SSH Key pair ở trên.
 
