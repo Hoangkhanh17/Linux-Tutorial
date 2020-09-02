@@ -4,7 +4,7 @@
 
 - [1. Tạo User với quyền sudo](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob-Trainning/Security-and-Firewall/SSH-Configuration/create-root-user.md#1-t%E1%BA%A1o-user-v%E1%BB%9Bi-quy%E1%BB%81n-sudo)
 
-- [2. Tắt tính năng SSH cho user root](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob-Trainning/Security-and-Firewall/SSH-Configuration/Configure-SSH-keypair.md#12-t%E1%BA%AFt-t%C3%ADnh-n%C4%83ng-ssh-cho-user-root)
+- [2. Tắt tính năng SSH cho user root](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob-Trainning/Security-and-Firewall/SSH-Configuration/create-root-user.md#2-t%E1%BA%AFt-t%C3%ADnh-n%C4%83ng-ssh-cho-user-root)
 
 ## Tạo User được cấp quyền sudo và Tắt tính năng SSH cho User root
 
