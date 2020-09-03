@@ -148,4 +148,3 @@ Open SSL là một thư viện nguồn mở được sử dụng để mã hóa 
 - **Full SSL**: Kiểu này CloudFlare sẽ hỗ trợ người truy cập vào website thông qua giao thức HTTPS và dữ liệu từ CloudFlare gửi về máy chủ cũng sẽ được mã hóa. Tuy nhiên bạn phải có một chứng chỉ SSL, nhưng CloudFlare sẽ không xác thực chứng chỉ này nên bạn có thể sử dụng chứng chỉ tự ký, hoặc tạo chứng chỉ của CloudFlare. Và tài khoản bạn phải là tài khoản Pro mới có thể sử dụng chứng chỉ riêng trên CloudFlare.
 
 - **Full SSL (strict)**: Giống như kiểu Full SSL nhưng CloudFlare sẽ xác thực chứng chỉ này, chứng chỉ của bạn phải mua hoặc sử dụng Let’s Encrypt. Và tài khoản của bạn phải là Pro mới có thể sử dụng chứng chỉ riêng.
-Ở phần dưới mình sẽ hướng dẫn chi tiết cách sử dụng từng loại.
