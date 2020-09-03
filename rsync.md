@@ -2,6 +2,18 @@
 
 ## Mục lục
 
+[1. Rsync là gì?](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/rsync.md#1-rsync-l%C3%A0-g%C3%AC-)
+
+[2. Cài đặt Rsync](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/rsync.md#2-c%C3%A0i-%C4%91%E1%BA%B7t-rsync)
+
+[3. Cách sử dụng Rsync](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/rsync.md#3-c%C3%A1ch-s%E1%BB%AD-d%E1%BB%A5ng-rsync)
+
+- [3.1. Copy file và thư mục giữa các Server](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/rsync.md#31-copy-file-v%C3%A0-th%C6%B0-m%E1%BB%A5c-gi%E1%BB%AFa-c%C3%A1c-server)
+
+- [3.2. Rsync qua SSH](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/rsync.md#32-rsync-qua-ssh)
+
+[Tài liệu tham khảo](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/rsync.md#t%C3%A0i-li%E1%BB%87u-tham-kh%E1%BA%A3o)
+
 ## 1. Rsync là gì ?
 
 **Rsync (Remote Sync)** là một công cụ dùng để sao chép và đồng bộ file/thư mục được dùng rất phổ biến. Với sự trợ giúp của rsync, bạn có thể đồng bộ dữ liệu trên local hoặc giữa các server với nhau một cách dễ dàng.
