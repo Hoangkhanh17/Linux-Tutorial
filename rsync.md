@@ -106,6 +106,63 @@ Lệnh trên copy file `/root/install.log` trên Remote Server `192.168.0.100` v
 
 `rsync -avzhe "ssh -p 2222" root@192.168.0.100:/root/install.log /tmp/`
 
+## 4. Sử dụng Rsync kết hợp với SSH Key pair để Tự động hóa việc đồng bộ
+
+### 4.1. Kiểm tra việc đồng bộ bằng tay
+
+Tham khảo bào viết về SSH Key pair [tại đây](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/Linux-Onjob-Trainning/Security-and-Firewall/SSH-Configuration/ssh-keypair.md)
+
+Ở bài viết về SSH Key pair, có đoạn gõ Passphrase, ta sẽ bỏ qua việc đặt mật khẩu Passphrase để tự động hóa việc đồng bộ thư mục.
+
+Trước tiên ta thử thực hiện việc đồng bộ bằng lệnh sau:
+
+`rsync -avzhe "ssh -p port" user@IP:/backup/ /backups/`
+
+Trong đó:
+
+- `rsync -avzhe`: Câu lệnh rsync cùng với các tùy chọn.
+
+- `ssh -p port`: Là việc sử dụng rsync qua SSH với tùy chọn `port` nếu máy chủ đích thay đổi port cho SSH.
+
+- `user@IP:/backup/`: Thư mục của máy chủ đích mà ta muốn đồng bộ.
+
+- `/backups/`: Thư mục của máy chủ hiện tại ta sẽ lưu các đồng bộ.
+
+Do đã cấu hình SSH Keypair không có Passphrase nên rsync sẽ tự đồng đồng bộ các thư mục. Thông báo đồng bộ xong:
+
+```
+[root@localhost backups]# sh rsync.sh
+receiving incremental file list
+./
+
+sent 30 bytes  received 467 bytes  10.25 bytes/sec
+total size is 52.28M  speedup is 105,194.40
+```
+
+### 4.2. Cấu hình tự đồng hóa rsync
+
+#### Bước 1: Tạo tệp Shell Scripts
+
+`vi /backups/rsync.sh`
+
+Ta thêm dòng lệnh `rsync` ở trên vào Scripts sau đó lưu lại. Vì đã có SSH Key pair nên chúng ta chỉ cần 1 dòng này trong scripts:
+
+`rsync -avzhe "ssh -p port" user@IP:/backup/ /backups/`
+
+#### Bước 2: Lưu lại và phần quyền thực thi cho tệp Shell Scripts vừa tạo
+
+`chmod +x /backups/rsync.sh`
+
+#### Bước 3: Đưa Script vào Crontab để tự động hóa
+
+`crontab -e`
+
+Thêm nội dung sau:
+
+`0 8 * * * /backups/rsync.sh`
+
+Tại đây có nghĩa là việc đồng bộ sẽ được diễn ra vào lúc 8 giờ sáng hàng ngày. Ta lưu lại là thành công.
+
 ## Tài liệu tham khảo
 
 https://hocvps.com/rsync/
