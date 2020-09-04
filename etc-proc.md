@@ -62,6 +62,8 @@ Sử dụng lệnh `ls /proc` sẽ thấy tập tin và các thư mục:
 
 Một số nội dung và mô tả ngắn gọn:
 
+-------------------------------------------------
+
 file:/proc/cmdline == Kernel Command line (eg . “/rhgb”, “quite” etc.
 
 file:/proc/cpuinfo == used cpus and various info about them
@@ -123,3 +125,7 @@ file:/proc/uptime == Uptime (times elapsed since boot) for individule cpus
 file:/proc/version == Linux Kernel version and compiler used to build it
 
 file:/proc/vmstat == Details Virtual memory Info ,including page faults,range,etc.
+
+-------------------------------------------------
+
+Các thư mục được đánh số như 1, 4567, 2385, 112, 40, 41 … chính là các Process ID (PID) của những process đang chạy trong hệ thống. Mỗi thư mục sẽ chứa thông tin về process đó. Bạn có thể dùng lệnh “ps –ef” để liệt kê các process đang chạy và so sánh với tên các thư mục trên để biết thư mục nào chứa thông tin của process nào.
