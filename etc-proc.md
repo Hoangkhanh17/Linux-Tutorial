@@ -129,3 +129,11 @@ file:/proc/vmstat == Details Virtual memory Info ,including page faults,range,et
 -------------------------------------------------
 
 Các thư mục được đánh số như 1, 4567, 2385, 112, 40, 41 … chính là các Process ID (PID) của những process đang chạy trong hệ thống. Mỗi thư mục sẽ chứa thông tin về process đó. Bạn có thể dùng lệnh “ps –ef” để liệt kê các process đang chạy và so sánh với tên các thư mục trên để biết thư mục nào chứa thông tin của process nào.
+
+Một số process khi sử dụng lệnh `ps -ef`:
+
+<img src="https://imgur.com/zzAyB4l.png">
+
+## Tài liệu tham khảo
+
+https://tldp.org/LDP/Linux-Filesystem-Hierarchy/html/proc.html
