@@ -42,3 +42,13 @@ Các sự kiện sau đây sẽ xảy ra tuần tự khi người dùng gởi ma
 5. Email đến được nhận bởi SMTP (MTA) cục bộ trên server mail.exampleB.tst. Sau khi nhận được email, nó được chuyển cho MDA, sau đó gửi thư đến hộp thư của người nhận được lưu trữ trong máy chủ. Máy chủ có các hộp thư riêng biệt cho mỗi người dùng.
 
 6. Khi người nhận kiểm tra email qua giao thức POP hoặc IMAP, email được MUA lấy từ máy chủ về máy tính của user . Tùy thuộc vào cấu hình MUA, email có thể được tải xuống trong máy trạm, bản sao có thể được lưu giữ trong cả máy chủ và máy trạm, hoặc email giữa máy chủ và MUA được đồng bộ hóa , tuỳ thuộc vào bạn chọn giao thức POP hay IMAP.
+
+## 3. Các giao thức Mail Server
+
+Hiện nay có 3 giao thức cơ bản được ứng dụng trong mail server giúp hệ thống có thể hoạt động trơn tru và đảm bảo khả năng bảo mật cao nhất, bao gồm:
+
+- **SMTP – Simple Mail Transfer Porotocol**: SMTP được sử dụng khi gửi từ một ứng dụng email như Postfix với một máy chủ email hoặc khi email được gửi từ một máy chủ email khác. Giao thức này sử dụng cổng TCP 25 với không bảo mật SSL và cổng 465/587 với bảo mật SSL/TLS.
+
+- **POP3 – Post Office Porotocol version 3**: giao thức này được dùng để tải một email từ một máy chủ email. POP3 sử dụng cổng TCP 110 khi không có SSL, cổng 995 khi có SSL/TLS.
+
+- **IMAP – Internet Message Access Protocol**: Đây là giao thức thế hệ mới của POP. IMAP sử dụng cổng TCP 143 (không có SSL) và 993 (Có SSL). Nó đặt sự kiểm soát email trên mail server. IMAP có thể hoạt động ở 3 chế độ: trực tuyến, ngoại tuyến và ngắt kết nối. Chế độ ngoại tuyến được thực hiện như sau: khi các email đã được chuyển tới máy client, nó sẽ bị xóa khỏa mail server và sau đó hệ thống bị ngắt. Lúc này người dùng có thể đọc, trả lời và làm một số việc khác ở chế độ ngoại tuyến. Tuy nhiên nếu họ muốn gửi thư, họ phải kết nối lại. Như vậy ở trong chế độ này, thông điệp được lưu tạm ở client server giúp người dùng có thể sử dụng bình thường và ở lần kết nối kế tiếp nó sẽ được cập nhập trở lại vào mail server.
