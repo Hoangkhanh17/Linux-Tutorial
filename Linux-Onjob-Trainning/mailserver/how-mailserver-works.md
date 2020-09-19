@@ -32,3 +32,13 @@ Các sự kiện sau đây sẽ xảy ra tuần tự khi người dùng gởi ma
 
 <img src="https://imgur.com/MkQgkL3.png">
 
+1. MUA của người gửi khởi tạo kết nối tới mail server mail.exampleA.tst bằng giao thức SMTP (thường là TCP Port 25).
+
+2. Mail server mail.exampleA.tst nhận email và biết rằng domain đích cần gởi email tới là exampleB.tst . Server mail.exampleA.tst tạo ra một truy vấn đến máy chủ DNS để hỏi về thông tin record MX của domain exampleB.tst. Giả sử rằng không có thông tin về domain exampleB.tst trong bộ nhớ cache của máy chủ DNS .
+
+3. Máy chủ DNS lần lượt tạo ra một truy vấn đệ quy đối với máy chủ DNS có thẩm quyền và tìm hiểu về chi tiết các record MX của domain exampleB.tst. Thông tin này sẽ được trả về cho server mail.exampleA.tst .
+
+4. Bây giờ server mail.exampleA.tst đã có địa chỉ IP của mail server đích , nó sẽ gửi email trực tiếp tới mail server mail.exampleB.tst thông qua Internet. SMTP được sử dụng để liên lạc giữa các mail server nguồn và đích.
+5. Email đến được nhận bởi SMTP (MTA) cục bộ trên server mail.exampleB.tst. Sau khi nhận được email, nó được chuyển cho MDA, sau đó gửi thư đến hộp thư của người nhận được lưu trữ trong máy chủ. Máy chủ có các hộp thư riêng biệt cho mỗi người dùng.
+
+6. Khi người nhận kiểm tra email qua giao thức POP hoặc IMAP, email được MUA lấy từ máy chủ về máy tính của user . Tùy thuộc vào cấu hình MUA, email có thể được tải xuống trong máy trạm, bản sao có thể được lưu giữ trong cả máy chủ và máy trạm, hoặc email giữa máy chủ và MUA được đồng bộ hóa , tuỳ thuộc vào bạn chọn giao thức POP hay IMAP.
