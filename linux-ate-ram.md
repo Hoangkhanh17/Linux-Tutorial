@@ -1,5 +1,19 @@
 # Hệ thống Linux ngốn RAM như thế nào ?
 
+## Mục Lục
+
+[1. Cơ chế sử dụng RAM](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/linux-ate-ram.md#1-c%C6%A1-ch%E1%BA%BF-s%E1%BB%AD-d%E1%BB%A5ng-ram)
+
+[2. Cản trở cơ chế sử dụng RAM](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/linux-ate-ram.md#2-c%E1%BA%A3n-tr%E1%BB%9F-c%C6%A1-ch%E1%BA%BF-s%E1%BB%AD-d%E1%BB%A5ng-ram)
+
+[3. Tìm hiểu Lệnh Free](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/linux-ate-ram.md#3-t%C3%ACm-hi%E1%BB%83u-l%E1%BB%87nh-free)
+
+[4. Khi nào cần lo lắng về Memory](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/linux-ate-ram.md#4-khi-n%C3%A0o-c%E1%BA%A7n-lo-l%E1%BA%AFng-v%E1%BB%81-memory)
+
+[Kết luận](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/linux-ate-ram.md#k%E1%BA%BFt-lu%E1%BA%ADn)
+
+[Tài liệu tham khảo](https://github.com/quanganh1996111/Linux-Tutorial/blob/master/linux-ate-ram.md#t%C3%A0i-li%E1%BB%87u-tham-kh%E1%BA%A3o)
+
 ## 1. Cơ chế sử dụng RAM
 
 Linux mượn một số phần RAM không được sử dụng để làm bộ nhớ đệm cho hệ thống `(Disk Caching)`. Điều này có vẻ như đang chiếm dụng RAM nhưng thực tế thì không phải vậy.
