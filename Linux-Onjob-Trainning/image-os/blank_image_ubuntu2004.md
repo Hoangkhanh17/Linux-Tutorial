@@ -72,3 +72,20 @@
 - Lựa chọn cài đặt `Open SSH Server`:
 
 <img src="https://imgur.com/uYDuSjv.png">
+
+- Đợi OS được cài đặt sau đó tiến hành reboot:
+
+<img src="https://imgur.com/cz2hwzO.png">
+
+- Tiến hành Force Off máy và và gỡ ISO ra để Boot từ vda:
+
+<img src="https://imgur.com/RaepcoU.png">
+
+<img src="https://imgur.com/3dxDTCf.png">
+
+- Kiểm tra lại Dịch vụ của SSH:
+
+<img src="https://imgur.com/bFFC9aj.png">
+
+### Bước 4: Cài đặt 
+
