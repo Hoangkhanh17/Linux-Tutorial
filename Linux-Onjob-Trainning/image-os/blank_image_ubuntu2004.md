@@ -384,3 +384,13 @@ history -c
 ### Bước 7: Tắt VM, Tạo Snapshot cho Ubuntu2004-Blank
 
 <img src="https://imgur.com/zEf7cV7.png">
+
+## Phần 4: Nén Image Ubuntu 20.04 và tạo Image trên Openstack
+
+### Bước 1: Xử dụng lệnh virt-sysprep để xóa toàn bộ các thông tin máy ảo
+
+`virt-sysprep -d ops_anhtq_Ubuntu2004`
+
+### Bước 2: Tối ưu kích thước image
+
+`virt-sparsify --compress --convert qcow2 /kvm/anhtq_ops_ubuntu2004.qcow2 /root/image-create-ops/anhtq-ubuntu2004-blank`
