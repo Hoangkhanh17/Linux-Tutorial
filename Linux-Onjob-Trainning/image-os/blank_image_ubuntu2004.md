@@ -205,3 +205,182 @@ root@cloud:~# free -m
 Mem:           1987         129        1579           0         278        1706
 Swap:             0           0           0
 ```
+
+### Bước 5: Cài đặt các gói Dịch vụ và Cập nhật OS
+
+```
+apt-get update -y 
+apt-get upgrade -y 
+apt-get dist-upgrade -y
+apt-get autoremove 
+```
+
+### Bước 6: Cấu hình để instance báo log ra console, đổi tên Card mạng về eth* thay vì ens, eno
+
+```
+sed -i 's|GRUB_CMDLINE_LINUX=""|GRUB_CMDLINE_LINUX="net.ifnames=0 biosdevname=0 console=tty1 console=ttyS0"|g' /etc/default/grub
+update-grub
+```
+
+### Bước 7: Tắt netplan và cài đặt ifupdown
+
+Xóa Netplan:
+
+```
+apt-get --purge remove netplan.io -y
+rm -rf /usr/share/netplan
+rm -rf /etc/netplan
+```
+
+Cài đặt ifupdown:
+
+```
+apt-get update
+apt-get install -y ifupdown
+```
+
+Tạo Snapshot:
+
+## Phần 2: Cài đặt dịch vụ cần thiết cho Image Ubuntu 20.04
+
+### Bước 1: Cấu hình netplug
+
+Để sau khi boot máy ảo, có thể nhận đủ các NIC gắn vào:
+
+```
+apt-get install netplug -y
+
+wget https://raw.githubusercontent.com/danghai1996/thuctapsinh/master/HaiDD/CreateImage/scripts/netplug_ubuntu -O netplug
+
+mv netplug /etc/netplug/netplug
+
+chmod +x /etc/netplug/netplug
+```
+
+### Bước 2: Disable snapd service
+
+Kiểm tra Snap:
+
+```
+root@cloud:~# df -H
+Filesystem      Size  Used Avail Use% Mounted on
+udev            951M     0  951M   0% /dev
+tmpfs           199M  916K  198M   1% /run
+/dev/vda2       9.8G  2.4G  7.0G  26% /
+tmpfs           994M     0  994M   0% /dev/shm
+tmpfs           5.0M     0  5.0M   0% /run/lock
+tmpfs           994M     0  994M   0% /sys/fs/cgroup
+/dev/loop0       56M   56M     0 100% /snap/core18/1944
+/dev/loop1       32M   32M     0 100% /snap/snapd/10707
+/dev/loop2       70M   70M     0 100% /snap/lxd/19188
+tmpfs           199M     0  199M   0% /run/user/0
+```
+
+```
+root@cloud:~# snap list
+Name    Version   Rev    Tracking       Publisher   Notes
+core18  20201210  1944   latest/stable  canonical*  base
+lxd     4.0.5     19188  4.0/stable/…   canonical*  -
+snapd   2.48.2    10707  latest/stable  canonical*  snapd
+```
+
+Xóa Snap:
+
+```
+snap remove lxd
+snap remove core18
+snap remove snapd
+```
+
+Remove snapd package:
+
+`apt purge snapd -y`
+
+Xóa các thư mục snapd:
+
+```
+rm -rf ~/snap
+rm -rf /snap
+rm -rf /var/snap
+rm -rf /var/lib/snapd
+```
+
+Kiểm tra lại:
+
+```
+root@cloud:~# df -H
+Filesystem      Size  Used Avail Use% Mounted on
+udev            998M     0  998M   0% /dev
+tmpfs           209M  664k  208M   1% /run
+/dev/vda2        11G  2.3G  7.8G  23% /
+tmpfs           1.1G     0  1.1G   0% /dev/shm
+tmpfs           5.3M     0  5.3M   0% /run/lock
+tmpfs           1.1G     0  1.1G   0% /sys/fs/cgroup
+tmpfs           209M     0  209M   0% /run/user/0
+```
+
+### Bước 3: Thiết lập Cloud-init
+
+Cài đặt Cloud-init:
+
+`apt-get install -y cloud-init`
+
+Cấu hình user mặc định:
+
+sed -i 's/name: ubuntu/name: root/g' /etc/cloud/cloud.cfg
+
+Disable default config route:
+
+`sed -i 's|link-local 169.254.0.0|#link-local 169.254.0.0|g' /etc/networks`
+
+Cấu hình datasource, bỏ chọn mục NoCloud:
+
+`dpkg-reconfigure cloud-init`
+
+<img src="https://imgur.com/GeH9bA5.png">
+
+Clean cấu hình và restart service:
+
+```
+cloud-init clean
+systemctl restart cloud-init
+systemctl enable cloud-init
+systemctl status cloud-init
+```
+
+### Bước 4: Cài đặt qemu-agent
+
+Chú ý: qemu-guest-agent là một daemon chạy trong máy ảo, giúp quản lý và hỗ trợ máy ảo khi cần (có thể cân nhắc việc cài thành phần này lên máy ảo)
+
+Để có thể thay đổi password máy ảo bằng nova-set password thì phiên bản qemu-guest-agent phải `>= 2.5.0`
+
+```
+apt-get install software-properties-common -y
+apt-get update -y
+apt-get install qemu-guest-agent -y
+service qemu-guest-agent start
+```
+
+Kiểm tra phiên bản qemu-ga bằng lệnh:
+
+```
+qemu-ga --version
+service qemu-guest-agent status
+```
+
+### Bước 5: Cài đặt CMD Log
+
+`curl -Lso- https://raw.githubusercontent.com/nhanhoadocs/ghichep-cmdlog/master/cmdlog.sh | bash`
+
+### Bước 6: Dọn dẹp
+
+```
+apt-get clean all
+rm -f /var/log/wtmp /var/log/btmp
+history -c
+> /var/log/cmdlog.log
+```
+
+### Bước 7: Tắt VM, Tạo Snapshot cho Ubuntu2004-Blank
+
+<img src="https://imgur.com/zEf7cV7.png">
