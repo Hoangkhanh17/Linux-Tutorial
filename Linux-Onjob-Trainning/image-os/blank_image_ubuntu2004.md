@@ -39,3 +39,14 @@
 - Lựa chọn Boot theo thứ tự: 1:vda, 2:hda
 
 <img src="https://imgur.com/ujEbyQd.png">
+
+- Power On và Console vào cài đặt OS
+
+<img src="https://imgur.com/Am4rTdm.png">
+
+<img src="https://imgur.com/3YkMkDT.png">
+
+
+### Bước 3: Cài đặt OS
+
+#### Lưu ý: Do OS sẽ cài OS trắng nên sẽ bỏ hết các Options
