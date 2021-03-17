@@ -143,3 +143,14 @@ Mar 17 04:08:53 cloud systemd[1]: Stopped Uncomplicated firewall.
 Sau đó tiến hành Reboot lại VPS:
 
 `init 6`
+
+Kiểm tra lại SSH bằng User root:
+
+<img src="https://imgur.com/4uoR69S.png">
+
+Xóa user ubuntu đi, chỉ sử dụng user root cho quyền sudo
+
+```
+userdel ubuntu
+rm -rf /home/ubuntu
+```
