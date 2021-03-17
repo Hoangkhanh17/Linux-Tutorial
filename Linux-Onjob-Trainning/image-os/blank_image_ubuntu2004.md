@@ -154,3 +154,54 @@ Xóa user ubuntu đi, chỉ sử dụng user root cho quyền sudo
 userdel ubuntu
 rm -rf /home/ubuntu
 ```
+
+### Bước 2: Điều chỉnh Timezone
+
+Điều chỉnh Timezone về `Ho_Chi_Minh`:
+
+`timedatectl set-timezone Asia/Ho_Chi_Minh`
+
+Bổ sung `env locale`:
+
+`echo "export LC_ALL=C" >>  ~/.bashrc`
+
+### Bước 3: Disable IPv6
+
+```
+echo "net.ipv6.conf.all.disable_ipv6 = 1" >> /etc/sysctl.conf 
+echo "net.ipv6.conf.default.disable_ipv6 = 1" >> /etc/sysctl.conf 
+echo "net.ipv6.conf.lo.disable_ipv6 = 1" >> /etc/sysctl.conf
+sysctl -p
+```
+
+Kiểm tra lại, kết quả trả về `1` là tắt thành công, `0` tức là IPv6 vẫn đang bật:
+
+`root@cloud:~# cat /proc/sys/net/ipv6/conf/all/disable_ipv6`
+
+### Bước 4: Kiểm tra và xóa phân vùng SWAP
+
+```
+root@cloud:~# cat /proc/swaps
+Filename                                Type            Size    Used    Priority
+/swap.img                               file            2067452 0       -2
+```
+
+Xóa phân vùng Swap:
+
+```
+root@cloud:~# swapoff -a
+root@cloud:~# rm -rf /swap.img
+```
+
+Xóa cấu hình swap file trong file /etc/fstab:
+
+`sed -Ei '/swap.img/d' /etc/fstab`
+
+Kiểm tra lại:
+
+```
+root@cloud:~# free -m
+              total        used        free      shared  buff/cache   available
+Mem:           1987         129        1579           0         278        1706
+Swap:             0           0           0
+```
