@@ -50,3 +50,25 @@
 ### Bước 3: Cài đặt OS
 
 #### Lưu ý: Do OS sẽ cài OS trắng nên sẽ bỏ hết các Options
+
+<img src="https://imgur.com/4ZvH7Hg.png">
+
+<img src="https://imgur.com/ocb6wi7.png">
+
+<img src="https://imgur.com/oKoeSc8.png">
+
+- Chọn `Use an entire disk` > `Done`. Lưu ý: KHÔNG DÙNG OPTION THIẾT LẬP DISK dạng LVM
+
+<img src="https://imgur.com/onZ676t.png">
+
+<img src="https://imgur.com/5nNakpR.png">
+
+<img src="https://imgur.com/g7vKNdG.png">
+
+- Điền các thông số và mật khẩu đăng nhập:
+
+<img src="https://imgur.com/ww0zB0C.png">
+
+- Lựa chọn cài đặt `Open SSH Server`:
+
+<img src="https://imgur.com/uYDuSjv.png">
