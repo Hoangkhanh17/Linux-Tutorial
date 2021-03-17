@@ -97,5 +97,49 @@
 
 <img src="https://imgur.com/EZd4svq.png">
 
-### Bước 4: Cài đặt Dịch vụ
+## Phần 2: Chuẩn bị Môi trường đóng Image Ubuntu 2004
 
+### Bước 1: Thiết lập SSH cho user root
+
+Login ssh với tài khoản ubuntu, chuyển user sudo
+
+`sudo su`
+
+Đổi mật khẩu cho User root
+
+```
+root@cloud:/home/ubuntu# passwd
+New password:
+Retype new password:
+```
+
+Cấu hình SSH cho User root
+
+```
+root@cloud:/home/ubuntu# sed -i 's/#PermitRootLogin prohibit-password/PermitRootLogin yes/'g /etc/ssh/sshd_config
+root@cloud:/home/ubuntu# systemctl restart sshd
+```
+
+Disable Firewall:
+
+```
+root@cloud:/home/ubuntu# systemctl disable ufw
+Synchronizing state of ufw.service with SysV service script with /lib/systemd/systemd-sysv-install.
+Executing: /lib/systemd/systemd-sysv-install disable ufw
+Removed /etc/systemd/system/multi-user.target.wants/ufw.service.
+root@cloud:/home/ubuntu# systemctl stop ufw
+root@cloud:/home/ubuntu# systemctl status ufw
+● ufw.service - Uncomplicated firewall
+     Loaded: loaded (/lib/systemd/system/ufw.service; disabled; vendor preset: enabled)
+     Active: inactive (dead)
+       Docs: man:ufw(8)
+
+Mar 17 04:08:53 cloud systemd[1]: Stopping Uncomplicated firewall...
+Mar 17 04:08:53 cloud ufw-init[1140]: Skip stopping firewall: ufw (not enabled)
+Mar 17 04:08:53 cloud systemd[1]: ufw.service: Succeeded.
+Mar 17 04:08:53 cloud systemd[1]: Stopped Uncomplicated firewall.
+```
+
+Sau đó tiến hành Reboot lại VPS:
+
+`init 6`
