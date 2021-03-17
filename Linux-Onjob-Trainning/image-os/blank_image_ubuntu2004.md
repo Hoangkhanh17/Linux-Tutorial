@@ -21,3 +21,21 @@
 <img src="https://imgur.com/1wIyv5d.png">
 
 <img src="https://imgur.com/DCKb9UE.png">
+
+- Tại phần thông số RAM và CPU ta có thể để: 2GB Ram, 2 Cores CPU để tăng tốc độ Boot OS.
+
+- Lựa chọn HDD với Disk đã tạo ở trên.
+
+- Lựa chọn dải VLAN cung cấp địa chỉ IP
+
+<img src="https://imgur.com/zS5rbSR.png">
+
+### Lựa chọn file iso để cài đặt OS
+
+<img src="https://imgur.com/b13WryY.png">
+
+<img src="https://imgur.com/I45A5wH.png">
+
+- Lựa chọn Boot theo thứ tự: 1:vda, 2:hda
+
+<img src="https://imgur.com/ujEbyQd.png">
