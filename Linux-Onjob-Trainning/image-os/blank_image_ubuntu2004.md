@@ -87,5 +87,15 @@
 
 <img src="https://imgur.com/bFFC9aj.png">
 
-### Bước 4: Cài đặt 
+- Kiểm tra lại cấu hình IP. Lưu ý: Cấu hình đúng dải IP Vlan đã chọn từ trước đó.
+
+<img src="https://imgur.com/cdhPs0d.png">
+
+<img src="https://imgur.com/gN4C11X.png">
+
+- Tạo Snapshot trước khi tiến hành cài đặt các Dịch vụ
+
+<img src="https://imgur.com/EZd4svq.png">
+
+### Bước 4: Cài đặt Dịch vụ
 
